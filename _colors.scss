@@ -1,0 +1,50 @@
+$colors: (
+    "primary": (
+        "dark-purple": #0C093C,
+        "light-purple": #7758D9,
+        "offwhite": #EBF0EC
+    ),
+    "type": (
+        "emphasis-high": #000000,
+        "emphasis-medium": #000000B2,
+        "emphasis-low": #00000080,
+        "emphasis-high-inverse": #FFFFFF,
+        "emphasis-medium-inverse": #EBF0ECCC
+    ),
+    "background": (
+        "light": #F5F5F6,
+        "dark": #070525
+    ),
+    "neutral": (
+        "0": #FFFFFF,
+        "10": #E6E6E6,
+        "20": #CCCCCC,
+        "30": #B3B3B3,
+        "40": #999999,
+        "50": #808080,
+        "60": #666666,
+        "70": #4D4D4D,
+        "80": #333333,
+        "90": #1A1A1A,
+        "100": #000000
+    ),
+    "outline": (
+        "light": #0000001A,
+        "dark": #FFFFFF1A
+    ),
+    "secondary": (
+        "yellow": #FCD18B
+    ),
+    "support": (
+        "10": #F2EFFC,
+        "20": #E4DEF7,
+        "30": #D7CDF4,
+        "40": #C9BCF0,
+        "50": #BBACEC,
+        "60": #AD9BE8
+    )
+);
+
+@function get ($color-type, $color-name) {
+    @return map-get($colors, $color-type, $color-name);
+}

@@ -1,0 +1,15 @@
+@use "colors";
+
+@import "fonts";
+@import "grid";
+
+body {
+    background-color: colors.get("background", "dark");
+    color: colors.get("primary", "light-purple");
+    font-family: "SourceSans", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: colors.get("primary", "offwhite");
+}

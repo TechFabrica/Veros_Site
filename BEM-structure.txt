@@ -1,0 +1,213 @@
+--- Common ------------------------------------------------------------------------------------------
+
+button
+    --light-purple
+    --dark-purple
+    --borderless
+    __content
+    __icon
+
+card
+    --click
+    --small
+    __content
+    __icon
+
+form
+    __input
+    __submit
+
+
+--- Mobile ------------------------------------------------------------------------------------------
+
+header
+    __logo
+    __open-menu-button
+    __menu
+    __menu-item
+
+hero
+    __background
+    __title
+        --emphasis
+    __content
+    __card-group
+    __cta-wpp
+
+quem-atendemos
+    __title
+    __subtitle
+    __menu
+    __menu-item
+    __content-container
+    __content-title
+    __content
+    __checklist
+    __checklist-item
+    __button
+
+servicos
+    __title
+    __subtitle
+    __link
+
+especialidades
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __card-img
+    __button
+
+estrutura
+    __title
+    __subtitle
+    __link
+    __img
+        --big
+    __content-title
+    __content
+
+social-proof
+    __title
+        --emphasis
+    __carousel
+    __card
+        --off-screen
+    __carousel-guide
+
+faq
+    __title
+    __subtitle
+    __question
+    __question-content
+    __??? 
+
+contato 
+    __img
+    __title
+    __content
+    __phone-id-icon
+    __phone-id
+    __phone-number
+    __card
+
+newsletter
+    __icon
+    __title
+    __subtitle
+    __form
+
+footer
+    __logo
+    __column
+        --drop-down
+    __column-title
+    __column-item
+    __adress-icon
+    __adress-info
+    __[final]
+    __[final]-copyright
+    __[final]-link
+    __[final]-social 
+
+
+--- Desktop ------------------------------------------------------------------------------------------
+
+login-menu
+    __options
+
+header
+    __logo
+    __menu
+    __menu-item
+    __search
+    __cta-wpp
+
+hero
+    __background
+    __title
+        --emphasis
+    __content
+    __card-group
+    __cta-wpp
+
+quem-atendemos
+    __title
+    __subtitle
+    __menu
+    __menu-item
+    __content-container
+    __content-title
+    __content
+    __checklist
+    __checklist-item
+    __button
+
+servicos
+    __title
+    __subtitle
+    __link
+
+especialidades
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __card-img
+    __button
+
+estrutura
+    __title
+    __subtitle
+    __link 
+    __img
+        --big
+    __content-title
+    __content
+
+social-proof
+    __title
+        --emphasis
+    __carousel
+    __card
+        --unfocused
+        --off-screen
+    __button
+    __carousel-guide
+
+faq
+    __title
+    __subtitle
+    __question
+    __question-content
+    __???
+
+contato 
+    __img
+    __title
+    __content
+    __phone-id-icon
+    __phone-id
+    __phone-number
+    __card
+
+newsletter
+    __icon
+    __title
+    __subtitle
+    __form
+
+footer
+    __logo
+    __column
+    __column-title
+    __column-item
+    __adress-icon
+    __adress-info
+    __[final]
+    __[final]-copyright
+    __[final]-link
+    __[final]-social 
