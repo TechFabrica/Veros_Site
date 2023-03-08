@@ -1,0 +1,13 @@
+@use "../_library/library";
+
+body {
+    background-color: library.get-color("background", "dark");
+    color: library.get-color("primary", "light-purple");
+    font-family: "SourceSans", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: library.get-color("primary", "offwhite");
+    margin: 20px;
+}

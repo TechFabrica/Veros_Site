@@ -45,6 +45,6 @@ $colors: (
     )
 );
 
-@function get ($color-type, $color-name) {
+@function get-color ($color-type, $color-name) {
     @return map-get($colors, $color-type, $color-name);
 }
