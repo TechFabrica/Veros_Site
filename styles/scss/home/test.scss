@@ -1,13 +1,15 @@
 @use "../_library/library";
 
-body {
-    background-color: library.get-color("background", "dark");
-    color: library.get-color("primary", "light-purple");
-    font-family: "SourceSans", sans-serif;
-    font-weight: 400;
-}
-
 p {
     color: library.get-color("primary", "offwhite");
     margin: 20px;
+    background-color: library.get-color("support", "40");
+}
+
+.grid-container{
+    // inserir todas as propriedades dentro do conjunto de modificadores
+    
+    &--4, &--6, &--12{
+        background-color: library.get-color("support", "60");
+    }
 }

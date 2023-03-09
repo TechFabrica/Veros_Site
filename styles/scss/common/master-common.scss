@@ -1,0 +1,14 @@
+@use "../_library/library";
+
+@forward "./button.scss";
+@forward "./card.scss";
+@forward "./footer.scss";
+@forward "./form.scss";
+@forward "./header.scss";
+@forward "./select.scss";
+@forward "./tag.scss";
+
+body {
+    background-color: library.get-color("background", "dark");
+    color: library.get-color("primary", "light-purple");
+}

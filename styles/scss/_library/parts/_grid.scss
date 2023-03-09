@@ -1,5 +1,13 @@
-.grid-container{
+/* _library _grid */
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-supercontainer{
     display: grid;
+    width: 100%;
     margin: 0 24px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
@@ -10,13 +18,44 @@
         column-gap: 24px;
     }
     
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1281px) {
         margin: 0 124px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1601px) {
+        width: auto;
         margin: 0 auto;
         grid-template-columns: repeat(12, 98px);
+    }
+}
+
+.grid-container{
+    // inserir todas as propriedades dentro do conjunto de modificadores
+    &--4, &--6, &--12{
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        &--4, &--6, &--12{
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 24px;
+        }
+
+        &--4{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    
+        &--6{
+            grid-template-columns: repeat(6, 1fr);
+        }
+    
+        &--12{
+            grid-template-columns: repeat(12, 1fr);   
+        }
     }
 }
 
