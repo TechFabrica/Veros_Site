@@ -9,6 +9,6 @@
 @forward "./tag.scss";
 
 body {
-    background-color: library.get-color("background", "dark");
-    color: library.get-color("primary", "light-purple");
+    background-color: library.get-color("background", "light");
+    color: library.get-color("primary", "dark-purple");
 }

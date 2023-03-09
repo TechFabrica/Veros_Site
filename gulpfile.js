@@ -9,9 +9,9 @@ function buildStyles() {
 };
 
 // exports.buildStyles = buildStyles;
-exports.watch = function () {
-  watch('./styles/scss/**/*.scss', ['sass']);
-};
+// exports.watch = function () {
+//   watch('./styles/scss/**/*.scss', ['sass']);
+// };
 
 function serverLaunch(done){
   server.init({

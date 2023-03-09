@@ -79,7 +79,7 @@ body {
 }
 
 /* _library _grid */
-body {
+.body {
   display: flex;
   justify-content: center;
 }
@@ -156,16 +156,6 @@ body {
 }
 
 body {
-  background-color: #070525;
-  color: #7758D9;
-}
-
-p {
-  color: #EBF0EC;
-  margin: 20px;
-  background-color: #C9BCF0;
-}
-
-.grid-container--4, .grid-container--6, .grid-container--12 {
-  background-color: #AD9BE8;
+  background-color: #F5F5F6;
+  color: #0C093C;
 }
