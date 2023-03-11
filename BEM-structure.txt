@@ -129,6 +129,7 @@ login-menu
 header
     __logo-container
     __logo
+    __menu-container
     __menu
     __menu-item
     __search
@@ -238,8 +239,11 @@ header
 header
     __logo-container
     __logo
+    __menu-container
     __menu
     __menu-item
+    __submenu
+    __submenu-item
     __search
     __cta-wpp
 

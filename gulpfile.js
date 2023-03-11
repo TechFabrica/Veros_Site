@@ -1,4 +1,4 @@
-const { src, dest, watch, series} = require('gulp');
+const { src, dest, watch, series } = require('gulp');
 const server = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 
@@ -16,7 +16,7 @@ function buildStyles() {
 function serverLaunch(done){
   server.init({
     server: {
-      baseDid: '.'
+      baseDir: '.'
     }
   });
   done();

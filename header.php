@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?></title>
 
-    <link rel="stylesheet" href="./styles/css/home.csshome.css">
-
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <div class="grid-supercontainer">
+ 
+    <header class="header grid-item__4-12 body--14">
+        <div class="header__logo-containter">
+            <a href="<?php echo home_url(); ?>"><img class="header__logo" src="#" alt="logo do Veros"></a>
+        </div>
+        <div class="header__open-menu-button">
+            <button class="button"><img src="#" alt="burger menu"> </button>
+        </div>
 
-    <header class="header heading--48">
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-        <p><?php bloginfo('description'); ?></p>
+        <nav class="header__menu-container">
+            <?php 
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        'menu_class' => 'header__menu',
+                        'walker' => new submenu_wrap()
+                    )
+                ); 
+            ?>
+        </nav>
+
     </header>
