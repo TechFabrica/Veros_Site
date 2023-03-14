@@ -1,23 +1,29 @@
 /* _library _grid */
 
+$desktop-column-gap: 24px;
+
 .body{
     display: flex;
     justify-content: center;
 }
 
-.grid__supercontainer{
+.supercontainer{
     width: 100%;
+}
+
+.grid__supercontainer{
+    max-width: 100%;
     margin: 0;
+    grid-column: span 2;
     
     @media screen and (min-width: 1024px) {
         display: grid;
         grid-template-columns: 50% 50%;
-        column-gap: 24px;
     }
 }
 
 .grid__container{
-
+    
     display: grid;
     margin: 0;
     padding: 0 24px;
@@ -29,15 +35,50 @@
 
         padding: 0 80px;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 24px;
+        column-gap: $desktop-column-gap;
     }
     
     @media screen and (min-width: 1281px) {
         padding: 0 124px;
     }
-
+    
     @media screen and (min-width: 1601px) {
         padding: 0 240px;
+    }
+    
+    &--left{
+        grid-row: 1/-1;
+        grid-column: 1/2;
+
+        @media screen and (min-width: 1024px) {    
+            padding: 0 calc($desktop-column-gap / 2) 0 80px;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        
+        @media screen and (min-width: 1281px) {
+            padding: 0 calc($desktop-column-gap / 2) 0 124px;
+        }
+        
+        @media screen and (min-width: 1601px) {
+            padding: 0 calc($desktop-column-gap / 2) 0 240px;
+        }
+    }
+    
+    &--right{
+        grid-column: 2/3;
+
+        @media screen and (min-width: 1024px) {    
+            padding: 0 80px 0 calc($desktop-column-gap / 2);
+            grid-template-columns: repeat(6, 1fr);
+        }
+        
+        @media screen and (min-width: 1281px) {
+            padding: 0 124px 0 calc($desktop-column-gap / 2);
+        }
+        
+        @media screen and (min-width: 1601px) {
+            padding: 0 240px 0 calc($desktop-column-gap / 2);
+        }
     }
 }
 
@@ -77,26 +118,20 @@
 
 .grid__item{
 
-    &--4-12, &--4-6, &--4-4{
+    &--4-12, &--4-6, &--4-4, &--4-2{
         min-width: 0;
         min-height: 0;
-    }
-
-    &--4-12{
         grid-column: span 4;
-
-        @media screen and (min-width: 1024px) {
+    }
+    @media screen and (min-width: 1024px) {
+        &--4-12{
             grid-column: span 12;
         }
-    }
-    &--4-6{
-        grid-column: span 4;
-    
-        @media screen and (min-width: 1024px) {
+        &--4-6{
             grid-column: span 6;
         }
-    }
-    &--4-4{
-        grid-column: span 4;
+        &--4-2{
+            grid-column: span 2;
+        }
     }
 }

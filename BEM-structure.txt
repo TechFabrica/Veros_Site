@@ -1,7 +1,6 @@
 --- Common ------------------------------------------------------------------------------------------
 
 button
-    --light-purple
     --dark-purple
     --borderless
     __content
@@ -23,6 +22,148 @@ tag
 select
     __item
     __list 
+
+
+
+--- Mixed ------------------------------------------------------------------------------------------
+
+login-menu
+    __options
+
+
+header
+    __wrapper
+    __logo-container
+    __open-menu-button
+    __menu-container
+    __menu
+    __menu-item
+    __submenu
+    __submenu-item
+    __extra-container
+    __search
+    __cta-phone
+    __cta-wpp
+
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __bottom-wrapper
+    __banner
+    __title
+        --emphasis
+    __content
+    __card
+
+
+quem-atendemos
+    __title
+    __subtitle
+    __menu
+    __menu-item
+    __content-container
+    __content-title
+    __content
+    __checklist
+    __checklist-item
+    __button
+
+
+servicos
+    __title
+    __subtitle
+    __link
+
+
+especialidades
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __card-img
+    __button
+
+
+estrutura
+    __title
+    __subtitle
+    __link
+    __img
+        --big
+    __content-title
+    __content
+
+
+social-proof
+    __title
+        --emphasis
+    __carousel
+    __card
+        --off-screen
+    __carousel-guide
+
+social-proof
+    __title
+        --emphasis
+    __carousel
+    __card
+        --unfocused
+        --off-screen
+    __button
+    __carousel-guide
+
+
+faq
+    __title
+    __subtitle
+    __question
+    __question-content
+    __??? 
+
+
+contato 
+    __img
+    __title
+    __content
+    __phone-id-icon
+    __phone-id
+    __phone-number
+    __card
+
+
+newsletter
+    __icon
+    __title
+    __subtitle
+    __form
+
+footer
+    __logo
+    __column
+        --drop-down
+    __column-title
+    __column-item
+    __adress-icon
+    __adress-info
+    __institutional
+    __institutional-copyright
+    __institutional-link
+    __institutional-social
+
+footer
+    __logo
+    __column
+    __column-title
+    __column-item
+    __adress-icon
+    __adress-info
+    __institutional
+    __institutional-copyright
+    __institutional-link
+    __institutional-social
+
 
 
 --- Mobile ------------------------------------------------------------------------------------------
@@ -209,143 +350,6 @@ newsletter
     __title
     __subtitle
     __form
-
-footer
-    __logo
-    __column
-    __column-title
-    __column-item
-    __adress-icon
-    __adress-info
-    __institutional
-    __institutional-copyright
-    __institutional-link
-    __institutional-social
-
-
---- Mixed ------------------------------------------------------------------------------------------
-
-login-menu
-    __options
-
-
-header
-    __wrapper
-    __logo-container
-    __open-menu-button
-    __menu-container
-    __menu
-    __menu-item
-    __submenu
-    __submenu-item
-    __extra-container
-    __search
-    __cta-wpp
-
-
-hero
-    __background
-    __title
-        --emphasis
-    __content
-    __card-group
-    __cta-wpp
-
-
-quem-atendemos
-    __title
-    __subtitle
-    __menu
-    __menu-item
-    __content-container
-    __content-title
-    __content
-    __checklist
-    __checklist-item
-    __button
-
-
-servicos
-    __title
-    __subtitle
-    __link
-
-
-especialidades
-    __title
-    __subtitle
-    __card
-    __card-title
-    __card-content
-    __card-img
-    __button
-
-
-estrutura
-    __title
-    __subtitle
-    __link
-    __img
-        --big
-    __content-title
-    __content
-
-
-social-proof
-    __title
-        --emphasis
-    __carousel
-    __card
-        --off-screen
-    __carousel-guide
-
-social-proof
-    __title
-        --emphasis
-    __carousel
-    __card
-        --unfocused
-        --off-screen
-    __button
-    __carousel-guide
-
-
-faq
-    __title
-    __subtitle
-    __question
-    __question-content
-    __??? 
-
-
-contato 
-    __img
-    __title
-    __content
-    __phone-id-icon
-    __phone-id
-    __phone-number
-    __card
-
-
-newsletter
-    __icon
-    __title
-    __subtitle
-    __form
-
-footer
-    __logo
-    __column
-        --drop-down
-    __column-title
-    __column-item
-    __adress-icon
-    __adress-info
-    __institutional
-    __institutional-copyright
-    __institutional-link
-    __institutional-social
 
 footer
     __logo

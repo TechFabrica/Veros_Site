@@ -1,7 +1,9 @@
 @use "../_library/library";
 
 .card{
-
+    background-color: library.get-color("background", "light");
+    padding: 24px;
+    box-sizing: border-box;
 
     &--click{
 
@@ -16,7 +18,7 @@
     }
     
     &__icon{
-
+        margin-bottom: 16px;
     }
     
 }

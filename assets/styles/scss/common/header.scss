@@ -11,21 +11,25 @@
         width: 100%;
         padding: 35px 0;
     }
+
     &__logo{
 
     }
+    
     &__open-menu-button{
         padding: 0;
         @media screen and (min-width: 1024px){
             display: none;
         }
     }
+
     &__menu-container{
         display: none;
         @media screen and (min-width: 1024px) {
             display: block;
         }
     }
+
     &__menu{
         display: flex;
         margin: 0 10px;
@@ -33,6 +37,7 @@
         justify-content: space-between;
         align-items: center;
     }
+
     &__menu-item{
         position: relative;
         &:hover .header__submenu{
@@ -45,22 +50,52 @@
             padding: 16px;
         }
     }
+
     &__submenu{
         display: none;
         position: absolute;
         padding: 5px 10px 0 0;
         top: 25px;
     }
+
     &__submenu-item{
 
     }
     &__extra-container{
-        display: flex;
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
     }
+
     &__search{
         padding: 16px;
+        color: library.get-color("type", "emphasis-medium");
     }
+
+    &__cta-phone{
+        padding: 16px;
+        color: library.get-color("primary", "light-purple");
+    }
+
     &__cta-wpp{
         padding: 16px;
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 2;
+
+        @media screen and (min-width: 1024px) {
+            right: 80px;
+            bottom: 40px;
+        }
+        @media screen and (min-width: 1281px) {
+            right: 124px;
+            bottom: 62px;
+        }
+        @media screen and (min-width: 1601px) {
+            right: 240px;
+            bottom: 120px;
+        }
     }
 }

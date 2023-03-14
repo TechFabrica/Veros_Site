@@ -4,13 +4,23 @@
     display: flex;
     background-color: inherit;
     align-items: center;
-
+    cursor: pointer;
+    
     &--light-purple{
-
+        color: library.get-color("primary", "offwhite");
+        background-color: library.get-color("primary", "light-purple");
     }
 
     &--dark-purple{
+        
+    }
 
+    &--transparent{
+        
+    }
+
+    &--round{
+        border-radius: 48px;
     }
 
     &--borderless{
@@ -19,9 +29,14 @@
 
     &__content{
         margin: 0;
+        font-style: normal;
     }
 
     &__icon{
         margin-right: 9px;
+    }
+
+    &__lone-icon{
+
     }
 }

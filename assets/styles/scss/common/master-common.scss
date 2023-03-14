@@ -7,8 +7,3 @@
 @forward "./header.scss";
 @forward "./select.scss";
 @forward "./tag.scss";
-
-.body {
-    background-color: library.get-color("background", "light");
-    color: library.get-color("primary", "dark-purple");
-}
