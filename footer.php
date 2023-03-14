@@ -1,6 +1,6 @@
-<footer class="footer grid-item__4-12">
+<footer class="footer grid__item--4-12">
 
-    <nav class="footerr__menu">
+    <nav class="footer__menu">
             <?php
             
             $args = array(

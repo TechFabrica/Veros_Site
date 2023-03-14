@@ -1,0 +1,66 @@
+@use "../_library/library";
+
+.header{
+    background-color: library.get-color("background", "light");
+    color: library.get-color("primary", "dark-purple");
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 35px 0;
+    }
+    &__logo{
+
+    }
+    &__open-menu-button{
+        padding: 0;
+        @media screen and (min-width: 1024px){
+            display: none;
+        }
+    }
+    &__menu-container{
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+    }
+    &__menu{
+        display: flex;
+        margin: 0 10px;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu-item{
+        position: relative;
+        &:hover .header__submenu{
+            display: block;
+        }
+        
+        & a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px;
+        }
+    }
+    &__submenu{
+        display: none;
+        position: absolute;
+        padding: 5px 10px 0 0;
+        top: 25px;
+    }
+    &__submenu-item{
+
+    }
+    &__extra-container{
+        display: flex;
+    }
+    &__search{
+        padding: 16px;
+    }
+    &__cta-wpp{
+        padding: 16px;
+    }
+}

@@ -230,20 +230,15 @@ login-menu
 
 
 header
+    __wrapper
     __logo-container
-    __logo
     __open-menu-button
-    __menu
-    __menu-item
-
-header
-    __logo-container
-    __logo
     __menu-container
     __menu
     __menu-item
     __submenu
     __submenu-item
+    __extra-container
     __search
     __cta-wpp
 

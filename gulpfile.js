@@ -3,15 +3,10 @@ const server = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 
 function buildStyles() {
-  return src('./styles/scss/*.scss')
+  return src('./assets/styles/scss/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(dest('./styles/css/'));
+    .pipe(dest('./assets/styles/css/'));
 };
-
-// exports.buildStyles = buildStyles;
-// exports.watch = function () {
-//   watch('./styles/scss/**/*.scss', ['sass']);
-// };
 
 function serverLaunch(done){
   server.init({
@@ -28,7 +23,7 @@ function serverReload(done){
 }
 
 function watchTask(){
-  watch('./styles/scss/**/*.scss', series(buildStyles, serverReload));
+  watch('./assets/styles/scss/**/*.scss', series(buildStyles, serverReload));
 }
 
 exports.default = series(

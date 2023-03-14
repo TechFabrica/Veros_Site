@@ -1,7 +1,9 @@
 @use "../_library/library";
 
 .button{
-    
+    display: flex;
+    background-color: inherit;
+    align-items: center;
 
     &--light-purple{
 
@@ -12,14 +14,14 @@
     }
 
     &--borderless{
-
+        border: none;
     }
 
     &__content{
-        
+        margin: 0;
     }
 
     &__icon{
-
+        margin-right: 9px;
     }
 }

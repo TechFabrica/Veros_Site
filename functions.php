@@ -29,8 +29,9 @@ class submenu_wrap extends Walker_Nav_Menu {
 
 function veros_register_styles(){
     
-    wp_enqueue_style('veros-normalize', get_template_directory_uri() . './styles/css/normalize.css', array(), '1.0');
-    wp_enqueue_style('veros-home', get_template_directory_uri() . './styles/css/home.css', array(), '1.0');
+    $version = wp_get_theme()->get('Version');
+    wp_enqueue_style('veros-normalize', get_template_directory_uri() . './assets/styles/css/normalize.css', array(), $version);
+    wp_enqueue_style('veros-home', get_template_directory_uri() . './assets/styles/css/home.css', array('veros-normalize'), $version);
 
 }
 

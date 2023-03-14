@@ -1,0 +1,102 @@
+/* _library _grid */
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.grid__supercontainer{
+    width: 100%;
+    margin: 0;
+    
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 24px;
+    }
+}
+
+.grid__container{
+
+    display: grid;
+    margin: 0;
+    padding: 0 24px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    
+    @media screen and (min-width: 1024px) {
+        grid-column: span 2;
+
+        padding: 0 80px;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 24px;
+    }
+    
+    @media screen and (min-width: 1281px) {
+        padding: 0 124px;
+    }
+
+    @media screen and (min-width: 1601px) {
+        padding: 0 240px;
+    }
+}
+
+// .grid__container{
+//     // inserir todas as propriedades dentro do conjunto de modificadores
+//     &--4, &--6, &--12{
+//         grid-column: 1/-1;
+//         min-width: 0;
+//         min-height: 0;
+
+//         display: grid;
+//         margin: 0;
+//         padding: 0;
+//         grid-template-columns: repeat(4, 1fr);
+//         column-gap: 16px;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+
+//         &--4, &--6, &--12{
+//             column-gap: 24px;
+//         }
+
+//         &--4{
+//             grid-template-columns: repeat(4, 1fr);
+//         }
+    
+//         &--6{
+//             grid-template-columns: repeat(6, 1fr);
+//         }
+    
+//         &--12{
+//             grid-template-columns: repeat(12, 1fr);   
+//         }
+//     }
+// }
+
+.grid__item{
+
+    &--4-12, &--4-6, &--4-4{
+        min-width: 0;
+        min-height: 0;
+    }
+
+    &--4-12{
+        grid-column: span 4;
+
+        @media screen and (min-width: 1024px) {
+            grid-column: span 12;
+        }
+    }
+    &--4-6{
+        grid-column: span 4;
+    
+        @media screen and (min-width: 1024px) {
+            grid-column: span 6;
+        }
+    }
+    &--4-4{
+        grid-column: span 4;
+    }
+}
