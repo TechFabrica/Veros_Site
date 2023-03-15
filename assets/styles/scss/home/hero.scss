@@ -12,34 +12,73 @@
     }
     
     &__right-wrapper{
-
+        padding-left: 0;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding-left: 12px;
+        }    
     }
-
-    &__bottom-wrapper{
-        height: 159px;
-        background-color: library.get-color("primary", "dark-purple");
-    }
-
+    
     &__banner{
         min-width: 100%;
         max-width: 100%;
         height: 100%;
     }
-
+    
     &__title{
+        margin-top: 32px;
         margin-bottom: 8px;
-
+        
+        @include library.heading--28;
+        @media screen and (min-width: library.$breakpoint-2){
+            @include library.heading--32;
+        }
+        
         &--emphasis{
             color: library.get-color("primary", "light-purple");
         }
     }
-
+    
     &__content{
+        margin-bottom: 63px;
         color: library.get-color("type", "emphasis-medium");
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 80px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            margin-bottom: 30px;
+        }
+
+        @include library.body--16;
+        @media screen and (min-width: library.$breakpoint-2){
+            @include library.body--18;
+        }
+    }
+    
+    &__bottom-wrapper{
+        background-color: library.get-color("primary", "dark-purple");
+        height: fit-content;
+
+        @include library.body--14;
+        @media screen and (min-width: library.$breakpoint-2){
+            @include library.body--16;
+        }
     }
     
     &__card{
-        height: 100%;
-        transform: translateY(-77px);
+        height: 64px;
+        transform: translateY(-32px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (min-width: library.$breakpoint-1) {
+            height: 140px;
+            transform: translateY(-70px);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            height: 160px;
+            transform: translateY(-80px);
+        }
     }
 }

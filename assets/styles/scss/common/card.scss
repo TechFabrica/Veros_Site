@@ -2,8 +2,15 @@
 
 .card{
     background-color: library.get-color("background", "light");
-    padding: 24px;
+    padding: 8px;
     box-sizing: border-box;
+    border-radius: 4px;
+    @media screen and (min-width: library.$breakpoint-1) {
+        padding: 16px;
+    }
+    @media screen and (min-width: library.$breakpoint-2) {
+        padding: 24px;
+    }
 
     &--click{
 
@@ -18,7 +25,12 @@
     }
     
     &__icon{
-        margin-bottom: 16px;
+        width: 56px;
+        height: 47px;
+        margin: 0 16px 0 0;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 0 0 16px;
+        }
     }
     
 }

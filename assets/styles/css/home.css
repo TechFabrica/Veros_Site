@@ -1,81 +1,9 @@
 /* _library _colors */ /* _library _fonts */
-body {
+.body {
   font-family: "SourceSans", sans-serif;
   font-weight: 400;
-}
-
-.heading--48 {
-  font-family: "Vinila", sans-serif;
-  font-size: 48px;
-  line-height: 60px;
-}
-
-.heading--32 {
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 43.2px;
-}
-
-.heading--28 {
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
-}
-
-.heading--24 {
-  font-family: "Vinila", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.heading--18 {
-  font-family: "Vinila", sans-serif;
-  font-size: 18px;
-  line-height: 22.5px;
-}
-
-.body--20 {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.body--18 {
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.body--16 {
   font-size: 16px;
   line-height: 24px;
-}
-
-.body--14 {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.caption--12 {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.caption--10 {
-  font-size: 10px;
-  line-height: 15px;
-}
-
-.overline--16 {
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.overline--16 {
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
 }
 
 /* _library _grid */
@@ -106,6 +34,7 @@ body {
   padding: 0 24px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
+  row-gap: 8px;
 }
 @media screen and (min-width: 1024px) {
   .grid__container {
@@ -115,12 +44,12 @@ body {
     column-gap: 24px;
   }
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   .grid__container {
     padding: 0 124px;
   }
 }
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
   .grid__container {
     padding: 0 240px;
   }
@@ -135,17 +64,18 @@ body {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   .grid__container--left {
     padding: 0 12px 0 124px;
   }
 }
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
   .grid__container--left {
     padding: 0 12px 0 240px;
   }
 }
 .grid__container--right {
+  grid-row: 1/-1;
   grid-column: 2/3;
 }
 @media screen and (min-width: 1024px) {
@@ -154,12 +84,12 @@ body {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   .grid__container--right {
     padding: 0 124px 0 12px;
   }
 }
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
   .grid__container--right {
     padding: 0 240px 0 12px;
   }
@@ -217,14 +147,38 @@ a {
 }
 .card {
   background-color: #F5F5F6;
-  padding: 24px;
+  padding: 8px;
   box-sizing: border-box;
+  border-radius: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    padding: 24px;
+  }
 }
 .card__icon {
-  margin-bottom: 16px;
+  width: 56px;
+  height: 47px;
+  margin: 0 16px 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .card__icon {
+    margin: 0 0 16px;
+  }
+}
+
+.footer {
+  padding-top: 100px;
 }
 
 .header {
+  font-size: 14px;
+  line-height: 21px;
   background-color: #F5F5F6;
   color: #0C093C;
 }
@@ -304,13 +258,13 @@ a {
     bottom: 40px;
   }
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   .header__cta-wpp {
     right: 124px;
     bottom: 62px;
   }
 }
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
   .header__cta-wpp {
     right: 240px;
     bottom: 120px;
@@ -327,9 +281,13 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.hero__bottom-wrapper {
-  height: 159px;
-  background-color: #0C093C;
+.hero__right-wrapper {
+  padding-left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .hero__right-wrapper {
+    padding-left: 12px;
+  }
 }
 .hero__banner {
   min-width: 100%;
@@ -337,15 +295,149 @@ a {
   height: 100%;
 }
 .hero__title {
+  margin-top: 32px;
   margin-bottom: 8px;
+  font-family: "Vinila", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43.2px;
+  }
 }
 .hero__title--emphasis {
   color: #7758D9;
 }
 .hero__content {
+  margin-bottom: 63px;
   color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__content {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__content {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__content {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.hero__bottom-wrapper {
+  background-color: #0C093C;
+  height: fit-content;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__bottom-wrapper {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .hero__card {
-  height: 100%;
-  transform: translateY(-77px);
+  height: 64px;
+  transform: translateY(-32px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero__card {
+    height: 140px;
+    transform: translateY(-70px);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__card {
+    height: 160px;
+    transform: translateY(-80px);
+  }
+}
+
+.quem-atendemos {
+  background-color: #F5F5F6;
+  color: rgba(0, 0, 0, 0.6980392157);
+  padding-top: 64px;
+}
+@media screen and (min-width: 1024px) {
+  .quem-atendemos {
+    padding-top: 80px;
+  }
+}
+.quem-atendemos__title {
+  color: #0C093C;
+  font-family: "Vinila", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .quem-atendemos__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.quem-atendemos__subtitle {
+  margin-bottom: 33px;
+}
+.quem-atendemos__menu {
+  display: flex;
+}
+.quem-atendemos__menu-item {
+  padding: 17px 40px;
+}
+@media screen and (min-width: 1024px) {
+  .quem-atendemos__content-container {
+    padding-left: 16px;
+  }
+}
+.quem-atendemos__content-img {
+  width: 100%;
+}
+.quem-atendemos__content-title {
+  margin-top: 40px;
+  color: #7758D9;
+  font-family: "Vinila", sans-serif;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+.quem-atendemos__content {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.quem-atendemos__checklist {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media screen and (min-width: 1280px) {
+  .quem-atendemos__checklist {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.quem-atendemos__checklist-item {
+  display: inline-block;
+  margin-top: 16px;
+  margin-right: 27px;
+}
+.quem-atendemos__cta {
+  margin-top: 40px;
 }

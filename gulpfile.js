@@ -23,11 +23,11 @@ function serverReload(done){
 }
 
 function watchTask(){
-  watch('./assets/styles/scss/**/*.scss', series(buildStyles, serverReload));
+  watch('./assets/styles/scss/**/*.scss', buildStyles); //series(buildStyles, serverReload)
 }
 
 exports.default = series(
   buildStyles,
-  serverLaunch,
+  // serverLaunch,
   watchTask
 );

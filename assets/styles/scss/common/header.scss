@@ -1,6 +1,7 @@
 @use "../_library/library";
 
 .header{
+    @include library.body--14;
     background-color: library.get-color("background", "light");
     color: library.get-color("primary", "dark-purple");
     
@@ -18,14 +19,14 @@
     
     &__open-menu-button{
         padding: 0;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: library.$breakpoint-1){
             display: none;
         }
     }
 
     &__menu-container{
         display: none;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: library.$breakpoint-1) {
             display: block;
         }
     }
@@ -63,7 +64,7 @@
     }
     &__extra-container{
         display: none;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: library.$breakpoint-1) {
             display: flex;
         }
     }
@@ -85,15 +86,15 @@
         bottom: 24px;
         z-index: 2;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: library.$breakpoint-1) {
             right: 80px;
             bottom: 40px;
         }
-        @media screen and (min-width: 1281px) {
+        @media screen and (min-width: library.$breakpoint-2) {
             right: 124px;
             bottom: 62px;
         }
-        @media screen and (min-width: 1601px) {
+        @media screen and (min-width: library.$breakpoint-3) {
             right: 240px;
             bottom: 120px;
         }
