@@ -4,7 +4,7 @@ var $panes = document.querySelectorAll('.tabnav__pane');
 var options = [];
 
 linkSelectorsPanes();
-hidePanes(0);
+updatePanes(0);
 addListeners(options);
 
 function linkSelectorsPanes(){
@@ -13,32 +13,32 @@ function linkSelectorsPanes(){
             selector: $selectors[i],
             pane: $panes[i]
         }
-    
+        
         options.push(option);
     }
 }
 
 function addListeners(options){
+    debugger
     for (var i = 0; i < options.length; i++){
-        window.addEventListener('click', function(){
-            updatePanes(i);
+
+        options[i].selector.index = i;
+
+        options[i].selector.addEventListener('click', function(e){
+            debugger
+            updatePanes(e.target.index);
         });
     }
 }
 
-function hidePanes(except){
+function updatePanes(except){
     for (var i = 0; i < options.length; i++){
         if ( i != except){
             options[i].selector.classList.add('tabnav__selector--inactive');
             options[i].pane.classList.add('tabnav__pane--hidden');
+        } else {
+            options[i].selector.classList.remove('tabnav__selector--inactive');
+            options[i].pane.classList.remove('tabnav__pane--hidden');
         }
     }
-}
-
-function updatePanes(active){
-    debugger
-    options[active].selector.classList.remove('tabnav__selector--inactive');
-    options[active].pane.classList.remove('tabnav__pane--hidden');
-
-    hidePanes(active);
 }
