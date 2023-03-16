@@ -23,7 +23,7 @@
                 $icon = $item['hero__card-icon'];
                 if( !empty( $icon ) ):
             ?>
-            <img class="card__icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+            <img class="card__icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
             <?php endif; ?>
 
             <p class="card__content"><?php echo $item['hero__card-content'] ?></p>

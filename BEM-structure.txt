@@ -12,6 +12,12 @@ card
     __content
     __icon
 
+tabnav
+    __selector
+        --inactive
+    __pane
+        --hidden
+
 form
     __input
     __submit
@@ -60,8 +66,9 @@ hero
 quem-atendemos
     __title
     __subtitle
-    __menu
-    __menu-item
+    __tabnav
+    __tabnav-item
+    __tabnav-pane
     __content-img
     __content-container
     __content-title
@@ -73,18 +80,21 @@ quem-atendemos
 
 servicos
     __title
+    __support-container
     __subtitle
     __link
+    __card
 
 
 especialidades
     __title
     __subtitle
     __card
+    __support-container
     __card-title
     __card-content
     __card-img
-    __button
+    __link
 
 
 estrutura

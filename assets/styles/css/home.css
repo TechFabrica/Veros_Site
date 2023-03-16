@@ -31,7 +31,7 @@
 .grid__container {
   display: grid;
   margin: 0;
-  padding: 0 24px;
+  padding: 64px 24px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
   row-gap: 8px;
@@ -39,19 +39,19 @@
 @media screen and (min-width: 1024px) {
   .grid__container {
     grid-column: span 2;
-    padding: 0 80px;
+    padding: 80px 80px;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
   }
 }
 @media screen and (min-width: 1280px) {
   .grid__container {
-    padding: 0 124px;
+    padding: 80px 124px;
   }
 }
 @media screen and (min-width: 1600px) {
   .grid__container {
-    padding: 0 240px;
+    padding: 80px 240px;
   }
 }
 .grid__container--left {
@@ -94,8 +94,11 @@
     padding: 0 240px 0 12px;
   }
 }
+.grid__container--no-padding {
+  padding: 0;
+}
 
-.grid__item--4-12, .grid__item--4-6, .grid__item--4-4, .grid__item--4-2 {
+.grid__item--4-12, .grid__item--4-10, .grid__item--4-9, .grid__item--4-6, .grid__item--4-4, .grid__item--4-3, .grid__item--4-2 {
   min-width: 0;
   min-height: 0;
   grid-column: span 4;
@@ -104,8 +107,17 @@
   .grid__item--4-12 {
     grid-column: span 12;
   }
+  .grid__item--4-10 {
+    grid-column: span 10;
+  }
+  .grid__item--4-9 {
+    grid-column: span 9;
+  }
   .grid__item--4-6 {
     grid-column: span 6;
+  }
+  .grid__item--4-3 {
+    grid-column: span 3;
   }
   .grid__item--4-2 {
     grid-column: span 2;
@@ -126,7 +138,9 @@ a {
   display: flex;
   background-color: inherit;
   align-items: center;
+  padding: 16px 40px;
   cursor: pointer;
+  border: 1px solid #7758D9;
 }
 .button--light-purple {
   color: #EBF0EC;
@@ -137,6 +151,7 @@ a {
 }
 .button--borderless {
   border: none;
+  padding: 16px;
 }
 .button__content {
   margin: 0;
@@ -149,6 +164,7 @@ a {
   background-color: #F5F5F6;
   padding: 8px;
   box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 4px;
 }
 @media screen and (min-width: 1024px) {
@@ -181,13 +197,16 @@ a {
   line-height: 21px;
   background-color: #F5F5F6;
   color: #0C093C;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 35px 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 .header__open-menu-button {
   padding: 0;
@@ -227,7 +246,11 @@ a {
   display: none;
   position: absolute;
   padding: 5px 10px 0 0;
-  top: 25px;
+  top: 48px;
+  z-index: 1;
+}
+.header__submenu a {
+  padding: 8px 16px;
 }
 .header__extra-container {
   display: none;
@@ -238,11 +261,9 @@ a {
   }
 }
 .header__search {
-  padding: 16px;
   color: rgba(0, 0, 0, 0.6980392157);
 }
 .header__cta-phone {
-  padding: 16px;
   color: #7758D9;
 }
 .header__cta-wpp {
@@ -271,7 +292,106 @@ a {
   }
 }
 
+.tabnav__selector {
+  transform: translateY(3px);
+  border-bottom: 3px solid #7758D9;
+}
+.tabnav__selector--inactive {
+  border-bottom: none;
+}
+.tabnav__pane--hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.especialidades {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.6980392157);
+}
+.especialidades__title {
+  text-align: center;
+  color: #0C093C;
+  font-family: "Vinila", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .especialidades__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.especialidades__subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.especialidades__card {
+  background-color: #FFFFFF;
+  height: auto;
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .especialidades__card {
+    height: auto;
+    align-items: flex-start;
+  }
+}
+.especialidades__support-container {
+  padding: 10px;
+}
+@media screen and (min-width: 375px) {
+  .especialidades__support-container {
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .especialidades__support-container {
+    padding: 32px 24px;
+  }
+}
+.especialidades__card-title {
+  margin-bottom: 8px;
+  color: #7758D9;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media screen and (min-width: 1280px) {
+  .especialidades__card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.especialidades__card-content {
+  font-size: 12px;
+  line-height: 18px;
+}
+@media screen and (min-width: 1280px) {
+  .especialidades__card-content {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.especialidades__card-img {
+  height: 100%;
+  max-height: 97px;
+}
+@media screen and (min-width: 1024px) {
+  .especialidades__card-img {
+    max-height: 138px;
+  }
+}
 .hero {
+  font-size: 16px;
+  line-height: 24px;
   position: relative;
   background-color: #EBF0EC;
   color: #0C093C;
@@ -280,6 +400,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .hero__right-wrapper {
   padding-left: 0;
@@ -338,6 +460,8 @@ a {
 .hero__bottom-wrapper {
   background-color: #0C093C;
   height: fit-content;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 14px;
   line-height: 21px;
 }
@@ -370,16 +494,22 @@ a {
 }
 
 .quem-atendemos {
+  font-size: 16px;
+  line-height: 24px;
   background-color: #F5F5F6;
   color: rgba(0, 0, 0, 0.6980392157);
   padding-top: 64px;
+  padding-bottom: 64px;
+  row-gap: 0;
 }
 @media screen and (min-width: 1024px) {
   .quem-atendemos {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .quem-atendemos__title {
+  margin-bottom: 8px;
   color: #0C093C;
   font-family: "Vinila", sans-serif;
   font-size: 24px;
@@ -394,21 +524,36 @@ a {
   }
 }
 .quem-atendemos__subtitle {
-  margin-bottom: 33px;
+  margin-bottom: 40px;
 }
-.quem-atendemos__menu {
+.quem-atendemos__tabnav {
   display: flex;
+  font-family: "Vinila", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  border-bottom: 3px solid #CCCCCC;
+  margin-bottom: 32px;
+  transform: translateY(3px);
 }
-.quem-atendemos__menu-item {
+.quem-atendemos__tabnav-item {
+  color: #0C093C;
   padding: 17px 40px;
+  font-weight: 700;
 }
 @media screen and (min-width: 1024px) {
-  .quem-atendemos__content-container {
+  .quem-atendemos__content-pane {
     padding-left: 16px;
   }
 }
 .quem-atendemos__content-img {
   width: 100%;
+  border-radius: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .quem-atendemos__content-img {
+    margin-top: 12px;
+  }
 }
 .quem-atendemos__content-title {
   margin-top: 40px;
@@ -416,6 +561,11 @@ a {
   font-family: "Vinila", sans-serif;
   font-size: 18px;
   line-height: 22.5px;
+}
+@media screen and (min-width: 1024px) {
+  .quem-atendemos__content-title {
+    margin-top: 0;
+  }
 }
 .quem-atendemos__content {
   margin-top: 16px;
@@ -440,4 +590,47 @@ a {
 }
 .quem-atendemos__cta {
   margin-top: 40px;
+}
+
+.servicos {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #EBF0EC;
+  color: rgba(0, 0, 0, 0.6980392157);
+}
+.servicos__title {
+  font-family: "Vinila", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #7758D9;
+}
+.servicos__link {
+  color: #0C093C;
+}
+@media screen and (min-width: 1024px) {
+  .servicos__link {
+    text-align: end;
+  }
+}
+.servicos__card {
+  height: 120px;
+  margin-top: 16px;
+  padding: 36px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .servicos__card {
+    height: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .servicos__card {
+    height: 190px;
+  }
 }

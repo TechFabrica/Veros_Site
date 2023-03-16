@@ -4,13 +4,16 @@
     @include library.body--14;
     background-color: library.get-color("background", "light");
     color: library.get-color("primary", "dark-purple");
+    padding-top: 0;
+    padding-bottom: 0;
     
     &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 35px 0;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 
     &__logo{
@@ -56,7 +59,12 @@
         display: none;
         position: absolute;
         padding: 5px 10px 0 0;
-        top: 25px;
+        top: 48px;
+        z-index: 1;
+
+        & a{
+            padding: 8px 16px;
+        }
     }
 
     &__submenu-item{
@@ -70,12 +78,10 @@
     }
 
     &__search{
-        padding: 16px;
         color: library.get-color("type", "emphasis-medium");
     }
 
     &__cta-phone{
-        padding: 16px;
         color: library.get-color("primary", "light-purple");
     }
 

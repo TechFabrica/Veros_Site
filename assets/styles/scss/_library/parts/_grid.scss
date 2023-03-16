@@ -1,5 +1,6 @@
 /* _library _grid */
 
+$breakpoint-0: 375px;
 $breakpoint-1: 1024px;
 $breakpoint-2: 1280px;
 $breakpoint-3: 1600px;
@@ -30,25 +31,25 @@ $desktop-column-gap: 24px;
     
     display: grid;
     margin: 0;
-    padding: 0 24px;
+    padding: 64px 24px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
     row-gap: 8px;
     
     @media screen and (min-width: $breakpoint-1) {
         grid-column: span 2;
-
-        padding: 0 80px;
+        
+        padding: 80px 80px;
         grid-template-columns: repeat(12, 1fr);
         column-gap: $desktop-column-gap;
     }
     
     @media screen and (min-width: $breakpoint-2) {
-        padding: 0 124px;
+        padding: 80px 124px;
     }
     
     @media screen and (min-width: $breakpoint-3) {
-        padding: 0 240px;
+        padding: 80px 240px;
     }
     
     &--left{
@@ -86,45 +87,15 @@ $desktop-column-gap: 24px;
             padding: 0 240px 0 calc($desktop-column-gap / 2);
         }
     }
+
+    &--no-padding{
+        padding: 0;
+    }
 }
-
-// .grid__container{
-//     // inserir todas as propriedades dentro do conjunto de modificadores
-//     &--4, &--6, &--12{
-//         grid-column: 1/-1;
-//         min-width: 0;
-//         min-height: 0;
-
-//         display: grid;
-//         margin: 0;
-//         padding: 0;
-//         grid-template-columns: repeat(4, 1fr);
-//         column-gap: 16px;
-//     }
-
-//     @media screen and (min-width: $breakpoint-1) {
-
-//         &--4, &--6, &--12{
-//             column-gap: 24px;
-//         }
-
-//         &--4{
-//             grid-template-columns: repeat(4, 1fr);
-//         }
-    
-//         &--6{
-//             grid-template-columns: repeat(6, 1fr);
-//         }
-    
-//         &--12{
-//             grid-template-columns: repeat(12, 1fr);   
-//         }
-//     }
-// }
 
 .grid__item{
 
-    &--4-12, &--4-6, &--4-4, &--4-2{
+    &--4-12, &--4-10, &--4-9, &--4-6, &--4-4, &--4-3, &--4-2{
         min-width: 0;
         min-height: 0;
         grid-column: span 4;
@@ -133,8 +104,17 @@ $desktop-column-gap: 24px;
         &--4-12{
             grid-column: span 12;
         }
+        &--4-10{
+            grid-column: span 10;
+        }
+        &--4-9{
+            grid-column: span 9;
+        }
         &--4-6{
             grid-column: span 6;
+        }
+        &--4-3{
+            grid-column: span 3;
         }
         &--4-2{
             grid-column: span 2;

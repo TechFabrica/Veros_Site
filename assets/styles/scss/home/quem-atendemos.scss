@@ -1,36 +1,47 @@
 @use "../_library/library";
 
 .quem-atendemos{
+    @include library.body--16;
     background-color: library.get-color("background", "light");
     color: library.get-color("type", "emphasis-medium");
-
     padding-top: 64px;
+    padding-bottom: 64px;
+    row-gap: 0;
+
     @media screen and (min-width: library.$breakpoint-1) {
         padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     &__title{
+        margin-bottom: 8px;
         color: library.get-color("primary", "dark-purple");
-
         @include library.heading--24;
+
         @media screen and (min-width: library.$breakpoint-2){
             @include library.heading--28;
         }
     }
 
     &__subtitle{
-        margin-bottom: 33px;
+        margin-bottom: 40px;
     }
 
-    &__menu{
+    &__tabnav{
         display: flex;
+        @include library.button--14--light;
+        border-bottom: 3px solid library.get-color("neutral", "20");
+        margin-bottom: 32px;
+        transform: translateY(3px);
     }
 
-    &__menu-item{
+    &__tabnav-item{
+        color: library.get-color("primary", "dark-purple");
         padding: 17px 40px;
+        font-weight: 700;
     }
 
-    &__content-container{
+    &__content-pane{
         @media screen and (min-width: library.$breakpoint-1){
             padding-left: 16px;
         }
@@ -38,25 +49,32 @@
 
     &__content-img{
         width: 100%;
+        border-radius: 4px;
+
+        @media screen and (min-width: library.$breakpoint-1){
+            margin-top: 12px;
+        }
     }
 
     &__content-title{
         margin-top: 40px;
         color: library.get-color("primary", "light-purple");
-
         @include library.heading--18;
+
+        @media screen and (min-width: library.$breakpoint-1){
+            margin-top: 0;
+        }
     }
 
     &__content{
         margin-top: 16px;
-
         @include library.body--16;
     }
 
     &__checklist{
         margin-top: 8px;
-
         @include library.body--14;
+
         @media screen and (min-width: library.$breakpoint-2){
             @include library.body--16;
         }

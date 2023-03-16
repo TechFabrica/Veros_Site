@@ -1,3 +1,5 @@
+@media screen and (min-width: library.$breakpoint-0) {
+}
 @media screen and (min-width: library.$breakpoint-1) {
 }
 @media screen and (min-width: library.$breakpoint-2) {

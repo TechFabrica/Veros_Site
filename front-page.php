@@ -4,6 +4,9 @@
     
     <?php get_template_part('./template-parts/home/hero'); ?>
     <?php get_template_part('./template-parts/home/quem-atendemos'); ?>
+    <?php get_template_part('./template-parts/home/servicos'); ?>
+    <?php get_template_part('./template-parts/home/especialidades'); ?>
+    <?php get_template_part('./template-parts/home/estrutura'); ?>
 
 </main>
 
