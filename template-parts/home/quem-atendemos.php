@@ -2,7 +2,7 @@
     <h2 class="quem-atendemos__title grid__item--4-12"><?php the_field('quem-atendemos__title'); ?></h2>
     <p class="quem-atendemos__subtitle grid__item--4-12"><?php the_field('quem-atendemos__subtitle'); ?></p>
     
-    <div class="quem-atendemos__tabnav grid__item--4-12">
+    <div class="quem-atendemos__tabnav tabnav grid__item--4-12">
         <?php
             $hero_data = get_field('quem-atendemos__content-pane');
             foreach($hero_data as $item):

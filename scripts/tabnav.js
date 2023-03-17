@@ -19,13 +19,11 @@ function linkSelectorsPanes(){
 }
 
 function addListeners(options){
-    debugger
     for (var i = 0; i < options.length; i++){
 
         options[i].selector.index = i;
 
         options[i].selector.addEventListener('click', function(e){
-            debugger
             updatePanes(e.target.index);
         });
     }

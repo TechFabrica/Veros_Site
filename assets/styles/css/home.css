@@ -103,6 +103,15 @@
   min-height: 0;
   grid-column: span 4;
 }
+.grid__item--3-3 {
+  min-width: 0;
+  min-height: 0;
+  grid-column: span 3;
+}
+.grid__item--1-1 {
+  min-width: 0;
+  min-height: 0;
+}
 @media screen and (min-width: 1024px) {
   .grid__item--4-12 {
     grid-column: span 12;
@@ -116,7 +125,7 @@
   .grid__item--4-6 {
     grid-column: span 6;
   }
-  .grid__item--4-3 {
+  .grid__item--4-3, .grid__item--3-3 {
     grid-column: span 3;
   }
   .grid__item--4-2 {
@@ -193,71 +202,136 @@ a {
 }
 
 .header {
-  font-size: 14px;
-  line-height: 21px;
   background-color: #F5F5F6;
   color: #0C093C;
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
+  font-family: "Vinila", sans-serif;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
 }
+.header__logo-container {
+  display: inline-flex;
+  align-items: center;
+}
 .header__open-menu-button {
   padding: 0;
+  display: flex;
+  justify-content: end;
 }
 @media screen and (min-width: 1024px) {
   .header__open-menu-button {
     display: none;
   }
 }
+.header__nav {
+  margin-left: -24px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    width: auto;
+    flex-direction: row;
+    background-color: inherit;
+  }
+}
 .header__menu-container {
-  display: none;
+  z-index: 1;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .header__menu-container {
-    display: block;
+    width: auto;
   }
 }
 .header__menu {
   display: flex;
-  margin: 0 10px;
-  padding: 0;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  padding: 24px 0;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu {
+    flex-direction: row;
+    margin: 0 10px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header__menu-item {
+  display: inline-block;
   position: relative;
+  min-height: 48px;
 }
 .header__menu-item:hover .header__submenu {
   display: block;
 }
 .header__menu-item a {
-  text-decoration: none;
   display: inline-block;
-  padding: 16px;
+  width: 100%;
+  padding: 16px 16px 16px 24px;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu-item a {
+    padding: 16px;
+  }
 }
 .header__submenu {
   display: none;
+  width: max-content;
   position: absolute;
-  padding: 5px 10px 0 0;
-  top: 48px;
+  top: 33px;
+  left: 16px;
   z-index: 1;
 }
-.header__submenu a {
-  padding: 8px 16px;
-}
-.header__extra-container {
-  display: none;
+.header__submenu-item {
+  display: flex;
+  color: rgba(0, 0, 0, 0.6980392157);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  transform: translateY(-1px);
+  font-size: 16px;
+  line-height: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .header__extra-container {
-    display: flex;
+  .header__submenu-item {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.header__submenu-item a {
+  padding: 14px 16px;
+  width: 100%;
+}
+.header__submenu-item:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.header__submenu-item:last-child {
+  border-radius: 0 0 4px 4px;
+}
+.header__support-container {
+  display: flex;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .header__support-container {
+    width: auto;
   }
 }
 .header__search {
@@ -292,16 +366,23 @@ a {
   }
 }
 
+.tabnav {
+  border-bottom: 3px solid #CCCCCC;
+}
 .tabnav__selector {
   transform: translateY(3px);
   border-bottom: 3px solid #7758D9;
 }
 .tabnav__selector--inactive {
-  border-bottom: none;
+  border-bottom: 3px solid #CCCCCC;
+}
+.tabnav__pane {
+  overflow: hidden;
+  transition: opacity 0.8s;
 }
 .tabnav__pane--hidden {
+  opacity: 0;
   height: 0;
-  overflow: hidden;
 }
 
 .especialidades {
@@ -532,9 +613,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  border-bottom: 3px solid #CCCCCC;
   margin-bottom: 32px;
-  transform: translateY(3px);
 }
 .quem-atendemos__tabnav-item {
   color: #0C093C;

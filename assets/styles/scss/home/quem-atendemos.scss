@@ -30,9 +30,7 @@
     &__tabnav{
         display: flex;
         @include library.button--14--light;
-        border-bottom: 3px solid library.get-color("neutral", "20");
         margin-bottom: 32px;
-        transform: translateY(3px);
     }
 
     &__tabnav-item{

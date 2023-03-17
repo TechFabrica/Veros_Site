@@ -1,22 +1,24 @@
 @use "../_library/library";
 
 .tabnav{
-    
+    border-bottom: 3px solid library.get-color("neutral", "20");
+
     &__selector{
         transform: translateY(3px);
         border-bottom: 3px solid library.get-color("primary", "light-purple");
 
         &--inactive{
-            border-bottom: none;
+            border-bottom: 3px solid library.get-color("neutral", "20");
         }
     }
 
     &__pane{
-        
+        overflow: hidden;
+        transition: opacity .8s;
 
         &--hidden{
+            opacity: 0;
             height: 0;
-            overflow: hidden;
         }
     }
 }

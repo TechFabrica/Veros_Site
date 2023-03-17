@@ -41,12 +41,13 @@ header
     __wrapper
     __logo-container
     __open-menu-button
+    __nav
     __menu-container
     __menu
     __menu-item
     __submenu
     __submenu-item
-    __extra-container
+    __support-container
     __search
     __cta-phone
     __cta-wpp
