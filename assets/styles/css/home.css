@@ -94,11 +94,16 @@
     padding: 0 240px 0 12px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .grid__container--6-columns {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 .grid__container--no-padding {
   padding: 0;
 }
 
-.grid__item--4-12, .grid__item--4-10, .grid__item--4-9, .grid__item--4-6, .grid__item--4-4, .grid__item--4-3, .grid__item--4-2 {
+.grid__item--4-12, .grid__item--4-10, .grid__item--4-9, .grid__item--4-6, .grid__item--4-5, .grid__item--4-4, .grid__item--4-3, .grid__item--4-2 {
   min-width: 0;
   min-height: 0;
   grid-column: span 4;
@@ -124,6 +129,9 @@
   }
   .grid__item--4-6 {
     grid-column: span 6;
+  }
+  .grid__item--4-5 {
+    grid-column: span 5;
   }
   .grid__item--4-3, .grid__item--3-3 {
     grid-column: span 3;
@@ -204,6 +212,7 @@ a {
 .header {
   background-color: #F5F5F6;
   color: #0C093C;
+  min-height: 90px;
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
@@ -242,6 +251,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 90px;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
@@ -249,10 +261,14 @@ a {
     width: auto;
     flex-direction: row;
     background-color: inherit;
+    position: static;
   }
 }
+.header__nav--hidden {
+  display: none;
+}
 .header__menu-container {
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -279,9 +295,6 @@ a {
   position: relative;
   min-height: 48px;
 }
-.header__menu-item:hover .header__submenu {
-  display: block;
-}
 .header__menu-item a {
   display: inline-block;
   width: 100%;
@@ -292,13 +305,18 @@ a {
     padding: 16px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .header__menu-item:hover .header__submenu {
+    display: block;
+  }
+}
 .header__submenu {
   display: none;
   width: max-content;
   position: absolute;
-  top: 33px;
+  top: 50px;
   left: 16px;
-  z-index: 1;
+  z-index: 2;
 }
 .header__submenu-item {
   display: flex;
@@ -326,26 +344,51 @@ a {
   border-radius: 0 0 4px 4px;
 }
 .header__support-container {
-  display: flex;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
 }
 @media screen and (min-width: 1024px) {
   .header__support-container {
+    min-width: 245px;
     width: auto;
+    flex-direction: row;
+    padding: 0;
   }
 }
 .header__search {
   color: rgba(0, 0, 0, 0.6980392157);
+  width: 100%;
+  padding: 16px 16px 16px 24px;
+}
+@media screen and (min-width: 1024px) {
+  .header__search {
+    padding: 16px;
+  }
 }
 .header__cta-phone {
   color: #7758D9;
+  width: 100%;
+  min-width: fit-content;
+  padding: 16px 16px 16px 24px;
+}
+@media screen and (min-width: 1024px) {
+  .header__cta-phone {
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__cta-phone {
+    padding: 16px 0 16px 16px;
+  }
 }
 .header__cta-wpp {
   padding: 16px;
   position: fixed;
   right: 24px;
   bottom: 24px;
-  z-index: 2;
+  z-index: 5;
 }
 @media screen and (min-width: 1024px) {
   .header__cta-wpp {
@@ -470,6 +513,140 @@ a {
     max-height: 138px;
   }
 }
+.estrutura {
+  position: relative;
+}
+.estrutura__left-wrapper-1 {
+  grid-row: 1/2;
+  background-color: #7758D9;
+  color: #FFFFFF;
+  padding: 80px 24px 80px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__left-wrapper-1 {
+    padding: 80px 12px 80px 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .estrutura__left-wrapper-1 {
+    padding: 80px 12px 80px 124px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .estrutura__left-wrapper-1 {
+    padding: 80px 12px 80px 240px;
+  }
+}
+.estrutura__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.estrutura__title {
+  font-family: "Vinila", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 30px;
+  }
+}
+.estrutura__subtitle {
+  color: rgba(235, 240, 236, 0.8);
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__subtitle {
+    font-family: "Vinila", sans-serif;
+    font-size: 18px;
+    line-height: 22.5px;
+  }
+}
+.estrutura__link {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__link {
+    margin-bottom: 30px;
+  }
+}
+.estrutura__left-wrapper-2 {
+  z-index: 1;
+  grid-row: 2/3;
+}
+.estrutura__banner {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.estrutura__right-wrapper {
+  grid-row: 1/3;
+  background-color: #F5F5F6;
+  padding: 16px 24px 40px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__right-wrapper {
+    padding: 64px 80px 64px 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .estrutura__right-wrapper {
+    padding: 64px 124px 64px 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .estrutura__right-wrapper {
+    padding: 64px 240px 64px 40px;
+  }
+}
+.estrutura__support-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.estrutura__support-container:first-child {
+  border-top: none;
+}
+.estrutura__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.estrutura__content-title {
+  font-family: "Vinila", sans-serif;
+  font-size: 18px;
+  line-height: 22.5px;
+  padding: 48px 0 8px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__content-title {
+    padding: 0 0 8px;
+  }
+}
+.estrutura__content {
+  font-size: 14px;
+  line-height: 21px;
+}
+.estrutura__img-container {
+  display: flex;
+  align-items: center;
+}
+.estrutura__content-img {
+  min-width: 100%;
+  margin: 14px 0 30px;
+}
+@media screen and (min-width: 1024px) {
+  .estrutura__content-img {
+    margin: 0;
+  }
+}
+
 .hero {
   font-size: 16px;
   line-height: 24px;
@@ -496,6 +673,20 @@ a {
   min-width: 100%;
   max-width: 100%;
   height: 100%;
+}
+.hero__banner--desktop {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .hero__banner {
+    display: none;
+  }
+  .hero__banner--desktop {
+    display: block;
+  }
 }
 .hero__title {
   margin-top: 32px;
@@ -674,7 +865,7 @@ a {
 .servicos {
   font-size: 16px;
   line-height: 24px;
-  background-color: #EBF0EC;
+  background-color: #FCD18B;
   color: rgba(0, 0, 0, 0.6980392157);
 }
 .servicos__title {

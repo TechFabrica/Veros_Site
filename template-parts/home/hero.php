@@ -5,7 +5,15 @@
             if( !empty( $image ) ):
         ?>
 
-        <img class="hero__banner grid__item--4-6" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <img class="hero__banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+
+        <?php endif; ?>
+        <?php 
+            $image = get_field('hero__banner--desktop');
+            if( !empty( $image ) ):
+        ?>
+
+        <img class="hero__banner--desktop" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
         <?php endif; ?>
     </div>

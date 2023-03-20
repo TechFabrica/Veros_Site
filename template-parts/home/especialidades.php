@@ -19,7 +19,5 @@
         <?php endif; ?>
 
     </a>
-    <?php
-        endforeach;
-    ?>
+    <?php endforeach; ?>
 </section>

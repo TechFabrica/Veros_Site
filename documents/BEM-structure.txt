@@ -58,6 +58,7 @@ hero
     __right-wrapper
     __bottom-wrapper
     __banner
+        --desktop
     __title
         --emphasis
     __content
@@ -99,13 +100,19 @@ especialidades
 
 
 estrutura
+    __left-wrapper-1
     __title
     __subtitle
     __link
-    __img
-        --big
+    __left-wrapper-2
+    __banner
+    __right-wrapper
+    __support-container
+    __content-container
     __content-title
     __content
+    __img-container
+    __content-img
 
 
 social-proof

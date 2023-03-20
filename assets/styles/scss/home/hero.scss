@@ -25,6 +25,20 @@
         min-width: 100%;
         max-width: 100%;
         height: 100%;
+
+        &--desktop{
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: none;
+            &--desktop{
+                display: block;
+            }
+        }
     }
     
     &__title{

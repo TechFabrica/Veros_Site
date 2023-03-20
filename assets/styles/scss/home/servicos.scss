@@ -2,7 +2,7 @@
 
 .servicos{
     @include library.body--16;
-    background-color: library.get-color("primary", "offwhite");
+    background-color: library.get-color("secondary", "yellow");
     color: library.get-color("type", "emphasis-medium");
 
     &__title{
