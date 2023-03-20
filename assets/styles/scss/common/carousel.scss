@@ -1,0 +1,28 @@
+@use "../_library/library";
+
+.carousel{
+    &__card{
+
+        &--blurred{
+            
+        }
+        &--off-screen{
+            
+        }
+    }
+    
+    &__guide{
+
+    }
+    
+    &__guide-dot{
+
+        &--active{
+            
+        }
+    }
+    
+    &__nav-button{
+
+    }
+}

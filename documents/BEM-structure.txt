@@ -18,6 +18,15 @@ tabnav
     __pane
         --hidden
 
+carousel
+    __card
+        --blurred
+        --off-screen
+    __guide
+        --active
+    __nav-button
+
+
 form
     __input
     __submit
@@ -101,6 +110,9 @@ especialidades
 
 estrutura
     __left-wrapper-1
+    __graphic
+        --mobile
+        --desktop
     __title
     __subtitle
     __link
@@ -120,18 +132,21 @@ social-proof
         --emphasis
     __carousel
     __card
-        --off-screen
-    __carousel-guide
-
-social-proof
-    __title
-        --emphasis
-    __carousel
-    __card
-        --unfocused
-        --off-screen
+    __card-title
+    __card-quote
+    __card-img
+    __card-name
     __button
     __carousel-guide
+
+carousel
+    __card
+        --blurred
+        --off-screen
+    __guide
+    __guide-dot
+        --active
+    __nav-button
 
 
 faq

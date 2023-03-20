@@ -42,6 +42,7 @@ function veros_register_scripts(){
     $version = wp_get_theme()->get('Version');
     wp_enqueue_script('veros-mobile-menu', get_template_directory_uri() . './scripts/header__mobile-menu.js', array(), $version, true);
     wp_enqueue_script('veros-tabnav', get_template_directory_uri() . './scripts/tabnav.js', array(), $version, true);
+    wp_enqueue_script('veros-carousel', get_template_directory_uri() . './scripts/carousel.js', array(), $version, true);
 
 }
 

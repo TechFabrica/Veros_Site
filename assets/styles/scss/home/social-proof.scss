@@ -1,0 +1,57 @@
+@use "../_library/library";
+
+.social-proof{
+    background-color: library.get-color("primary", "dark-purple");
+    color: library.get-color("primary", "offwhite");
+    
+    &__title{
+        @include library.heading--24;
+        text-align: center;
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+        
+        &--emphasis{
+            color: library.get-color("primary", "light-purple");
+        }
+    }
+
+    &__carousel{
+
+    }
+
+    &__card{
+        @include library.body--16;
+        padding: 36px 48px;
+        border: 1px solid library.get-color("outline", "dark");
+        border-radius: 8px;
+    }
+
+    &__card-title{
+        @include library.body--18;
+    }
+    
+    &__card-quote{
+        margin: 16px 0;
+    }
+
+    &__card-img{
+        display: inline-block;
+        max-width: 24px;
+        max-height: 24px;
+        margin-right: 16px;
+    }
+
+    &__card-name{
+        display: inline-block;
+    }
+
+    &__button{
+
+    }
+
+    &__carousel-guide{
+
+    }
+}

@@ -20,7 +20,5 @@
 
         <p class="card__content"><?php echo $item['servicos__card-content'] ?></p>
     </a>
-    <?php
-        endforeach;
-    ?>
+    <?php endforeach; ?>
 </section>

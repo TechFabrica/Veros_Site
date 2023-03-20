@@ -904,3 +904,48 @@ a {
     height: 190px;
   }
 }
+
+.social-proof {
+  background-color: #0C093C;
+  color: #EBF0EC;
+}
+.social-proof__title {
+  font-family: "Vinila", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .social-proof__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.social-proof__title--emphasis {
+  color: #7758D9;
+}
+.social-proof__card {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 36px 48px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-radius: 8px;
+}
+.social-proof__card-title {
+  font-size: 18px;
+  line-height: 27px;
+}
+.social-proof__card-quote {
+  margin: 16px 0;
+}
+.social-proof__card-img {
+  display: inline-block;
+  max-width: 24px;
+  max-height: 24px;
+  margin-right: 16px;
+}
+.social-proof__card-name {
+  display: inline-block;
+}
