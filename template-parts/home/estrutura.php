@@ -1,10 +1,9 @@
 <section class="estrutura grid__supercontainer">
     <div class="estrutura__left-wrapper-1 grid__container grid__container--left">
         <picture class="estrutura__graphic">
-            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/graphics/pattern-amarelo-1--desktop.png">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/pattern-amarelo-1.png">
+            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1--desktop.svg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1.svg">
         </picture>
-        <!-- ALTERAR PARA OS SVGs -->
         <h2 class="estrutura__title grid__item--4-5"><?php the_field('estrutura__title'); ?></h2>
         <p class="estrutura__subtitle grid__item--4-5"><?php the_field('estrutura__subtitle'); ?></p>
         <a class="estrutura__link grid__item--4-5" href="<?php the_field('estrutura__link'); ?>">

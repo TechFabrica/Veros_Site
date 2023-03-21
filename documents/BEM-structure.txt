@@ -140,7 +140,8 @@ social-proof
     __carousel-guide
 
 carousel
-    __card
+    __content
+    __slide
         --blurred
         --off-screen
     __guide
