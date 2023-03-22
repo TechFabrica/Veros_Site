@@ -147,9 +147,10 @@ social-proof
 faq
     __title
     __subtitle
+    __container
     __question
-    __question-content
-    __??? 
+    __arrow
+    __answer
 
 
 contato 

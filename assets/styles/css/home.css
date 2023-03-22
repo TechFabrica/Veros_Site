@@ -904,6 +904,59 @@ a {
   }
 }
 
+.faq {
+  background-color: #F5F5F6;
+}
+.faq__title {
+  text-align: center;
+  color: #0C093C;
+  font-family: "Vinila", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .faq__title {
+    font-family: "Vinila", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.faq__subtitle {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .faq__subtitle {
+    margin-bottom: 24px;
+  }
+}
+.faq__container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.faq__question {
+  cursor: pointer;
+  padding: 36px 0;
+  color: #0C093C;
+  display: flex;
+  justify-content: space-between;
+}
+.faq__answer {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 16px;
+  line-height: 24px;
+  margin: -24px 0 8px;
+}
+@media screen and (min-width: 1024px) {
+  .faq__answer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .hero {
   font-size: 16px;
   line-height: 24px;

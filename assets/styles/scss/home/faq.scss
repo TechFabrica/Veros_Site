@@ -1,0 +1,50 @@
+@use "../_library/library";
+
+.faq{
+    background-color: library.get-color("background", "light");
+
+    &__title{
+        text-align: center;
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    
+    &__subtitle{
+        text-align: center;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+        margin-bottom: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 24px;
+        }
+    }
+    
+    &__container{
+        border-bottom: 1px solid library.get-color("outline", "light");
+    }
+    
+    &__question{
+        cursor: pointer;
+        padding: 36px 0;
+        color: library.get-color("primary", "dark-purple");
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__arrow{
+
+    }
+    
+    &__answer{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+        margin: -24px 0 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.body--16;
+        }
+    }
+
+}

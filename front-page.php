@@ -8,6 +8,7 @@
     <?php get_template_part('./template-parts/home/especialidades'); ?>
     <?php get_template_part('./template-parts/home/estrutura'); ?>
     <?php get_template_part('./template-parts/home/social-proof'); ?>
+    <?php get_template_part('./template-parts/home/faq'); ?>
 
 </main>
 
