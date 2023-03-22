@@ -1,5 +1,202 @@
 @use "../_library/library";
 
 .footer{
-    padding-top: 100px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: library.get-color("primary", "offwhite");
+
+    &__wrapper{
+        position: relative;
+        padding-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid library.get-color("outline", "light");
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+        }
+    }
+
+    &__logo-container{
+        max-width: 127px;
+    
+        &-svg{
+            width: 100%;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+        }
+    }
+
+    &__menu-container{
+
+    }
+    
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+            margin: 0 10px;
+            padding: 0;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    
+    &__menu-item{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        min-height: 48px;
+        color: library.get-color("primary", "dark-purple");
+        @include library.body--14;
+        border-bottom: 1px solid library.get-color("outline", "light");
+        @media screen and (min-width: library.$breakpoint-2){
+            width: auto;
+            @include library.body--16;
+            border: none;
+        }
+
+        & a{
+            display: inline-block;
+            width: 100%;
+            padding: 16px 0;
+            @media screen and (min-width: library.$breakpoint-1) {
+                padding: 16px;
+            }
+        }
+    }
+
+    &__submenu{
+        padding-bottom: 16px;
+    }
+
+    &__submenu-item{
+        display: flex;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--14;
+        
+        & a{
+            padding: 8px 24px;
+            width: 100%;
+            @media screen and (min-width: library.$breakpoint-1) {
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    &__addresses{
+        @include library.caption--12;
+        font-style: normal;
+    }
+
+    &__adresses-menu-item{
+        border: none;
+        margin-bottom: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__address-title{
+        color: library.get-color("type", "emphasis-medium");
+        margin-bottom: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding-left: 16px;
+        }
+    }
+    
+    &__address-support-container{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding-left: 16px;
+        }
+        
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    
+    &__address-icon{
+
+    }
+    
+    &__address-info{
+        color: library.get-color("type", "emphasis-medium");
+        margin-left: 8px;
+        max-width: 300px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.body--14;
+            max-width: 122px;
+        }
+    }
+
+    &__institutional{
+        @include library.body--14;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+    &__institutional-copyright{
+        color: library.get-color("type", "emphasis-low");
+        padding: 16px 16px 16px 0;
+        margin-bottom: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__institutional-menu{
+        color: library.get-color("primary", "light-purple");
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+        }
+    }
+
+    &__institutional-menu-item{
+        padding: 12px 16px 12px 0;
+    }
+
+    &__institutional-social-container{
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 0;
+        }
+    }
+
+    &__institutional-social{
+        display: inline-block;
+        width: 32px;
+        padding: 18px;
+        &:first-of-type{
+            padding-left: 0;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: 16px;
+            padding: 12px;
+            &:first-of-type{
+                padding-left: 12px;
+            }
+        }
+    }
+
 }

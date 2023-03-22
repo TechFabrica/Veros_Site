@@ -6,19 +6,24 @@
     align-items: center;
     padding: 16px 40px;
     cursor: pointer;
-    border:1px solid library.get-color("primary", "light-purple");
+    border: 1px solid library.get-color("primary", "light-purple");
     
-    &--light-purple{
-        color: library.get-color("primary", "offwhite");
+    &--primary{
+        color: library.get-color("background", "light");
         background-color: library.get-color("primary", "light-purple");
     }
     
-    &--dark-purple{
+    &--line{
+        color: library.get-color("type", "emphasis-medium");
         
+        &:hover{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
     
-    &--transparent{
-        
+    &--line-inverse{
+        color: library.get-color("primary", "offwhite");
+        border-color: library.get-color("primary", "offwhite");
     }
     
     &--round{

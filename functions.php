@@ -27,11 +27,20 @@ class submenu_wrap extends Walker_Nav_Menu {
     }
 }
 
+class footer_submenu_wrap extends Walker_Nav_Menu {
+    function start_lvl(&$output, $depth = 0, $args = null) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"footer__submenu\">\n";
+    }
+}
+
 function veros_register_styles(){
     
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('veros-normalize', get_template_directory_uri() . './assets/styles/css/normalize.css', array(), $version);
-    wp_enqueue_style('veros-home', get_template_directory_uri() . './assets/styles/css/home.css', array('veros-normalize'), $version);
+    wp_enqueue_style('veros-home', get_template_directory_uri() . './assets/styles/css/home.css', array('veros-normalize', 'veros-glide-core-style', 'veros-glide-theme-style'), $version);
+    wp_enqueue_style('veros-glide-core-style', get_template_directory_uri() . './assets/styles/css/glide/glide.core.css', array('veros-normalize'), $version);
+    wp_enqueue_style('veros-glide-theme-style', get_template_directory_uri() . './assets/styles/css/glide/glide.theme.css', array('veros-normalize'), $version);
 
 }
 
@@ -40,9 +49,10 @@ add_action('wp_enqueue_scripts', 'veros_register_styles');
 function veros_register_scripts(){
     
     $version = wp_get_theme()->get('Version');
+    wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . './scripts/glide/glide.js', array(), '3.6.0', true);
     wp_enqueue_script('veros-mobile-menu', get_template_directory_uri() . './scripts/header__mobile-menu.js', array(), $version, true);
     wp_enqueue_script('veros-tabnav', get_template_directory_uri() . './scripts/tabnav.js', array(), $version, true);
-    wp_enqueue_script('veros-carousel', get_template_directory_uri() . './scripts/carousel.js', array(), $version, true);
+    wp_enqueue_script('veros-glide', get_template_directory_uri() . './scripts/home__glide.js', array('veros-glide-cdn'), $version, true);
 
 }
 

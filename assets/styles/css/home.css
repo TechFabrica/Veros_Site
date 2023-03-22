@@ -159,9 +159,19 @@ a {
   cursor: pointer;
   border: 1px solid #7758D9;
 }
-.button--light-purple {
-  color: #EBF0EC;
+.button--primary {
+  color: #F5F5F6;
   background-color: #7758D9;
+}
+.button--line {
+  color: rgba(0, 0, 0, 0.6980392157);
+}
+.button--line:hover {
+  color: #000000;
+}
+.button--line-inverse {
+  color: #EBF0EC;
+  border-color: #EBF0EC;
 }
 .button--round {
   border-radius: 48px;
@@ -205,12 +215,209 @@ a {
   }
 }
 
-.carousel__slide--blurred {
-  transform: scale(0.8, 0.8);
-  filter: blur(1.54286px);
-}
 .footer {
-  padding-top: 100px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #EBF0EC;
+}
+.footer__wrapper {
+  position: relative;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+@media screen and (min-width: 1024px) {
+  .footer__wrapper {
+    flex-direction: row;
+  }
+}
+.footer__logo-container {
+  max-width: 127px;
+}
+.footer__logo-container-svg {
+  width: 100%;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__nav {
+    flex-direction: row;
+  }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__menu {
+    flex-direction: row;
+    margin: 0 10px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.footer__menu-item {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  color: #0C093C;
+  font-size: 14px;
+  line-height: 21px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+@media screen and (min-width: 1280px) {
+  .footer__menu-item {
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+}
+.footer__menu-item a {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__menu-item a {
+    padding: 16px;
+  }
+}
+.footer__submenu {
+  padding-bottom: 16px;
+}
+.footer__submenu-item {
+  display: flex;
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer__submenu-item a {
+  padding: 8px 24px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .footer__submenu-item a {
+    padding: 8px 16px;
+  }
+}
+.footer__addresses {
+  font-size: 12px;
+  line-height: 18px;
+  font-style: normal;
+}
+.footer__adresses-menu-item {
+  border: none;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__adresses-menu-item {
+    margin-bottom: 0;
+  }
+}
+.footer__address-title {
+  color: rgba(0, 0, 0, 0.6980392157);
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__address-title {
+    padding-left: 16px;
+  }
+}
+.footer__address-support-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__address-support-container {
+    padding-left: 16px;
+  }
+}
+.footer__address-support-container:last-of-type {
+  margin-bottom: 0;
+}
+.footer__address-info {
+  color: rgba(0, 0, 0, 0.6980392157);
+  margin-left: 8px;
+  max-width: 300px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__address-info {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 122px;
+  }
+}
+.footer__institutional {
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__institutional {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__institutional-copyright {
+  color: rgba(0, 0, 0, 0.5019607843);
+  padding: 16px 16px 16px 0;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__institutional-copyright {
+    margin-bottom: 0;
+  }
+}
+.footer__institutional-menu {
+  color: #7758D9;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__institutional-menu {
+    flex-direction: row;
+  }
+}
+.footer__institutional-menu-item {
+  padding: 12px 16px 12px 0;
+}
+.footer__institutional-social-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__institutional-social-container {
+    margin-top: 0;
+  }
+}
+.footer__institutional-social {
+  display: inline-block;
+  width: 32px;
+  padding: 18px;
+}
+.footer__institutional-social:first-of-type {
+  padding-left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__institutional-social {
+    width: 16px;
+    padding: 12px;
+  }
+  .footer__institutional-social:first-of-type {
+    padding-left: 12px;
+  }
 }
 
 .header {
@@ -413,6 +620,43 @@ a {
   }
 }
 
+.glide {
+  display: flex;
+  justify-content: center;
+}
+.glide__track {
+  width: 280px;
+}
+@media screen and (min-width: 1024px) {
+  .glide__track {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .glide__track {
+    width: 840px;
+  }
+}
+.glide__slide {
+  filter: blur(1.54286px);
+  transform: scale(0.8, 0.8);
+  transition: all 0.3s linear;
+}
+.glide__slide--active {
+  filter: blur(0);
+  transform: scale(1, 1);
+}
+.glide__bullets {
+  bottom: -25px;
+}
+.glide__arrow {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .glide__arrow {
+    display: block;
+  }
+}
 .tabnav {
   border-bottom: 3px solid #CCCCCC;
 }
@@ -517,6 +761,15 @@ a {
     max-height: 138px;
   }
 }
+.especialidades__link-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+}
+.especialidades__link {
+  display: block;
+}
+
 .estrutura {
   position: relative;
 }
@@ -862,7 +1115,8 @@ a {
   margin-top: 16px;
   margin-right: 27px;
 }
-.quem-atendemos__cta {
+.quem-atendemos__link {
+  display: block;
   margin-top: 40px;
 }
 
@@ -931,10 +1185,6 @@ a {
 .social-proof__title--emphasis {
   color: #7758D9;
 }
-.social-proof__carousel {
-  max-width: 800px;
-  height: 275px;
-}
 .social-proof__card {
   font-size: 16px;
   line-height: 24px;
@@ -952,13 +1202,21 @@ a {
 .social-proof__card-quote {
   margin: 16px 0;
 }
+.social-proof__card-author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .social-proof__card-img {
   display: inline-block;
   max-width: 24px;
   max-height: 24px;
-  margin-right: 16px;
   border-radius: 50%;
 }
 .social-proof__card-name {
   display: inline-block;
+}
+.social-proof__glide-arrow {
+  padding: 16px 21px;
 }

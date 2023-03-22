@@ -18,14 +18,18 @@ tabnav
     __pane
         --hidden
 
-carousel
-    __card
-        --blurred
-        --off-screen
-    __guide
+glide
+    __track
+    __slides
+    __slide
         --active
-    __nav-button
-
+    __bullets
+    __bullet
+        --active
+    __arrows
+    __arrow
+        --left
+        --right
 
 form
     __input
@@ -51,6 +55,7 @@ header
     __logo-container
     __open-menu-button
     __nav
+        --hidden
     __menu-container
     __menu
     __menu-item
@@ -130,24 +135,13 @@ estrutura
 social-proof
     __title
         --emphasis
-    __carousel
     __card
     __card-title
     __card-quote
+    __card-author
     __card-img
     __card-name
-    __button
-    __carousel-guide
-
-carousel
-    __content
-    __slide
-        --blurred
-        --off-screen
-    __guide
-    __guide-dot
-        --active
-    __nav-button
+    __glide-arrow
 
 
 faq
@@ -174,30 +168,28 @@ newsletter
     __subtitle
     __form
 
-footer
-    __logo
-    __column
-        --drop-down
-    __column-title
-    __column-item
-    __adress-icon
-    __adress-info
-    __institutional
-    __institutional-copyright
-    __institutional-link
-    __institutional-social
 
 footer
-    __logo
-    __column
-    __column-title
-    __column-item
-    __adress-icon
-    __adress-info
+    __wrapper
+    __logo-container
+    __nav
+    __menu-container
+    __menu
+    __menu-item
+    __submenu
+    __submenu-item
+    __addresses
+    __address-title
+    __address-support-container
+    __address-icon
+    __address-info
     __institutional
     __institutional-copyright
-    __institutional-link
+    __institutional-menu
+    __institutional-menu-item
+    __institutional-social-container
     __institutional-social
+    __institutional-social-icon
 
 
 
@@ -291,10 +283,11 @@ footer
     __column-item
     __adress-icon
     __adress-info
-    __institutional
+    __institutional-wrapper
     __institutional-copyright
-    __institutional-link
+    __institutional
     __institutional-social
+    __institutional-social-icon
 
 
 --- Desktop ------------------------------------------------------------------------------------------

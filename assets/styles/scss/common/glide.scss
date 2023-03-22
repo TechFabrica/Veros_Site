@@ -1,0 +1,56 @@
+@use "../_library/library";
+
+.glide{
+    display: flex;
+    justify-content: center;
+
+    &__track{
+        width: 280px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: 800px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            width: 840px;
+        }
+    }
+    &__slides{
+        
+    }
+    &__slide{
+        filter: blur(1.54286px);
+        transform: scale(.8, .8);
+        transition: all .3s linear;
+        
+        &--active{
+            filter: blur(0);
+            transform: scale(1, 1);
+        }
+    }
+    &__bullets{
+        bottom: -25px;
+    }
+    &__bullet{
+
+
+        &--active{
+    
+        }
+    }
+    &__arrows{
+
+    }
+    &__arrow{
+        display: none;
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: block;
+        }
+
+        &--left{
+    
+        }
+        &--right{
+    
+        }
+    }
+}
