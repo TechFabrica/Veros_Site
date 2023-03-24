@@ -4,13 +4,29 @@
     background-color: library.get-color("background", "light");
     color: library.get-color("primary", "dark-purple");
     min-height: 90px;
+    min-width: -webkit-fill-available;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
     @include library.heading--18;
-
+    
     @media screen and (min-width: library.$breakpoint-1) {
         @include library.body--14;
+        padding-top: 34px;
+        
+        transition: box-shadow .8s;
+        &--sticky{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            padding-top: 0;
+            box-shadow: 0 -20px 25px 15px library.get-color("neutral", "90");
+        
+            & ~ .fake-header{
+                display: block;
+            }
+        }
     }
 
     &__wrapper{
@@ -193,4 +209,8 @@
             bottom: 120px;
         }
     }
+}
+
+.fake-header{
+    display: none;
 }

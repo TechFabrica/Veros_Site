@@ -46,8 +46,12 @@ select
 
 --- Mixed ------------------------------------------------------------------------------------------
 
-login-menu
-    __options
+login-menu--desktop
+    __wrapper
+    __container
+    __text
+
+login-menu--mobile
 
 
 header
@@ -75,6 +79,9 @@ hero
         --desktop
     __title
         --emphasis
+    __pet-type
+    __pet-type-js-slot
+        --visible
     __content
     __card
 
@@ -153,21 +160,44 @@ faq
     __answer
 
 
-contato 
-    __img
+contact 
+    __left-wrapper
+    __banner
+    __right-wrapper
     __title
     __content
-    __phone-id-icon
+    __phones-container
     __phone-id
+    __phone-link
+    __phone-icon
     __phone-number
+    __cards-container
     __card
+    __card-icon
+    __card-content
 
 
 newsletter
+    __left-wrapper
+    __icon-container
     __icon
+    __support-container
     __title
     __subtitle
     __form
+    __form-field-container
+    __form-label
+    __form-field
+    __form-declaration
+    __form-submit
+    __form-submit-text
+
+form
+    __label
+    __field
+    __field-input
+    __error-msg
+    __submit
 
 
 footer

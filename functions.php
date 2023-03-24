@@ -50,7 +50,8 @@ function veros_register_scripts(){
     
     $version = wp_get_theme()->get('Version');
     wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . './scripts/glide/glide.js', array(), '3.6.0', true);
-    wp_enqueue_script('veros-mobile-menu', get_template_directory_uri() . './scripts/header__mobile-menu.js', array(), $version, true);
+    wp_enqueue_script('veros-header', get_template_directory_uri() . './scripts/header.js', array(), $version, true);
+    wp_enqueue_script('veros-pet-types', get_template_directory_uri() . './scripts/pet-types.js', array(), $version, true);
     wp_enqueue_script('veros-tabnav', get_template_directory_uri() . './scripts/tabnav.js', array(), $version, true);
     wp_enqueue_script('veros-glide', get_template_directory_uri() . './scripts/home__glide.js', array('veros-glide-cdn'), $version, true);
 

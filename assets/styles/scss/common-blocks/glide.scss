@@ -6,8 +6,10 @@
 
     &__track{
         width: 280px;
+        // overflow: visible; COMMENTED TO AVOID CHROME DEVELOPER'S TOOLS BUG. REMOVE AT THE END!!
         @media screen and (min-width: library.$breakpoint-1) {
             width: 800px;
+            overflow: hidden;
         }
         @media screen and (min-width: library.$breakpoint-2) {
             width: 840px;

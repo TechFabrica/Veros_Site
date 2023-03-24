@@ -1,0 +1,89 @@
+@use "../_library/library";
+
+.newsletter{
+    background-color: library.get-color("primary", "dark-purple");
+    
+    &__left-wrapper{
+    }
+    
+    &__right-wrapper{
+        grid-row: auto/auto;
+    }
+
+    &__icon-container{
+        margin-bottom: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__icon{
+
+    }
+
+    &__support-container{
+        
+    }
+    
+    &__title{
+        margin-bottom: 8px;
+        color: library.get-color("type", "emphasis-high-inverse");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--32;
+        }
+    }
+    
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium-inverse");
+        margin-bottom: 32px;
+        @include library.body--14;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 0;
+            @include library.body--16;
+        }
+    }
+
+    &__form{
+        
+    }
+    
+    &__form-field-container{
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 8px;
+        row-gap: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    &__form-label{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    &__form-field{
+
+    }
+    
+    &__form-declaration{
+        margin: 8px 0 32px;
+        color: library.get-color("type", "emphasis-medium-inverse");
+        @include library.caption--12;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 8px 0 16px;
+        }
+    }
+    
+    &__form-submit{
+        width: 100%;
+        padding: 12px 0;
+    }
+    
+    &__form-submit-text{
+        margin: 0 auto;
+    }
+}

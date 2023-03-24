@@ -35,8 +35,14 @@
 
     &__tabnav-item{
         color: library.get-color("primary", "dark-purple");
-        padding: 17px 40px;
         font-weight: 700;
+        padding: 12px 28px;
+        @media screen and (min-width: library.$breakpoint-0) {
+            padding: 12px 32px;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding: 16px 40px;
+        }
     }
 
     &__content-pane{

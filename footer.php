@@ -32,17 +32,15 @@
                     foreach($addresses_data as $item):
                         ?>
                 <p class="footer__address-title"><?php echo $item['footer__address-title']; ?></p>
-                <div class="footer__address-support-container">
+                <a class="footer__address-support-container" href="<?php echo $item['footer__address-link']; ?>" target="_blank">
                     <?php 
                         $icon = $item['footer__address-icon'];
                         if( !empty( $icon ) ):
                             ?>
                     <img class="footer__address-icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
                     <?php endif; ?>
-                    <a href="<?php echo $item['footer__address-link']; ?>" target="_blank">
-                        <p class="footer__address-info"><?php echo $item['footer__address-info']; ?></p>
-                    </a>
-                </div>
+                    <p class="footer__address-info"><?php echo $item['footer__address-info']; ?></p>
+                </a>
                 <?php endforeach; ?>
             </address>
         </div>

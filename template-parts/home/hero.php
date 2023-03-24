@@ -18,7 +18,18 @@
         <?php endif; ?>
     </div>
     <div class="hero__left-wrapper grid__container grid__container--left">
-        <h2 class="hero__title"><?php the_field('hero__title'); ?></h2>
+        <h2 class="hero__title">
+            <?php the_field('hero__title'); ?>
+            <span class="hero__title--emphasis">
+                <?php
+                    $pet_types_data = get_field('hero__pet-types');
+                    foreach($pet_types_data as $pet):
+                ?>
+                    <span class="hero__pet-type"><?php echo $pet['hero__pet-type']; ?></span>
+                <?php endforeach; ?>
+                <span class="hero__pet-type-js-slot"></span>
+            </span>
+        </h2>
         <p class="hero__content"><?php the_field('hero__content'); ?></p>
     </div>
     <div class="hero__bottom-wrapper grid__container">

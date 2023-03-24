@@ -1,11 +1,12 @@
-@use "./common/master-common.scss";
+@use "./common-blocks/master-common.scss";
 
-@use "./home/contato.scss";
+@use "./common-parts/contact.scss";
+@use "./common-parts/newsletter.scss";
+
 @use "./home/especialidades.scss";
 @use "./home/estrutura.scss";
 @use "./home/faq.scss";
 @use "./home/hero.scss";
-@use "./home/newsletter.scss";
 @use "./home/quem-atendemos.scss";
 @use "./home/servicos.scss";
 @use "./home/social-proof.scss";

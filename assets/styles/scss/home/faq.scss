@@ -24,6 +24,13 @@
     
     &__container{
         border-bottom: 1px solid library.get-color("outline", "light");
+        
+        &[open] .faq__arrow-down{
+            display: none;
+        }
+        &[open] .faq__arrow-up{
+            display: inline;
+        }
     }
     
     &__question{
@@ -33,10 +40,15 @@
         display: flex;
         justify-content: space-between;
     }
-    
-    &__arrow{
 
+    &__arrow-down{
+        display: inline;
     }
+
+    &__arrow-up{
+        display: none;
+    }
+
     
     &__answer{
         color: library.get-color("type", "emphasis-medium");

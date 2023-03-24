@@ -54,7 +54,21 @@
             color: library.get-color("primary", "light-purple");
         }
     }
+
+    &__pet-type{
+        display: none;
+    }
     
+    &__pet-type-js-slot{
+        opacity: 0;
+        transition: all .5s;
+        position: absolute;
+
+        &--visible{
+            opacity: 1;
+        }
+    }
+
     &__content{
         margin-bottom: 63px;
         color: library.get-color("type", "emphasis-medium");
@@ -98,6 +112,14 @@
         @media screen and (min-width: library.$breakpoint-2) {
             height: 160px;
             transform: translateY(-80px);
+        }
+
+        &:hover{
+            background-color: library.get-color("primary", "light-purple");
+
+            & .card__content{
+                color: library.get-color("background", "light");
+            }
         }
     }
 }
