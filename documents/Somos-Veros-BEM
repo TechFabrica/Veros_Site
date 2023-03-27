@@ -1,9 +1,10 @@
 --- Somos Veros ------------------------------------------------------------------------------------------
 
 hero
+    __left-wrapper
     __right-wrapper
     __banner
-    __left-wrapper
+        --desktop
     __path
     __parent-page
     __arrow
@@ -24,3 +25,24 @@ mvv
     __big-number-icon-container
     __big-number-icon
     __big-number-content
+
+parceiro
+    __content-container
+    __banner
+    __title
+    __content
+    __checklist
+    __checklist-item
+    __button
+
+trabalhe
+    __banner
+    __content-container
+    __title
+    __content
+    __big-numbers-container
+    __big-number
+    __big-number-icon-container
+    __big-number-icon
+    __big-number-content
+    __link
