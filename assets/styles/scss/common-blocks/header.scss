@@ -56,6 +56,7 @@
         justify-content: space-between;
         align-items: center;
         z-index: 1;
+        box-shadow: 0 15px 25px -10px library.get-color("neutral", "90");
 
         position: absolute;
         top: 90px;
@@ -66,6 +67,7 @@
             flex-direction: row;
             background-color: inherit;
             position: static;
+            box-shadow: none;
         }
 
         &--hidden{
@@ -106,6 +108,11 @@
             width: 100%;
             padding: 16px 16px 16px 24px;
             @media screen and (min-width: library.$breakpoint-1) {
+                padding: 16px 8px;
+                text-align: center;
+            }
+            @media screen and (min-width: library.$breakpoint-2) {
+                min-width: max-content;
                 padding: 16px;
             }
         }
@@ -118,29 +125,35 @@
     }
     
     &__submenu{
-        display: none;
+        display: block;
         width: max-content;
-        position: absolute;
-        top: 50px;
-        left: 16px;
-        z-index: 2;
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 16px;
+            z-index: 2;
+        }
     }
     
     &__submenu-item{
         display: flex;
         color: library.get-color("type", "emphasis-medium");
         background-color: library.get-color("type", "emphasis-high-inverse");
-        border: 1px solid library.get-color("outline", "light");
         transform: translateY(-1px);
         
         @include library.body--16;
         @media screen and (min-width: library.$breakpoint-1){
+            border: 1px solid library.get-color("outline", "light");
             @include library.body--14;
         }
         
         & a{
-            padding: 14px 16px;
             width: 100%;
+            padding: 12px 0 12px 24px;
+            @media screen and (min-width: library.$breakpoint-1){
+                padding: 14px 16px;
+            }
         }
 
         &:first-child{
@@ -156,12 +169,15 @@
         display: flex;
         flex-direction: column;
         padding: 24px 0;
+        border-top: 1px solid library.get-color("neutral", "10");
+        border-bottom: 1px solid library.get-color("neutral", "10");
         
         @media screen and (min-width: library.$breakpoint-1) {
             min-width: 245px;
             width: auto;
             flex-direction: row;
             padding: 0;
+            border: none;
         }
     }
     

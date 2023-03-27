@@ -523,6 +523,7 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  box-shadow: 0 15px 25px -10px #1A1A1A;
   position: absolute;
   top: 90px;
   background-color: #FFFFFF;
@@ -533,6 +534,7 @@ a {
     flex-direction: row;
     background-color: inherit;
     position: static;
+    box-shadow: none;
   }
 }
 .header__nav--hidden {
@@ -573,6 +575,13 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .header__menu-item a {
+    padding: 16px 8px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu-item a {
+    min-width: max-content;
     padding: 16px;
   }
 }
@@ -582,31 +591,41 @@ a {
   }
 }
 .header__submenu {
-  display: none;
+  display: block;
   width: max-content;
-  position: absolute;
-  top: 50px;
-  left: 16px;
-  z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .header__submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    z-index: 2;
+  }
 }
 .header__submenu-item {
   display: flex;
   color: rgba(0, 0, 0, 0.6980392157);
   background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
   transform: translateY(-1px);
   font-size: 16px;
   line-height: 24px;
 }
 @media screen and (min-width: 1024px) {
   .header__submenu-item {
+    border: 1px solid rgba(0, 0, 0, 0.1019607843);
     font-size: 14px;
     line-height: 21px;
   }
 }
 .header__submenu-item a {
-  padding: 14px 16px;
   width: 100%;
+  padding: 12px 0 12px 24px;
+}
+@media screen and (min-width: 1024px) {
+  .header__submenu-item a {
+    padding: 14px 16px;
+  }
 }
 .header__submenu-item:first-child {
   border-radius: 4px 4px 0 0;
@@ -619,6 +638,8 @@ a {
   display: flex;
   flex-direction: column;
   padding: 24px 0;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 @media screen and (min-width: 1024px) {
   .header__support-container {
@@ -626,6 +647,7 @@ a {
     width: auto;
     flex-direction: row;
     padding: 0;
+    border: none;
   }
 }
 .header__search {
@@ -688,6 +710,29 @@ a {
   display: none;
 }
 
+.login-menu {
+  width: 100%;
+  padding: 24px 0;
+  font-family: "Vinila", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+@media screen and (min-width: 1024px) {
+  .login-menu {
+    display: none;
+  }
+}
+.login-menu__container {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login-menu__text {
+  padding: 0 8px 0 24px;
+}
+
 .login-menu--desktop {
   display: none;
   background-color: #0C093C;
@@ -715,6 +760,7 @@ a {
 .login-menu--desktop__text {
   padding: 0 8px 0 24px;
 }
+
 .glide {
   display: flex;
   justify-content: center;
