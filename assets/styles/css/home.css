@@ -1,4 +1,8 @@
 /* _library _colors */ /* _library _fonts */
+@font-face {
+  font-family: Vinila;
+  src: url("../../fonts/VinilaRegular.otf");
+}
 .body {
   font-family: "SourceSans", sans-serif;
   font-weight: 400;
