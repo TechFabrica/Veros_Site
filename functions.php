@@ -46,6 +46,9 @@ function veros_register_styles(){
     }
     if (is_page_template('somos-veros.php')){
         wp_enqueue_style('veros-home', get_template_directory_uri() . '/assets/styles/css/somos-veros.css', array('veros-normalize'), $version);
+        
+    if (is_page_template('servicos.php')){
+        wp_enqueue_style('veros-servicos', get_template_directory_uri() . '/assets/styles/css/servicos.css', array('veros-normalize'), $version);    
     }
 
 }
