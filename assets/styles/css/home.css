@@ -148,10 +148,11 @@
 .body {
   background-color: #F5F5F6;
   color: #0C093C;
+  cursor: default;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  cursor: default;
+h1, h2, h3, h4, h5, h6, p, span {
+  cursor: inherit;
 }
 
 a {
@@ -196,6 +197,7 @@ a {
   margin-right: 9px;
 }
 .card {
+  cursor: pointer;
   background-color: #F5F5F6;
   padding: 8px;
   box-sizing: border-box;
@@ -472,6 +474,7 @@ a {
   padding-bottom: 0;
   position: relative;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22.5px;
 }
@@ -796,12 +799,14 @@ a {
 .contact__title {
   color: #0C093C;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .contact__title {
     font-family: "Vinila", sans-serif;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
   }
@@ -891,6 +896,7 @@ a {
   margin-bottom: 8px;
   color: #FFFFFF;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -961,6 +967,7 @@ a {
   text-align: center;
   color: #0C093C;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1028,6 +1035,7 @@ a {
   }
 }
 .especialidades__card-img {
+  margin: auto;
   height: 100%;
   max-height: 97px;
 }
@@ -1076,6 +1084,7 @@ a {
 }
 .estrutura__title {
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1097,6 +1106,7 @@ a {
 @media screen and (min-width: 1024px) {
   .estrutura__subtitle {
     font-family: "Vinila", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 22.5px;
   }
@@ -1152,6 +1162,7 @@ a {
 }
 .estrutura__content-title {
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22.5px;
   padding: 48px 0 8px;
@@ -1186,6 +1197,7 @@ a {
   text-align: center;
   color: #0C093C;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1398,6 +1410,7 @@ a {
   margin-bottom: 8px;
   color: #0C093C;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1453,6 +1466,7 @@ a {
   margin-top: 40px;
   color: #7758D9;
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22.5px;
 }
@@ -1543,6 +1557,7 @@ a {
 }
 .social-proof__title {
   font-family: "Vinila", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-align: center;

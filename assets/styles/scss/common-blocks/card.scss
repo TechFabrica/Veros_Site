@@ -1,6 +1,7 @@
 @use "../_library/library";
 
 .card{
+    cursor: pointer;
     background-color: library.get-color("background", "light");
     padding: 8px;
     box-sizing: border-box;
