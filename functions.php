@@ -38,14 +38,17 @@ function veros_register_styles(){
     
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('veros-normalize', get_template_directory_uri() . './assets/styles/css/normalize.css', array(), $version);
-    wp_enqueue_style('veros-glide-core-style', get_template_directory_uri() . './assets/styles/css/glide/glide.core.css', array('veros-normalize'), $version);
-    wp_enqueue_style('veros-glide-theme-style', get_template_directory_uri() . './assets/styles/css/glide/glide.theme.css', array('veros-normalize'), $version);
-
+    
     if (is_front_page()){
+        wp_enqueue_style('veros-glide-core-style', get_template_directory_uri() . './assets/styles/css/glide/glide.core.css', array('veros-normalize'), $version);
+        wp_enqueue_style('veros-glide-theme-style', get_template_directory_uri() . './assets/styles/css/glide/glide.theme.css', array('veros-normalize'), $version);
         wp_enqueue_style('veros-home', get_template_directory_uri() . './assets/styles/css/home.css', array('veros-normalize', 'veros-glide-core-style', 'veros-glide-theme-style'), $version);
     }
     if (is_page_template('somos-veros.php')){
-        wp_enqueue_style('veros-home', get_template_directory_uri() . './assets/styles/css/somos-veros.css', array('veros-normalize'), $version);
+        wp_enqueue_style('veros-somos-veros', get_template_directory_uri() . './assets/styles/css/somos-veros.css', array('veros-normalize'), $version);
+    }
+    if (is_page_template('servicos.php')){
+        wp_enqueue_style('veros-servicos', get_template_directory_uri() . './assets/styles/css/servicos.css', array('veros-normalize'), $version);
     }
 
 }

@@ -1,4 +1,8 @@
 /* _library _colors */ /* _library _fonts */
+@font-face {
+  font-family: Vinila;
+  src: url("../../fonts/VinilaRegular.otf");
+}
 .body {
   font-family: "SourceSans", sans-serif;
   font-weight: 400;
@@ -197,7 +201,6 @@ a {
   margin-right: 9px;
 }
 .card {
-  cursor: pointer;
   background-color: #F5F5F6;
   padding: 8px;
   box-sizing: border-box;
