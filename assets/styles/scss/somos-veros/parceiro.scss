@@ -1,0 +1,62 @@
+@use "../_library/library";
+
+.parceiro{
+    background-color: library.get-color("primary", "offwhite");
+
+    &__content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (min-width: library.$breakpoint-1){
+            padding-left: 16px;
+        }
+    }
+
+    &__banner{
+        width: 100%;
+        border-radius: 4px;
+
+        @media screen and (min-width: library.$breakpoint-1){
+            margin-top: 12px;
+        }
+    }
+
+    &__title{
+        margin-top: 40px;
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--24;
+        
+        @media screen and (min-width: library.$breakpoint-1){
+            @include library.heading--28;
+            margin-top: 0;
+        }
+    }
+    
+    &__content{
+        margin-top: 8px;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+    }
+    
+    &__checklist{
+        color: library.get-color("type", "emphasis-medium");
+        margin-top: 8px;
+        @include library.body--14;
+
+        @media screen and (min-width: library.$breakpoint-2){
+            @include library.body--16;
+        }
+    }
+    
+    &__checklist-item{
+        display: inline-block;
+        margin-top: 16px;
+        margin-right: 27px;
+    }
+
+    &__button{
+        max-width: max-content;
+        display: block;
+        margin-top: 40px;
+    }
+}

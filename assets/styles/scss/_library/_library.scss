@@ -8,6 +8,10 @@
     color: colors.get-color("primary", "dark-purple");
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    cursor: default;
+}
+
 a{ //alterar para o bloco equivalente
     color: inherit;
     text-decoration: none;

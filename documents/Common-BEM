@@ -1,0 +1,43 @@
+--- Common ------------------------------------------------------------------------------------------
+
+button
+    --dark-purple
+    --borderless
+    __content
+    __icon
+
+card
+    --click
+    --small
+    __content
+    __icon
+
+tabnav
+    __selector
+        --inactive
+    __pane
+        --hidden
+
+glide
+    __track
+    __slides
+    __slide
+        --active
+    __bullets
+    __bullet
+        --active
+    __arrows
+    __arrow
+        --left
+        --right
+
+form
+    __input
+    __submit
+
+tag
+    --disabled
+
+select
+    __item
+    __list 

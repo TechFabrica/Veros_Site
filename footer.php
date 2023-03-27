@@ -28,7 +28,7 @@
                 </div>
                 
                 <?php
-                    $addresses_data = get_field('footer__addresses');
+                    $addresses_data = get_field('footer__addresses', 6);
                     foreach($addresses_data as $item):
                         ?>
                 <p class="footer__address-title"><?php echo $item['footer__address-title']; ?></p>

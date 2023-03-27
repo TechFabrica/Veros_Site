@@ -37,10 +37,8 @@
             <?php
                 endforeach;
             ?>
-            <a href="<?php the_field('quem-atendemos__link'); ?>" class="quem-atendemos__link">
-                <button class="button button--line button--round">
-                    <?php the_field('quem-atendemos__link-text'); ?>
-                </button>
+            <a href="<?php the_field('quem-atendemos__link'); ?>" class="quem-atendemos__button button button--line button--round">
+                <?php the_field('quem-atendemos__link-text'); ?>
             </a>
             </div>
         </div>

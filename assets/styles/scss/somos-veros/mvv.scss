@@ -1,0 +1,70 @@
+@use "../_library/library";
+
+.mvv{
+    background-color: library.get-color("primary", "dark-purple");
+    color: library.get-color("primary", "offwhite");
+    
+    &__wrapper{
+        padding-bottom: 40px;
+        border-bottom: 1px solid library.get-color("outline", "dark");
+    }
+    
+    &__container{
+        margin-bottom: 64px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title{
+        margin: 24px 0 16px;
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    
+    &__content{
+        color: library.get-color("type", "emphasis-medium-inverse");
+        @include library.body--16;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding-right: 16px;
+        }
+    }
+
+    &__big-numbers-container{
+        margin-top: 48px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 56px;
+        }
+    }
+
+    &__big-number{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 8px;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__big-number-icon-container{
+
+    }
+
+    &__big-number-icon{
+
+    }
+
+    &__big-number-content{
+        @include library.heading--18;
+        display: inline-block;
+        margin-left: 24px;
+    }
+}

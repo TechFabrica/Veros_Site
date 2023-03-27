@@ -1,7 +1,7 @@
 <section class="contact grid__supercontainer">
     <div class="contact__left-wrapper">
         <?php 
-            $image = get_field('contact__banner');
+            $image = get_field('contact__banner', 6);
             if( !empty( $image ) ):
         ?>
 
@@ -10,11 +10,11 @@
         <?php endif; ?>
     </div>
     <div class="contact__right-wrapper grid__container grid__container--right">
-        <h2 class="contact__title grid__item--4-6"><?php the_field('contact__title'); ?></h2>
-        <p class="contact__content grid__item--4-6"><?php the_field('contact__content'); ?></p>
+        <h2 class="contact__title grid__item--4-6"><?php the_field('contact__title', 6); ?></h2>
+        <p class="contact__content grid__item--4-6"><?php the_field('contact__content', 6); ?></p>
         <div class="contact__phones-container grid__item--4-6">
             <?php
-                $contact_data = get_field('contact__phones');
+                $contact_data = get_field('contact__phones', 6);
                 foreach($contact_data as $item):
             ?>
             <a class="contact__phone-id" href="<?php echo $item['contact__phone-link'] ?>">
