@@ -7,6 +7,7 @@
 
 @mixin heading--48 {
     font-family: 'Vinila', sans-serif;
+    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
 }
@@ -24,11 +25,13 @@
 }
 @mixin heading--24 {
     font-family: 'Vinila', sans-serif;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 @mixin heading--18 {
     font-family: 'Vinila', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 22.5px;
 }
