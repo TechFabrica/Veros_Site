@@ -1,0 +1,38 @@
+--- Servicos ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __big-numbers-wrapper
+    __big-numbers-container
+    __big-number
+    __big-number-text
+
+main´
+    __banner
+    __title
+    __container
+    __content
+    __imgs-container
+    __img
+    __glide-arrow
+
+como-funciona
+    __container
+    __sect-title
+    __title
+    __hexa-dog
+    __steps-container
+    __step
+    __step-index
+    __step-title
+    __step-content
+    __button

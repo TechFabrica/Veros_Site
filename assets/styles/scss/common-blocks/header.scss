@@ -150,6 +150,7 @@
         
         & a{
             width: 100%;
+            text-align: left;
             padding: 12px 0 12px 24px;
             @media screen and (min-width: library.$breakpoint-1){
                 padding: 14px 16px;

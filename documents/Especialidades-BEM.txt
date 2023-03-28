@@ -19,10 +19,11 @@ hero
 main
     __title
     __subtitle
-    __items-wrapper
-    __item-container
-    __item-img
-    __item-subcontainer
-    __item-title
-    __item-content
-    __item-button
+    __tabnav
+    __tabnav-item
+    __cards-wrapper
+    __card
+    __card-title
+    __card-content
+    __card-link
+    __card-arrow

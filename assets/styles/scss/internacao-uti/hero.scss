@@ -79,39 +79,5 @@
         }
     }
     
-    &__big-numbers-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 8px;
-        @media screen and (min-width: library.$breakpoint-2){
-            margin-top: 16px;
-        }
-    }
     
-    &__big-numbers-container{
-        flex-grow: 1;
-        padding: 16px;
-        border-right: 1px solid library.get-color("outline", "light");
-        &:first-child{
-            padding-left: 0px;
-        }
-        &:last-child{
-            padding-right: 0px;
-            border-right: none;
-        }
-    }
-    
-    &__big-number{
-        color: library.get-color("type", "emphasis-high");
-        @include library.heading--24;
-        @media screen and (min-width: library.$breakpoint-2){
-            @include library.heading--28;
-        }
-    }
-    
-    &__big-number-text{
-        color: library.get-color("type", "emphasis-medium");
-        @include library.body--14;
-    }
 }

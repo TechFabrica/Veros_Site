@@ -53,6 +53,9 @@ function veros_register_styles(){
     if (is_page_template('especialidades.php')){
         wp_enqueue_style('veros-especialidades', get_template_directory_uri() . '/assets/styles/css/especialidades.css', array('veros-normalize'), $version);    
     }
+    if (is_page_template('internacao-uti.php')){
+        wp_enqueue_style('veros-internacao-uti', get_template_directory_uri() . '/assets/styles/css/internacao-uti.css', array('veros-normalize'), $version);    
+    }
 
 }
 

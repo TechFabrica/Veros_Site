@@ -627,6 +627,7 @@ a {
 }
 .header__submenu-item a {
   width: 100%;
+  text-align: left;
   padding: 12px 0 12px 24px;
 }
 @media screen and (min-width: 1024px) {
