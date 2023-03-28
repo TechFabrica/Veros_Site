@@ -1,0 +1,28 @@
+--- Especialidades ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __big-numbers-wrapper
+    __big-numbers-container
+    __big-number
+    __big-number-text
+
+main
+    __title
+    __subtitle
+    __items-wrapper
+    __item-container
+    __item-img
+    __item-subcontainer
+    __item-title
+    __item-content
+    __item-button

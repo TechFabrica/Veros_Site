@@ -50,6 +50,9 @@ function veros_register_styles(){
     if (is_page_template('servicos.php')){
         wp_enqueue_style('veros-servicos', get_template_directory_uri() . '/assets/styles/css/servicos.css', array('veros-normalize'), $version);    
     }
+    if (is_page_template('especialidades.php')){
+        wp_enqueue_style('veros-especialidades', get_template_directory_uri() . '/assets/styles/css/especialidades.css', array('veros-normalize'), $version);    
+    }
 
 }
 
@@ -59,12 +62,16 @@ function veros_register_scripts(){
     
     $version = wp_get_theme()->get('Version');
     wp_enqueue_script('veros-header', get_template_directory_uri() . '/scripts/header.js', array(), $version, true);
-    wp_enqueue_script('veros-rd-station-newsletter', 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/d19a3880-2941-468f-ade5-fff01b355b4e-loader.js', array());
+    // wp_enqueue_script('veros-rd-station-newsletter', 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/d19a3880-2941-468f-ade5-fff01b355b4e-loader.js', array());
+    
     if (is_front_page()){
         wp_enqueue_script('veros-pet-types', get_template_directory_uri() . '/scripts/pet-types.js', array(), $version, true);
         wp_enqueue_script('veros-tabnav', get_template_directory_uri() . '/scripts/tabnav.js', array(), $version, true);
         wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . '/scripts/glide/glide.js', array(), '3.6.0', true);
         wp_enqueue_script('veros-glide', get_template_directory_uri() . '/scripts/home__glide.js', array('veros-glide-cdn'), $version, true);
+    }
+    if (is_page_template('especialidades.php')){
+        wp_enqueue_script('veros-tabnav-cards', get_template_directory_uri() . '/scripts/tabnav-cards.js', array(), $version, true);
     }
 
 }

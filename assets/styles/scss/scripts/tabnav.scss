@@ -21,4 +21,20 @@
             height: 0;
         }
     }
+    
+    &__card-pane{
+        transition: opacity .3s;
+
+        &--hidden{
+            opacity: 0;
+        }
+    }
+
+    &__card{
+        
+
+        &--hidden{
+            display: none;
+        }
+    }
 }

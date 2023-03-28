@@ -11,9 +11,7 @@ setTimeout(function(){
 }, speed-500);
 
 var change_pet_types = setInterval(function(){
-    // setTimeout(function(){
-        $slot.classList.add('hero__pet-type-js-slot--visible');
-    // }, 800);
+    $slot.classList.add('hero__pet-type-js-slot--visible');
     
     $slot.innerHTML = "&nbsp;" + $pet_types[index].textContent + "</span>.";
     

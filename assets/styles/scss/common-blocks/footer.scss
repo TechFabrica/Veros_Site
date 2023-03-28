@@ -59,10 +59,12 @@
         color: library.get-color("primary", "dark-purple");
         @include library.body--14;
         border-bottom: 1px solid library.get-color("outline", "light");
-        @media screen and (min-width: library.$breakpoint-2){
+        @media screen and (min-width: library.$breakpoint-1){
             width: auto;
-            @include library.body--16;
             border: none;
+        }
+        @media screen and (min-width: library.$breakpoint-2){
+            @include library.body--16;
         }
 
         & a{

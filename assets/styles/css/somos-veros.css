@@ -285,12 +285,16 @@ a {
   line-height: 21px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .footer__menu-item {
     width: auto;
+    border: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__menu-item {
     font-size: 16px;
     line-height: 24px;
-    border: none;
   }
 }
 .footer__menu-item a {
@@ -709,10 +713,6 @@ a {
   display: none;
 }
 
-#wpadminbar {
-  display: none;
-}
-
 .login-menu {
   width: 100%;
   padding: 24px 0;
@@ -762,63 +762,6 @@ a {
 }
 .login-menu--desktop__text {
   padding: 0 8px 0 24px;
-}
-
-.glide {
-  display: flex;
-  justify-content: center;
-}
-.glide__track {
-  width: 280px;
-}
-@media screen and (min-width: 1024px) {
-  .glide__track {
-    width: 800px;
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .glide__track {
-    width: 840px;
-  }
-}
-.glide__slide {
-  filter: blur(1.54286px);
-  transform: scale(0.8, 0.8);
-  transition: all 0.3s linear;
-}
-.glide__slide--active {
-  filter: blur(0);
-  transform: scale(1, 1);
-}
-.glide__bullets {
-  bottom: -25px;
-}
-.glide__arrow {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .glide__arrow {
-    display: block;
-  }
-}
-.tabnav {
-  border-bottom: 3px solid #CCCCCC;
-}
-.tabnav__selector {
-  transform: translateY(3px);
-  border-bottom: 3px solid #7758D9;
-}
-.tabnav__selector--inactive {
-  border-bottom: 3px solid #CCCCCC;
-}
-.tabnav__pane {
-  overflow: hidden;
-  transition: opacity 0.8s;
-}
-.tabnav__pane--hidden {
-  opacity: 0;
-  height: 0;
 }
 
 .contact {

@@ -4,8 +4,8 @@
     
     <div class="quem-atendemos__tabnav tabnav grid__item--4-12">
         <?php
-            $hero_data = get_field('quem-atendemos__content-pane');
-            foreach($hero_data as $item):
+            $content_data = get_field('quem-atendemos__content-pane');
+            foreach($content_data as $item):
         ?>
         <button class="quem-atendemos__tabnav-item tabnav__selector button button--borderless"><?php echo $item['quem-atendemos__content-title']; ?></button>
         <?php
@@ -14,7 +14,7 @@
     </div>
 
     <?php
-        foreach($hero_data as $item):
+        foreach($content_data as $item):
         $image = $item['quem-atendemos__content-img'];
         if( !empty( $image ) ):
     ?>

@@ -1,0 +1,72 @@
+@use "../_library/library";
+
+.main{
+    background-color: library.get-color("background", "light");
+    
+    &__title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+    }
+    
+    &__tabnav{
+        display: flex;
+        @include library.button--14--light;
+        margin: 48px 0 24px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 40px 0 32px;
+        }
+    }
+
+    &__tabnav-item{
+        color: library.get-color("primary", "dark-purple");
+        font-weight: 700;
+        padding: 10px 16px;
+        @media screen and (min-width: library.$breakpoint-0) {
+            padding: 10px 20px;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding: 16px 40px;
+        }
+    }
+    
+    &__cards-wrapper{
+        row-gap: 16px;
+        column-gap: 32px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            row-gap: 24px;
+        }
+    }
+    
+    &__card{
+        background-color: library.get-color("type", "emphasis-high-inverse");
+        padding: 24px;
+    }
+    
+    &__card-title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--18;
+    }
+    
+    &__card-content{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--14;
+        margin: 8px 0 24px;
+    }
+    
+    &__card-link{
+        color: library.get-color("primary", "light-purple");
+        @include library.body--14;
+    }
+
+    &__card-arrow{
+
+    }
+}
