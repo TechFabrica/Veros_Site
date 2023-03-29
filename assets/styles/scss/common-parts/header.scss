@@ -10,23 +10,22 @@
     position: relative;
     @include library.heading--18;
     
+    transition: box-shadow .8s;
+    &--sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        padding-top: 0;
+        box-shadow: 0 -20px 25px 15px library.get-color("neutral", "90");
+    
+        & ~ .fake-header{
+            display: block;
+        }
+    }
     @media screen and (min-width: library.$breakpoint-1) {
         @include library.body--14;
         // padding-top: 34px;
-        
-        transition: box-shadow .8s;
-        &--sticky{
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 3;
-            padding-top: 0;
-            box-shadow: 0 -20px 25px 15px library.get-color("neutral", "90");
-        
-            & ~ .fake-header{
-                display: block;
-            }
-        }
     }
 
     &__wrapper{
@@ -51,15 +50,16 @@
     &__nav{
         margin-left: -24px;
         width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         z-index: 1;
         box-shadow: 0 15px 25px -10px library.get-color("neutral", "90");
-
-        position: absolute;
-        top: 90px;
+        position: fixed;
+        top: 89px;
+        overflow-y: scroll;
 
         background-color: library.get-color("neutral", "0");
         @media screen and (min-width: library.$breakpoint-1) {

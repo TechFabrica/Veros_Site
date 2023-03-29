@@ -2,9 +2,10 @@
 
 @forward "./button.scss";
 @forward "./card.scss";
-@forward "./footer.scss";
 @forward "./form.scss";
-@forward "./header.scss";
 @forward "./login-menu.scss";
 @forward "./select.scss";
 @forward "./tag.scss";
+
+@forward "../common-parts/header.scss";
+@forward "../common-parts/footer.scss";
