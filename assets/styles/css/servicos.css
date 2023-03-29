@@ -489,7 +489,6 @@ a {
   .header {
     font-size: 14px;
     line-height: 21px;
-    padding-top: 34px;
     transition: box-shadow 0.8s;
   }
   .header--sticky {
@@ -715,6 +714,7 @@ a {
 }
 
 .login-menu {
+  display: none;
   width: 100%;
   padding: 24px 0;
   font-family: "Vinila", sans-serif;
@@ -747,11 +747,6 @@ a {
   padding-bottom: 0;
   position: absolute;
   z-index: 1;
-}
-@media screen and (min-width: 1024px) {
-  .login-menu--desktop {
-    display: grid;
-  }
 }
 .login-menu--desktop__wrapper {
   display: flex;

@@ -1,4 +1,4 @@
---- Servicos ------------------------------------------------------------------------------------------
+--- Internação e UTI ------------------------------------------------------------------------------------------
 
 hero
     __left-wrapper
@@ -11,13 +11,11 @@ hero
     __current-page
     __title
     __content
-    __big-numbers-wrapper
-    __big-numbers-container
-    __big-number
-    __big-number-text
+    __button
 
-main´
+main
     __banner
+    __wrapper
     __title
     __container
     __content
@@ -26,13 +24,15 @@ main´
     __glide-arrow
 
 como-funciona
-    __container
+    __top-container
+    __title-container
     __sect-title
     __title
     __hexa-dog
-    __steps-container
+    __bottom-container
     __step
     __step-index
     __step-title
     __step-content
+    __button-container
     __button

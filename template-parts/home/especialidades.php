@@ -22,10 +22,8 @@
     <?php endforeach; ?>
     
     <div class="especialidades__link-container grid__item--4-12">
-        <a href="<?php the_field('especialidades__link'); ?>" class="especialidades__link">
-            <button class="button button--line button--round">
-                <?php the_field('especialidades__link-text'); ?>
-            </button>
+        <a href="<?php the_field('especialidades__link'); ?>" class="especialidades__link button button--line button--round">
+            <?php the_field('especialidades__link-text'); ?>
         </a>
     </div>
 </section>

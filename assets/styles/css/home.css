@@ -489,7 +489,6 @@ a {
   .header {
     font-size: 14px;
     line-height: 21px;
-    padding-top: 34px;
     transition: box-shadow 0.8s;
   }
   .header--sticky {
@@ -715,6 +714,7 @@ a {
 }
 
 .login-menu {
+  display: none;
   width: 100%;
   padding: 24px 0;
   font-family: "Vinila", sans-serif;
@@ -747,11 +747,6 @@ a {
   padding-bottom: 0;
   position: absolute;
   z-index: 1;
-}
-@media screen and (min-width: 1024px) {
-  .login-menu--desktop {
-    display: grid;
-  }
 }
 .login-menu--desktop__wrapper {
   display: flex;
@@ -795,6 +790,14 @@ a {
 .glide__bullets {
   bottom: -25px;
 }
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+.glide__bullet--active, .glide__bullet:hover, .glide__bullet:focus {
+  background-color: #F5F5F6;
+  border: none;
+}
 .glide__arrow {
   display: none;
 }
@@ -803,6 +806,10 @@ a {
     display: block;
   }
 }
+.glide__arrow:hover {
+  border: 1px solid;
+}
+
 .tabnav {
   border-bottom: 3px solid #CCCCCC;
 }

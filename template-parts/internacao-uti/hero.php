@@ -25,5 +25,9 @@
         </div>
         <h2 class="hero__title"><?php the_field('hero__title'); ?></h2>
         <p class="hero__content"><?php the_field('hero__content'); ?></p>
+        
+        <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--line button--round">
+            <?php the_field('hero__button-text'); ?>
+        </a>
     </div>
 </section>

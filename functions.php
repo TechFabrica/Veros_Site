@@ -71,12 +71,16 @@ function veros_register_scripts(){
         wp_enqueue_script('veros-pet-types', get_template_directory_uri() . '/scripts/pet-types.js', array(), $version, true);
         wp_enqueue_script('veros-tabnav', get_template_directory_uri() . '/scripts/tabnav.js', array(), $version, true);
         wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . '/scripts/glide/glide.js', array(), '3.6.0', true);
-        wp_enqueue_script('veros-glide', get_template_directory_uri() . '/scripts/home__glide.js', array('veros-glide-cdn'), $version, true);
+        wp_enqueue_script('veros-home-glide', get_template_directory_uri() . '/scripts/home__glide.js', array('veros-glide-cdn'), $version, true);
     }
     if (is_page_template('especialidades.php')){
         wp_enqueue_script('veros-tabnav-cards', get_template_directory_uri() . '/scripts/tabnav-cards.js', array(), $version, true);
     }
-
+    if (is_page_template('internacao-uti.php')){
+        wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . '/scripts/glide/glide.js', array(), '3.6.0', true);
+        wp_enqueue_script('veros-internacao-uti-glide', get_template_directory_uri() . '/scripts/internacao-uti__glide.js', array('veros-glide-cdn'), $version, true);
+    }
+    
 }
 
 add_action('wp_enqueue_scripts', 'veros_register_scripts');
