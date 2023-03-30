@@ -28,8 +28,22 @@
         <h2 class="hero__title"><?php the_field('hero__title'); ?></h2>
         <p class="hero__content"><?php the_field('hero__content'); ?></p>
         
-        <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--line button--round">
-            <?php the_field('hero__button-text'); ?>
-        </a>
+        <div class="hero__buttons-container">
+            <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--line button--round">
+                <?php the_field('hero__button-text'); ?>
+            </a>
+            <a class="hero__phone-title" href="<?php the_field('hero__phone-link'); ?>" target="_blank">
+                <p><?php the_field('hero__phone-title'); ?></p>
+                <div class="hero__phone-link">
+                    <?php 
+                        $icon = get_field('hero__phone-icon');
+                        if( !empty( $icon ) ):
+                            ?>
+                    <img class="hero__phone-icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                    <?php endif; ?>
+                    <p class="hero__phone-link-text"><?php the_field('hero__phone-link-text'); ?></p>
+                </div>
+            </a>
+        </div>
     </div>
 </section>

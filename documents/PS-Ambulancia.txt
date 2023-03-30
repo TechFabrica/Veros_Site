@@ -1,0 +1,38 @@
+--- PS e Ambulância ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __button
+
+main
+    __banner
+    __wrapper
+    __title
+    __container
+    __content
+    __imgs-container
+    __img
+    __glide-arrow
+
+como-funciona
+    __top-container
+    __title-container
+    __sect-title
+    __title
+    __hexa-dog
+    __bottom-container
+    __step
+    __step-index
+    __step-title
+    __step-content
+    __button-container
+    __button

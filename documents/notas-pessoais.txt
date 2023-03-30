@@ -1,3 +1,13 @@
 REFATORAÇÃO
 
 REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
+
+
+PÁGINAS PRONTAS (COM URLs):
+
+Home: http://hml01.veros.vet/
+Somos Veros: http://hml01.veros.vet/somos-veros/
+Serviços: http://hml01.veros.vet/servicos/
+Especialidades: http://hml01.veros.vet/especialidades/
+Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+Cirurgias: http://hml01.veros.vet/cirurgias/
