@@ -890,7 +890,7 @@ a {
   }
 }
 .glide__arrow:hover {
-  border: 1px solid;
+  border: 1px solid #FFFFFF;
 }
 
 .tabnav {
@@ -1001,7 +1001,7 @@ a {
 }
 
 .contact {
-  background-color: #EBF0EC;
+  background-color: #F5F5F6;
 }
 .contact__banner {
   min-width: 100%;
@@ -1097,14 +1097,20 @@ a {
 }
 .contact__card {
   display: flex;
+  flex-direction: column;
   padding: 16px 24px;
   background-color: #F5F5F6;
+}
+@media screen and (min-width: 1024px) {
+  .contact__card {
+    flex-direction: row;
+  }
 }
 .contact__card-icon {
   display: inline-block;
   width: 24px;
   max-height: 24px;
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
 }
 .contact__card-content {
   color: rgba(0, 0, 0, 0.6980392157);

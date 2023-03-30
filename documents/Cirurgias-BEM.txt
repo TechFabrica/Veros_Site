@@ -1,0 +1,39 @@
+--- Internação e UTI ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __button
+
+
+cards-section
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __glide-arrow
+
+
+main
+    __left-wrapper-1
+    __graphic
+        --mobile
+        --desktop
+    __title
+    __subtitle
+    __link
+    __left-wrapper-2
+    __banner
+        --desktop
+    __right-wrapper
+    __content-title
+    __content

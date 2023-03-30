@@ -1,0 +1,98 @@
+@use "../_library/library";
+
+.main{
+    position: relative;
+    
+    &__left-wrapper-1{
+        grid-row: 1/2;
+        background-color: library.get-color("primary", "light-purple");
+        color: library.get-color("type", "emphasis-high-inverse");
+        padding: 80px 24px 80px;
+        @media screen and (min-width: library.$breakpoint-1) {    
+            padding: 80px calc(library.$desktop-column-gap / 2) 80px 100px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            padding: 80px calc(library.$desktop-column-gap / 2) 80px 124px;
+        }
+        @media screen and (min-width: library.$breakpoint-3) {
+            padding: 80px calc(library.$desktop-column-gap / 2) 80px 240px;
+        }
+    }
+    &__graphic{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__title{
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium-inverse");
+        margin: 16px 0;
+        @include library.body--16;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--18;
+        }
+    }
+    &__link{
+        @include library.body--16;
+    }
+    &__left-wrapper-2{
+        z-index: 1;
+        grid-row: 2/3;
+    }
+    &__banner{
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        
+        &--desktop{
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: none;
+
+            &--desktop{
+                display: block;
+            }
+        }
+    }
+    &__right-wrapper{
+        grid-row: 1/3;
+        background-color: library.get-color("type", "emphasis-high-inverse");
+        padding: 16px 24px 40px;
+        @media screen and (min-width: library.$breakpoint-1) {    
+            padding: 64px 80px 64px 48px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            padding: 64px 124px 64px 48px;
+        }
+        @media screen and (min-width: library.$breakpoint-3) {
+            padding: 64px 240px 64px 48px;
+        }
+    }
+    &__content-title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--18;
+        padding: 48px 0 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding: 0 0 8px;
+        }
+    }
+    &__content{
+        padding-top: 24px;
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
+    }
+}

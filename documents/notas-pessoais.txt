@@ -1,6 +1,3 @@
-ADICIONAR CLASSES NOS LINKS DOS MENUS
+REFATORAÇÃO
 
-[22:42, 13/03/2023] Nix: https://webdesign.tutsplus.com/tutorials/quick-tip-bem-naming-and-wordpress-filters-for-navigation--cms-31268
-
-
-quem atendemos da home: como vai transicionar
+REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE

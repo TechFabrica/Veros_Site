@@ -3,25 +3,22 @@
 .glide{
     display: flex;
     justify-content: center;
-    width: 328px;
 
     &__track{
-        width: 328px;
-        overflow: hidden;
+        width: 100%;
+        // overflow: visible; COMMENTED TO AVOID CHROME DEVELOPER'S TOOLS BUG. REMOVE AT THE END!!
+        @media screen and (min-width: library.$breakpoint-1) {
+            overflow: hidden;
+        }
     }
     &__slides{
         
     }
     &__slide{
         
-        &--active{
-        }
     }
     &__bullets{
-        bottom: -25px;
-        @media screen and (min-width: library.$breakpoint-1) {
-            bottom: -45px;
-        }
+        bottom: -41px;
     }
     &__bullet{
         background-color: library.get-color("neutral", "20");
@@ -34,24 +31,25 @@
     }
     &__arrows{
         position: absolute;
-        bottom: -40px;
+        top: -70px;
+        right: 70px;
     }
     &__arrow{
         display: none;
-        
+
         @media screen and (min-width: library.$breakpoint-1) {
             display: flex;
             color: library.get-color("primary", "offwhite");
             background-color: library.get-color("neutral", "20");
-            padding: 19px 21px;
+            padding: 19px;
             border-radius: 48px;
         }
 
         &--left{
-            left: 70px;
+            left: 8px;
         }
         &--right{
-            right: 70px;
+            right: 8px;
         }
 
         &:hover{

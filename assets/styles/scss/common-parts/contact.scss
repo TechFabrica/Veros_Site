@@ -1,7 +1,7 @@
 @use "../_library/library";
 
 .contact {
-    background-color: library.get-color("primary", "offwhite");
+    background-color: library.get-color("background", "light");
 
     &__left-wrapper{
 
@@ -95,15 +95,19 @@
     
     &__card{
         display: flex;
+        flex-direction: column;
         padding: 16px 24px;
         background-color: library.get-color('background', 'light');
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+        }
     }
     
     &__card-icon{
         display: inline-block;
         width: 24px;
         max-height: 24px;
-        margin-right: 8px;
+        margin: 0 8px 8px 0;
     }
     
     &__card-content{
