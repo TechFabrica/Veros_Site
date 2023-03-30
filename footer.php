@@ -24,7 +24,7 @@
             
             <address class="footer__addresses">
                 <div class="footer__menu-item footer__adresses-menu-item">
-                    <a href="#">Contato</a>
+                    <a href="http://localhost/veros_wordpress/contato/">Contato</a>
                 </div>
                 
                 <?php
