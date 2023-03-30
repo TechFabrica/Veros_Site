@@ -11,7 +11,12 @@ hero
     __current-page
     __title
     __content
+    __buttons-container
     __button
+    __phone-title
+    __phone-link
+    __phone-icon
+    __phone-link-text
 
 main
     __banner
