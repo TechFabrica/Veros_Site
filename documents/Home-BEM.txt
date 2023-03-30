@@ -9,11 +9,14 @@ login-menu--mobile
 
 
 header
+    --sticky
     __wrapper
     __logo-container
-    __open-menu-button
+    __menu-button
+    __menu-icon
+    __menu-icon-span
     __nav
-        --hidden
+    __nav-container
     __menu-container
     __menu
     __menu-item
@@ -23,6 +26,8 @@ header
     __search
     __cta-phone
     __cta-wpp
+
+fake-header
 
 
 hero
