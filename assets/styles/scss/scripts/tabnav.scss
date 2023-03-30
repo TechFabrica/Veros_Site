@@ -14,7 +14,7 @@
 
     &__pane{
         overflow: hidden;
-        transition: opacity .8s;
+        transition: all 3s;
 
         &--hidden{
             opacity: 0;
@@ -23,7 +23,7 @@
     }
     
     &__card-pane{
-        transition: opacity .3s;
+        transition: opacity 1.5s;
 
         &--hidden{
             opacity: 0;

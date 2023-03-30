@@ -94,13 +94,16 @@
     }
     
     &__card{
-
+        display: flex;
+        padding: 16px 24px;
+        background-color: library.get-color('background', 'light');
     }
     
     &__card-icon{
         display: inline-block;
         width: 24px;
         max-height: 24px;
+        margin-right: 8px;
     }
     
     &__card-content{

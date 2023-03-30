@@ -31,6 +31,14 @@
         &[open] .faq__arrow-up{
             display: inline;
         }
+        &[open] .faq__question ~ *{
+            animation: sweep .5s ease-in-out;
+        }
+    }
+    
+    @keyframes sweep {
+        0%    {opacity: 0; margin-left: -10px}
+        100%  {opacity: 1; margin-left: 0px}
     }
     
     &__question{
@@ -40,6 +48,7 @@
         display: flex;
         justify-content: space-between;
     }
+
 
     &__arrow-down{
         display: inline;

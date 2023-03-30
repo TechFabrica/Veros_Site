@@ -37,7 +37,7 @@
             $hero_data = get_field('hero__card');
             foreach($hero_data as $item):
         ?>
-        <a class="hero__card card grid__item--4-2" href="<?php echo $item['hero__card-link'] ?>">
+        <a class="hero__card card card--hover grid__item--4-2" href="<?php echo $item['hero__card-link'] ?>" target="_blank">
             <?php 
                 $icon = $item['hero__card-icon'];
                 if( !empty( $icon ) ):

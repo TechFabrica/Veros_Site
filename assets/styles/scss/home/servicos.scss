@@ -35,13 +35,5 @@
         @media screen and (min-width: library.$breakpoint-2) {
             height: 190px;
         }
-
-        &:hover{
-            background-color: library.get-color("primary", "light-purple");
-
-            & .card__content{
-                color: library.get-color("background", "light");
-            }
-        }
     }
 }

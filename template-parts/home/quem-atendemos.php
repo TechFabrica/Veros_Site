@@ -37,7 +37,7 @@
             <?php
                 endforeach;
             ?>
-            <a href="<?php the_field('quem-atendemos__link'); ?>" class="quem-atendemos__button button button--line button--round">
+            <a href="<?php the_field('quem-atendemos__link'); ?>" class="quem-atendemos__button button button--line button--round" target="_blank">
                 <?php the_field('quem-atendemos__link-text'); ?>
             </a>
             </div>

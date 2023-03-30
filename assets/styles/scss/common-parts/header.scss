@@ -46,6 +46,7 @@
         opacity: 0;
 
         &:checked ~ .header__nav{
+            transition: top 1s;
             top: 89px !important;
         }
         &:checked + .header__menu-icon > span {
@@ -101,9 +102,10 @@
         margin-left: -24px;
         width: 100vw;
         height: 100vh;
-        z-index: 1;
+        z-index: 2;
         position: absolute;
-        top: -200vh;
+        top: -120vh;
+        transition: top 1s;
         
         background-color: library.get-color("neutral", "0");
         @media screen and (min-width: library.$breakpoint-1) {
@@ -139,13 +141,14 @@
         
         @media screen and (min-width: library.$breakpoint-1) {
             width: auto;
+            margin-left: 0;
         }
     }
     
     &__menu{
         display: flex;
         flex-direction: column;
-        padding: 24px 0;
+        padding: 24px 0 24px 24px;
         
         @media screen and (min-width: library.$breakpoint-1) {
             flex-direction: row;
@@ -159,19 +162,24 @@
     &__menu-item{
         display: inline-block;
         position: relative;
-        min-height: 48px;
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 0 8px;
+            flex-direction: row;
+            padding: 16px 0;
+        }
         
         & a{
+            width: 100%;
             display: inline-block;
-            padding: 16px 16px 16px 24px;
             @media screen and (min-width: library.$breakpoint-1) {
-                width: 100%;
-                padding: 16px 8px;
                 text-align: center;
             }
             @media screen and (min-width: library.$breakpoint-2) {
                 min-width: max-content;
-                padding: 16px;
             }
         }
 
@@ -185,11 +193,12 @@
     &__submenu{
         display: block;
         width: max-content;
+        margin-top: 16px;
         @media screen and (min-width: library.$breakpoint-1) {
             display: none;
             position: absolute;
-            top: 50px;
-            left: 16px;
+            top: 32px;
+            left: 0;
             z-index: 2;
         }
     }
@@ -209,7 +218,7 @@
         & a{
             width: 100%;
             text-align: left;
-            padding: 12px 0 12px 24px;
+            padding: 12px 0;
             @media screen and (min-width: library.$breakpoint-1){
                 padding: 14px 16px;
             }
@@ -242,11 +251,11 @@
     
     &__search{
         color: library.get-color("type", "emphasis-medium");
-        // display: flex;
         width: 100%;
-        padding: 16px 16px 16px 24px;
+        margin: 16px 16px 16px 24px;
+        padding: 0;
         @media screen and (min-width: library.$breakpoint-1) {
-            padding: 16px;
+            margin: 16px;
         }
     }
 
@@ -255,12 +264,13 @@
         // display: flex;
         width: 100%;
         min-width: fit-content;
-        padding: 16px 16px 16px 24px;
+        margin: 16px 16px 16px 24px;
+        padding: 0;
         @media screen and (min-width: library.$breakpoint-1) {
-            padding: 16px;
+            margin: 16px;
         }
         @media screen and (min-width: library.$breakpoint-2) {
-            padding: 16px 0 16px 16px;
+            margin: 16px 0 16px 16px;
         }
     }
 

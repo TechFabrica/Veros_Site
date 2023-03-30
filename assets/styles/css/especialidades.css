@@ -217,6 +217,15 @@ a {
     padding: 24px;
   }
 }
+.card--hover:hover {
+  background-color: #7758D9;
+}
+.card--hover:hover .card__content {
+  color: #F5F5F6;
+}
+.card--hover:hover .card__icon {
+  filter: brightness(0) invert(1);
+}
 .card__icon {
   width: 56px;
   height: 47px;
@@ -357,6 +366,7 @@ a {
   opacity: 0;
 }
 .header__menu-button:checked ~ .header__nav {
+  transition: top 1s;
   top: 89px !important;
 }
 .header__menu-button:checked + .header__menu-icon > span {
@@ -410,9 +420,10 @@ a {
   margin-left: -24px;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
-  top: -200vh;
+  top: -120vh;
+  transition: top 1s;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
@@ -450,12 +461,13 @@ a {
 @media screen and (min-width: 1024px) {
   .header__menu-container {
     width: auto;
+    margin-left: 0;
   }
 }
 .header__menu {
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
+  padding: 24px 0 24px 24px;
 }
 @media screen and (min-width: 1024px) {
   .header__menu {
@@ -469,23 +481,30 @@ a {
 .header__menu-item {
   display: inline-block;
   position: relative;
-  min-height: 48px;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu-item {
+    margin: 0 8px;
+    flex-direction: row;
+    padding: 16px 0;
+  }
 }
 .header__menu-item a {
+  width: 100%;
   display: inline-block;
-  padding: 16px 16px 16px 24px;
 }
 @media screen and (min-width: 1024px) {
   .header__menu-item a {
-    width: 100%;
-    padding: 16px 8px;
     text-align: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__menu-item a {
     min-width: max-content;
-    padding: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -496,13 +515,14 @@ a {
 .header__submenu {
   display: block;
   width: max-content;
+  margin-top: 16px;
 }
 @media screen and (min-width: 1024px) {
   .header__submenu {
     display: none;
     position: absolute;
-    top: 50px;
-    left: 16px;
+    top: 32px;
+    left: 0;
     z-index: 2;
   }
 }
@@ -524,7 +544,7 @@ a {
 .header__submenu-item a {
   width: 100%;
   text-align: left;
-  padding: 12px 0 12px 24px;
+  padding: 12px 0;
 }
 @media screen and (min-width: 1024px) {
   .header__submenu-item a {
@@ -557,27 +577,29 @@ a {
 .header__search {
   color: rgba(0, 0, 0, 0.6980392157);
   width: 100%;
-  padding: 16px 16px 16px 24px;
+  margin: 16px 16px 16px 24px;
+  padding: 0;
 }
 @media screen and (min-width: 1024px) {
   .header__search {
-    padding: 16px;
+    margin: 16px;
   }
 }
 .header__cta-phone {
   color: #7758D9;
   width: 100%;
   min-width: fit-content;
-  padding: 16px 16px 16px 24px;
+  margin: 16px 16px 16px 24px;
+  padding: 0;
 }
 @media screen and (min-width: 1024px) {
   .header__cta-phone {
-    padding: 16px;
+    margin: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__cta-phone {
-    padding: 16px 0 16px 16px;
+    margin: 16px 0 16px 16px;
   }
 }
 .header__cta-wpp {
@@ -660,6 +682,7 @@ a {
 .footer__menu-item {
   display: inline-block;
   position: relative;
+  margin: 16px 0;
   width: 100%;
   min-height: 48px;
   color: #0C093C;
@@ -671,6 +694,7 @@ a {
   .footer__menu-item {
     width: auto;
     border: none;
+    margin: 0 8px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -680,17 +704,17 @@ a {
   }
 }
 .footer__menu-item a {
-  display: inline-block;
   width: 100%;
-  padding: 16px 0;
-}
-@media screen and (min-width: 1024px) {
-  .footer__menu-item a {
-    padding: 16px;
-  }
+  display: inline-block;
 }
 .footer__submenu {
   padding-bottom: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__submenu {
+    margin-top: 16px;
+    padding-bottom: 0;
+  }
 }
 .footer__submenu-item {
   display: flex;
@@ -704,7 +728,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .footer__submenu-item a {
-    padding: 8px 16px;
+    padding: 8px 0;
   }
 }
 .footer__addresses {
@@ -831,14 +855,14 @@ a {
 }
 .tabnav__pane {
   overflow: hidden;
-  transition: opacity 0.8s;
+  transition: all 3s;
 }
 .tabnav__pane--hidden {
   opacity: 0;
   height: 0;
 }
 .tabnav__card-pane {
-  transition: opacity 0.3s;
+  transition: opacity 1.5s;
 }
 .tabnav__card-pane--hidden {
   opacity: 0;
@@ -942,10 +966,16 @@ a {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 16px;
 }
+.contact__card {
+  display: flex;
+  padding: 16px 24px;
+  background-color: #F5F5F6;
+}
 .contact__card-icon {
   display: inline-block;
   width: 24px;
   max-height: 24px;
+  margin-right: 8px;
 }
 .contact__card-content {
   color: rgba(0, 0, 0, 0.6980392157);

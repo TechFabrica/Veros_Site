@@ -13,6 +13,18 @@
         padding: 24px;
     }
 
+    &--hover:hover{
+        background-color: library.get-color("primary", "light-purple");
+        
+        & .card__content{
+            color: library.get-color("background", "light");
+        }
+        & .card__icon{
+            filter: brightness(0) invert(1);
+            // filter: invert(77%) sepia(90%) saturate(2%) hue-rotate(200deg) brightness(105%) contrast(100%);
+        }
+    }
+
     &--click{
 
     }

@@ -10,7 +10,7 @@
         $servicos_data = get_field('servicos__card');
         foreach($servicos_data as $item):
     ?>
-    <a class="servicos__card card grid__item--4-4" href="<?php echo $item['servicos__card-link'] ?>">
+    <a class="servicos__card card card--hover grid__item--4-4" href="<?php echo $item['servicos__card-link'] ?>">
         <?php 
             $icon = $item['servicos__card-icon'];
             if( !empty( $icon ) ):

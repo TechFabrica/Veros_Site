@@ -113,13 +113,5 @@
             height: 160px;
             transform: translateY(-80px);
         }
-
-        &:hover{
-            background-color: library.get-color("primary", "light-purple");
-
-            & .card__content{
-                color: library.get-color("background", "light");
-            }
-        }
     }
 }
