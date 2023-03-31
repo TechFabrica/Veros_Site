@@ -7,19 +7,22 @@ ALJUSTES
         AJUSTAR CORES
         ADICIONAR CAMPO DE VISUALIZAÇÃO OU NÃO NO ACF
 
-    SVG    
+    SVG (PATTERN AMARELO)   
         PEDIR PARA A FABÍOLA O QUE ESTÁ BUGADO
         ALTERAR PARA TRANSFORM A VARIAÇÃO MOBILE/DESKTOP
     
+
 ---------------------------------------------------------------------------------------
+
 
 REFATORAÇÃO
 
     REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
 
+
 ---------------------------------------------------------------------------------------
 
-PÁGINAS PRONTAS (COM URLs):
+PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
 
     Home: http://hml01.veros.vet/
     Somos Veros: http://hml01.veros.vet/somos-veros/
