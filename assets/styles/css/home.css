@@ -924,6 +924,9 @@ a {
 .faq {
   background-color: #F5F5F6;
 }
+.faq--hidden {
+  display: none;
+}
 .faq__title {
   text-align: center;
   color: #0C093C;
@@ -1661,8 +1664,7 @@ a {
 }
 .quem-atendemos__checklist-item {
   display: inline-block;
-  margin-top: 16px;
-  margin-right: 27px;
+  margin: 16px 24px 0 0;
 }
 .quem-atendemos__button {
   max-width: max-content;

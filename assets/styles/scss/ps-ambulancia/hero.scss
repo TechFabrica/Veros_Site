@@ -78,13 +78,44 @@
             @include library.body--18;
         }
     }
-    
-    &__button{
-        max-width: fit-content;
+
+    &__buttons-container{
+        display: flex;
         margin-top: 16px;
-        padding: 17px 24px;
         @media screen and (min-width: library.$breakpoint-2){
             margin-top: 24px;
         }
+    }
+    
+    &__button{
+        max-width: fit-content;
+        margin-right: 40px;
+        padding: 17px 24px;
+        @media screen and (min-width: library.$breakpoint-2){
+            margin-right: 48px;
+        }
+    }
+
+    &__phone-title{
+        color: library.get-color("type", "emphasis-high");
+        @include library.caption--12;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    &__phone-icon{
+        margin-right: 8px;
+    }
+    
+    &__phone-link{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--14;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+    }
+    
+    &__phone-link-text{
+        
     }
 }

@@ -28,8 +28,13 @@
         <h2 class="hero__title"><?php the_field('hero__title'); ?></h2>
         <p class="hero__content"><?php the_field('hero__content'); ?></p>
         
-        <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--line button--round">
-            <?php the_field('hero__button-text'); ?>
-        </a>
+        <div class="hero__buttons-container">
+            <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--primary button--round">
+                <?php the_field('hero__button-text'); ?>
+            </a>
+            <a href="<?php the_field('hero__button-link--line'); ?>" class="hero__button button button--line button--round">
+                <?php the_field('hero__button-text--line'); ?>
+            </a>
+        </div>
     </div>
 </section>

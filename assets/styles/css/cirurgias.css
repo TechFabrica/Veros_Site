@@ -896,6 +896,9 @@ a {
 .faq {
   background-color: #F5F5F6;
 }
+.faq--hidden {
+  display: none;
+}
 .faq__title {
   text-align: center;
   color: #0C093C;
@@ -1258,6 +1261,7 @@ a {
 .hero__button {
   max-width: fit-content;
   margin-top: 16px;
+  padding: 17px 24px;
 }
 @media screen and (min-width: 1280px) {
   .hero__button {

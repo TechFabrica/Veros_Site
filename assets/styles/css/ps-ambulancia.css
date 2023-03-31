@@ -1259,17 +1259,43 @@ a {
     line-height: 27px;
   }
 }
+.hero__buttons-container {
+  display: flex;
+  margin-top: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__buttons-container {
+    margin-top: 24px;
+  }
+}
 .hero__button {
   max-width: fit-content;
-  margin-top: 16px;
+  margin-right: 40px;
   padding: 17px 24px;
 }
 @media screen and (min-width: 1280px) {
   .hero__button {
-    margin-top: 24px;
+    margin-right: 48px;
   }
 }
-
+.hero__phone-title {
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  min-width: 0;
+  min-height: 0;
+}
+.hero__phone-icon {
+  margin-right: 8px;
+}
+.hero__phone-link {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
 .main {
   background-color: #F5F5F6;
   display: flex;

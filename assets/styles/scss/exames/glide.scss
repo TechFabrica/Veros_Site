@@ -1,0 +1,60 @@
+@use "../_library/library";
+
+.glide{
+    display: flex;
+    justify-content: center;
+
+    &__track{
+        width: 100%;
+        padding-bottom: 41px;
+        // overflow: visible; COMMENTED TO AVOID CHROME DEVELOPER'S TOOLS BUG. REMOVE AT THE END!!
+        @media screen and (min-width: library.$breakpoint-1) {
+            overflow: hidden;
+        }
+    }
+    &__slides{
+        
+    }
+    &__slide{
+        
+    }
+    &__bullets{
+        bottom: 0
+    }
+    &__bullet{
+        background-color: library.get-color("neutral", "20");
+        border: none;
+        
+        &--active, &:hover, &:focus{
+            background-color: library.get-color("background", "dark");
+            border: none;
+        }
+    }
+    &__arrows{
+        position: absolute;
+        top: -70px;
+        right: 85px;
+    }
+    &__arrow{
+        display: none;
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: flex;
+            color: library.get-color("primary", "offwhite");
+            background-color: library.get-color("neutral", "20");
+            padding: 19px;
+            border-radius: 48px;
+        }
+
+        &--left{
+            left: 8px;
+        }
+        &--right{
+            right: 8px;
+        }
+
+        &:hover{
+            border: 1px solid library.get-color("neutral", "0");
+        }
+    }
+}

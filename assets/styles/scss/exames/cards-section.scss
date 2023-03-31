@@ -1,0 +1,81 @@
+@use "../_library/library";
+
+.cards-section{
+    background-color: library.get-color("background", "light");
+    color: library.get-color("primary", "dark-purple");
+    padding-bottom: 122px;
+    row-gap: 0;
+    
+    &__title{
+        @include library.heading--28;
+    }
+    
+    &__subtitle{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+        margin: 8px 0 40px;
+    }
+
+    &__tabnav{
+        display: flex;
+        @include library.button--14--light;
+        margin-bottom: 32px;
+    }
+
+    &__tabnav-item{
+        color: library.get-color("primary", "dark-purple");
+        font-weight: 700;
+        padding: 12px 28px;
+        @media screen and (min-width: library.$breakpoint-0) {
+            padding: 12px 32px;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding: 16px 40px;
+        }
+    }
+
+    &__content-pane{
+        @media screen and (min-width: library.$breakpoint-1){
+            padding-left: 16px;
+        }
+    }
+
+    &__pane-title{
+        margin-top: 40px;
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--18;
+        
+        @media screen and (min-width: library.$breakpoint-1){
+            margin-top: 0;
+        }
+    }
+    
+    &__pane-content{
+        color: library.get-color("type", "emphasis-medium");
+        margin-bottom: 16px;
+        @include library.body--16;
+    }
+    
+    &__card{
+        background-color: library.get-color("type", "emphasis-high-inverse");
+        @include library.body--16;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 242px;
+        padding: 24px;
+        border: 1px solid library.get-color("outline", "dark");
+        border-radius: 4px;
+    }
+
+    &__card-title{
+        @include library.body--18;
+    }
+    
+    &__card-content{
+        margin: 8px 0 0;
+    }
+
+    &__glide-arrow{
+        padding: 16px 21px;
+    }
+}

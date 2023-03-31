@@ -1,0 +1,48 @@
+--- Consultas ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __button
+
+
+main
+    __content-container
+    __banner
+    __title
+    __content
+    __checklist
+    __checklist-item
+    __button
+
+
+cards-section
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __glide-arrow
+
+
+como-funciona
+    __top-container
+    __title-container
+    __sect-title
+    __title
+    __hexa-dog
+    __bottom-container
+    __step
+    __step-index
+    __step-title
+    __step-content
+    __button-container
+    __button
