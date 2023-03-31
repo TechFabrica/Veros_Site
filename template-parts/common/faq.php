@@ -1,4 +1,11 @@
-<section class="faq grid__container">
+<?php
+    $class = '';
+    if( get_field('faq--hidden') == 1 ){
+        $class = 'faq--hidden';
+    }
+?>
+
+<section class="faq grid__container <?php echo $class; ?>">
     <h2 class="faq__title grid__item--4-12"><?php the_field('faq__title'); ?></h2>
     <p class="faq__subtitle grid__item--4-12"><?php the_field('faq__subtitle'); ?></p>
     <?php

@@ -3,6 +3,10 @@
 .faq{
     background-color: library.get-color("background", "light");
 
+    &--hidden{
+        display: none;
+    }
+
     &__title{
         text-align: center;
         color: library.get-color("primary", "dark-purple");
