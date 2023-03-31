@@ -1,0 +1,43 @@
+--- Exames ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __buttons-container
+    __button
+
+cards-section
+    __title
+    __subtitle
+    __tabnav
+    __tabnav-item
+    __content-pane
+    __pane-title
+    __pane-content
+    __card
+    __card-title
+    __card-content
+    __glide-arrow
+
+
+big-card
+    wrapper
+    banner
+        --desktop
+    card
+    card-text-container
+    card-title
+    card-content
+    card-checklist-container
+    card-checklist-title
+    card-checklist-item
+    card-buttons-container
+    card-button

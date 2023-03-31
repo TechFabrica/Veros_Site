@@ -78,6 +78,10 @@
             @include library.body--18;
         }
     }
+
+    &__buttons-container{
+        display: flex;
+    }
     
     &__button{
         max-width: fit-content;
@@ -86,6 +90,10 @@
 
         @media screen and (min-width: library.$breakpoint-2){
             margin-top: 24px;
+        }
+
+        &:last-child{
+            margin-left: 16px;
         }
     }
 }

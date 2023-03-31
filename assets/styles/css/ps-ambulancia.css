@@ -1268,6 +1268,7 @@ a {
 .hero__button {
   max-width: fit-content;
   margin-right: 40px;
+  padding: 17px 24px;
 }
 @media screen and (min-width: 1280px) {
   .hero__button {

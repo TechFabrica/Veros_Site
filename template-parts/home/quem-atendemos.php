@@ -15,10 +15,12 @@
 
     <?php
         foreach($content_data as $item):
-        $image = $item['quem-atendemos__content-img'];
-        if( !empty( $image ) ):
     ?>
     <div class="quem-atendemos__tabnav-pane tabnav__pane grid__item--4-12 grid__container grid__container--no-padding">
+        <?php
+            $image = $item['quem-atendemos__content-img'];
+            if( !empty( $image ) ):
+        ?>
         <img class="quem-atendemos__content-img grid__item--4-6" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
         <?php endif; ?>
         <div class="quem-atendemos__content-pane grid__item--4-6">

@@ -39,7 +39,7 @@ function veros_register_styles(){
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('veros-normalize', get_template_directory_uri() . '/assets/styles/css/normalize.css', array(), $version);
     
-    if (is_front_page() || is_page_template('internacao-uti.php') || is_page_template('cirurgias.php') || is_page_template('ps-ambulancia.php') || is_page_template('consultas.php')){
+    if (is_front_page() || is_page_template('internacao-uti.php') || is_page_template('cirurgias.php') || is_page_template('ps-ambulancia.php') || is_page_template('consultas.php') || is_page_template('exames.php')){
         wp_enqueue_style('veros-glide-core-style', get_template_directory_uri() . '/assets/styles/css/glide/glide.core.css', array('veros-normalize'), $version);
         wp_enqueue_style('veros-glide-theme-style', get_template_directory_uri() . '/assets/styles/css/glide/glide.theme.css', array('veros-normalize'), $version);
     }
@@ -68,6 +68,9 @@ function veros_register_styles(){
     if (is_page_template('consultas.php')){
         wp_enqueue_style('veros-consultas', get_template_directory_uri() . '/assets/styles/css/consultas.css', array('veros-normalize', 'veros-glide-core-style', 'veros-glide-theme-style'), $version);    
     }
+    if (is_page_template('exames.php')){
+        wp_enqueue_style('veros-exames', get_template_directory_uri() . '/assets/styles/css/exames.css', array('veros-normalize', 'veros-glide-core-style', 'veros-glide-theme-style'), $version);    
+    }
 
 }
 
@@ -79,7 +82,7 @@ function veros_register_scripts(){
     wp_enqueue_script('veros-header', get_template_directory_uri() . '/scripts/header.js', array(), $version, true);
     // wp_enqueue_script('veros-rd-station-newsletter', 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/d19a3880-2941-468f-ade5-fff01b355b4e-loader.js', array());
     
-    if (is_front_page() || is_page_template('internacao-uti.php') || is_page_template('cirurgias.php') || is_page_template('ps-ambulancia.php') || is_page_template('consultas.php')){
+    if (is_front_page() || is_page_template('internacao-uti.php') || is_page_template('cirurgias.php') || is_page_template('ps-ambulancia.php') || is_page_template('consultas.php') || is_page_template('exames.php')){
         wp_enqueue_script('veros-glide-cdn', get_template_directory_uri() . '/scripts/glide/glide.js', array(), '3.6.0', true);
     }
     
@@ -102,6 +105,10 @@ function veros_register_scripts(){
     }
     if (is_page_template('consultas.php')){
         wp_enqueue_script('veros-consultas-glide', get_template_directory_uri() . '/scripts/consultas__glide.js', array('veros-glide-cdn'), $version, true);
+    }
+    if (is_page_template('exames.php')){
+        wp_enqueue_script('veros-tabnav', get_template_directory_uri() . '/scripts/tabnav.js', array(), $version, true);
+        wp_enqueue_script('veros-exames-glide', get_template_directory_uri() . '/scripts/exames__glide.js', array('veros-glide-cdn'), $version, true);
     }
     
 }

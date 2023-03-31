@@ -90,6 +90,7 @@
     &__button{
         max-width: fit-content;
         margin-right: 40px;
+        padding: 17px 24px;
         @media screen and (min-width: library.$breakpoint-2){
             margin-right: 48px;
         }
