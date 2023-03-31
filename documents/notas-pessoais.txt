@@ -1,13 +1,30 @@
+ALJUSTES
+
+    SERVIÇOS
+        ADICIONAR LINKS NA MAIN
+    
+    FAQ
+        AJUSTAR CORES
+        ADICIONAR CAMPO DE VISUALIZAÇÃO OU NÃO NO ACF
+
+    SVG    
+        PEDIR PARA A FABÍOLA O QUE ESTÁ BUGADO
+        ALTERAR PARA TRANSFORM A VARIAÇÃO MOBILE/DESKTOP
+    
+---------------------------------------------------------------------------------------
+
 REFATORAÇÃO
 
-REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
+    REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
 
+---------------------------------------------------------------------------------------
 
 PÁGINAS PRONTAS (COM URLs):
 
-Home: http://hml01.veros.vet/
-Somos Veros: http://hml01.veros.vet/somos-veros/
-Serviços: http://hml01.veros.vet/servicos/
-Especialidades: http://hml01.veros.vet/especialidades/
-Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
-Cirurgias: http://hml01.veros.vet/cirurgias/
+    Home: http://hml01.veros.vet/
+    Somos Veros: http://hml01.veros.vet/somos-veros/
+    Serviços: http://hml01.veros.vet/servicos/
+    Especialidades: http://hml01.veros.vet/especialidades/
+    Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+    Cirurgias: http://hml01.veros.vet/cirurgias/
+
