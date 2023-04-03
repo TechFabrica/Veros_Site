@@ -1,0 +1,60 @@
+@use "../_library/library";
+
+.social-proof{
+    background-color: library.get-color("primary", "dark-purple");
+    color: library.get-color("primary", "offwhite");
+    
+    &__title{
+        @include library.heading--24;
+        text-align: center;
+        margin-bottom: 28px;
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+        
+        &--emphasis{
+            color: library.get-color("primary", "light-purple");
+        }
+    }
+
+    &__card{
+        @include library.body--16;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 280px;
+        padding: 36px 48px;
+        border: 1px solid library.get-color("outline", "dark");
+        border-radius: 8px;
+    }
+
+    &__card-title{
+        @include library.body--18;
+    }
+    
+    &__card-quote{
+        margin: 16px 0;
+    }
+
+    &__card-author{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__card-img{
+        display: inline-block;
+        max-width: 24px;
+        max-height: 24px;
+        border-radius: 50%;
+    }
+
+    &__card-name{
+        display: inline-block;
+    }
+
+    &__glide-arrow{
+        padding: 16px 21px;
+    }
+}

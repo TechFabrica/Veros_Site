@@ -2,9 +2,6 @@ ALJUSTES
 
     ACF
         PENSAR NA ARQUITETURA DOS CAMPOS PARA BLOCOS COMUNS (FAQ, COMO FUNCIONA, ETC)
-
-    SERVIÇOS
-        ADICIONAR LINKS NA MAIN
     
     FAQ
         AJUSTAR CORES
@@ -12,6 +9,8 @@ ALJUSTES
     SVG (PATTERN AMARELO)   
         PEDIR PARA A FABÍOLA O QUE ESTÁ BUGADO
         ALTERAR PARA TRANSFORM A VARIAÇÃO MOBILE/DESKTOP
+
+    REVER SCSS E JS DUPLICADOS
     
 
 ---------------------------------------------------------------------------------------
@@ -20,6 +19,12 @@ ALJUSTES
 REFATORAÇÃO
 
     REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
+
+    TRATAR TODAS AS IMAGENS
+    
+    ADICIONAR TAMANHOS ÀS IMAGENS PARA REDUZIR CLS
+
+    ADICIONAR MINIFICADOR PARA SASS E JS
 
 
 ---------------------------------------------------------------------------------------

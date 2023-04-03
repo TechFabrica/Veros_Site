@@ -1,0 +1,25 @@
+@use "../_library/library";
+
+.hero{
+    padding-bottom: 0;
+
+    &__path{
+        @include library.caption--12;
+        @media screen and (min-width: library.$breakpoint-1){
+            @include library.body--16;
+        }
+    }
+    
+    &__parent-page{
+        color: library.get-color("type", "emphasis-high");
+    }
+    
+    &__arrow{
+        
+    }
+    
+    &__current-page{
+        color: library.get-color("type", "emphasis-medium");
+        display: inline;
+    }
+}

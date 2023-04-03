@@ -1,0 +1,99 @@
+@use "../_library/library";
+
+.main{
+    background-color: library.get-color("background", "light");
+
+    &__title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+    }
+
+    &__cards-container{
+
+    }
+    
+    &__card{
+        margin: 24px 0 16px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content;
+        border-radius: 4px;
+        &:last-child{
+            margin: 24px 0 0;
+        }
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 24px 0 0;
+        }
+    }
+
+    &__card-img{
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+
+    &__card-content-container{
+        padding: 24px;
+    }
+
+    &__card-title{
+        @include library.heading--24;
+        color: library.get-color("primary", "dark-purple");
+    }
+    
+    &__card-content{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+        margin: 8px 0 0;
+    }
+
+    &__checklist{
+        margin: 36px 0 0;
+    }
+
+    &__checklist-item{
+        display: inline-block;
+        margin-right: 24px;
+        margin-bottom: 16px;
+    }
+
+    &__big-number{
+        display: flex;
+        align-items: center;
+        margin: 36px 0 16px;
+    }
+
+    &__big-number-icon-container{
+
+    }
+
+    &__big-number-icon{
+
+    }
+
+    &__big-number-content{
+        @include library.heading--18;
+        display: inline-block;
+        margin-left: 24px;
+    }
+
+    &__button{
+        text-align: center;
+        height: max-content;
+        margin: 0 24px 24px;
+        padding: 16px 24px;
+        align-self: flex-end;
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: max-content;
+        }
+    }
+}

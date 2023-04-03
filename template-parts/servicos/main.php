@@ -13,11 +13,13 @@
                 if( !empty( $thumbnail ) ):
             ?>
 
-            <img class="main__item-img grid__item--4-3" src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <a href="<?php echo $item['main__item-title-link']; ?>" class="main__item-img grid__item--4-3">
+                <img src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            </a>
 
             <?php endif; ?>
             <div class="main__item-subcontainer grid__item--4-9">
-                <h3 class="main__item-title"><?php echo $item['main__item-title']; ?></h3>
+                <h3 class="main__item-title"><a href="<?php echo $item['main__item-title-link']; ?>"><?php echo $item['main__item-title']; ?></a></h3>
                 <p class="main__item-content"><?php echo $item['main__item-content']; ?></p>
 
                 <?php
