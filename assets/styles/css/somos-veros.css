@@ -1126,6 +1126,9 @@ a {
     line-height: 27px;
   }
 }
+.hero__content--emphasis {
+  color: #000000;
+}
 .hero__checklist {
   font-size: 16px;
   line-height: 24px;
@@ -1259,6 +1262,9 @@ a {
   color: rgba(0, 0, 0, 0.6980392157);
   font-size: 16px;
   line-height: 24px;
+}
+.parceiro__content--emphasis {
+  color: #000000;
 }
 .parceiro__checklist {
   color: rgba(0, 0, 0, 0.6980392157);

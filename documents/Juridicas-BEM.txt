@@ -1,0 +1,18 @@
+--- Jurídicas ------------------------------------------------------------------------------------------
+
+hero
+    __path
+    __parent-page
+    __arrow
+    __current-page
+
+
+main
+    __title
+    __caption
+    __paragraph
+        --emphasis
+    __container
+    __section
+    __subtitle
+        --small

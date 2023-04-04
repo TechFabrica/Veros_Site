@@ -35,6 +35,10 @@ PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
     Somos Veros: http://hml01.veros.vet/somos-veros/
     Serviços: http://hml01.veros.vet/servicos/
     Especialidades: http://hml01.veros.vet/especialidades/
-    Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+    Consultas: http://hml01.veros.vet/servicos/consultas/
+    Exames de Imagens e Laboratoriais: http://hml01.veros.vet/servicos/exames/
     Cirurgias: http://hml01.veros.vet/cirurgias/
-
+    Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+    Pronto-socorro e Ambulância 24 horas: http://hml01.veros.vet/servicos/pronto-socorro-e-ambulancia-24-horas/
+    Contato: http://hml01.veros.vet/contato/
+    Para veterinários: http://hml01.veros.vet/para-veterinarios/

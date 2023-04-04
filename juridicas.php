@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 404
+Template Name: Jurídicas
 */
 ?>
 
@@ -9,7 +9,7 @@ Template Name: 404
 <main class="supercontainer">
     
     <?php get_template_part('./template-parts/common/hero--basic'); ?>
-    <?php get_template_part('./template-parts/404/main'); ?>
+    <?php get_template_part('./template-parts/juridicas/politica-privacidade'); ?>
 
 </main>
 

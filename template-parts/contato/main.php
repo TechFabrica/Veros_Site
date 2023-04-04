@@ -7,7 +7,7 @@
             $cards_data = get_field('main__cards');
             foreach( $cards_data as $item ):
         ?>
-        <div class="main__card card grid__item--4-3">
+        <a href="<?php echo $item['main__card-link'] ?>" class="main__card card grid__item--4-3">
             <?php 
                 $icon = $item['main__card-icon'];
                 if( !empty( $icon ) ):
@@ -20,7 +20,7 @@
                 <p class="main__card-title"><?php echo $item['main__card-title']; ?></p>
                 <p class="main__card-content"><?php echo $item['main__card-content']; ?></p>
             </div>
-        </div>
+        </a>
         <?php endforeach; ?>
     </div>
 

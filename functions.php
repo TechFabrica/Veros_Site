@@ -77,6 +77,12 @@ function veros_register_styles(){
     if (is_page_template('contato.php')){
         wp_enqueue_style('veros-contato', get_template_directory_uri() . '/assets/styles/css/contato.css', array('veros-normalize'), $version);    
     }
+    if (is_page_template('juridicas.php')){
+        wp_enqueue_style('veros-juridicas', get_template_directory_uri() . '/assets/styles/css/juridicas.css', array('veros-normalize'), $version);    
+    }
+    if (is_404()){
+        wp_enqueue_style('veros-404', get_template_directory_uri() . '/assets/styles/css/404.css', array('veros-normalize'), $version);    
+    }
 
 }
 
