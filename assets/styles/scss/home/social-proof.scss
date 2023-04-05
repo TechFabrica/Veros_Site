@@ -1,6 +1,7 @@
 @use "../_library/library";
 
 .social-proof{
+    display: none;
     background-color: library.get-color("primary", "dark-purple");
     color: library.get-color("primary", "offwhite");
     

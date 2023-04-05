@@ -24,7 +24,7 @@
             
             <address class="footer__addresses">
                 <div class="footer__menu-item footer__adresses-menu-item">
-                    <a href="#">Contato</a>
+                    <a href="http://localhost/veros_wordpress/contato/">Contato</a>
                 </div>
                 
                 <?php
@@ -42,6 +42,7 @@
                     <p class="footer__address-info"><?php echo $item['footer__address-info']; ?></p>
                 </a>
                 <?php endforeach; ?>
+                <a href="https://goo.gl/maps/t9iGDZsjfZEVdirG6" class="footer__maps-button button button--line button--round">Abrir no Google Maps</a>
             </address>
         </div>
     </div>

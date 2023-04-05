@@ -74,11 +74,12 @@
         @include library.body--16;
         color: library.get-color("type", "emphasis-medium");
     }
-
+    
     &__caption{
         margin-top: 16px;
         display: flex;
         align-items: center;
+        color: library.get-color("type", "emphasis-low");
     }
 
     &__caption-icon{

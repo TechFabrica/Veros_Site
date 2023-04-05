@@ -145,6 +145,14 @@
         }
     }
 
+    &__maps-button{
+        width: max-content;
+        padding: 8px 24px;
+        margin-left: 16px;
+        @include library.body--14;
+        font-weight: 700;
+    }
+
     &__institutional{
         @include library.body--14;
         padding-top: 20px;
