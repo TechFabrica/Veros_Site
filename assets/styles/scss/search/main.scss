@@ -1,0 +1,42 @@
+@use "../_library/library";
+
+.hero{
+    background-color: library.get-color("primary", "offwhite");
+}
+
+.main{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: library.get-color("primary", "offwhite");
+
+    &__title{
+        @include library.heading--32;
+        color: library.get-color("type", "emphasis-high");
+        text-align: center;
+    }
+    
+    &__subtitle{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+        text-align: center;
+    }
+}
+
+.search-form{
+    grid-column: 3/11;
+    display: flex;
+
+    &__input{
+        width: 100%;
+        height: 56px;
+        border-radius: 50px;
+        background-color: library.get-color("background", "light");
+        border: 1px solid library.get-color("outline", "light");
+        color: 1px solid library.get-color("type", "emphasis-high");
+    }
+
+    &__submit{
+        margin-left: 16px;
+        padding: 16px;
+    }
+}

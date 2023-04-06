@@ -83,6 +83,9 @@ function veros_register_styles(){
     if (is_404()){
         wp_enqueue_style('veros-404', get_template_directory_uri() . '/assets/styles/css/404.css', array('veros-normalize'), $version);    
     }
+    if (is_page_template('searchpage.php') || is_search()){
+        wp_enqueue_style('veros-search', get_template_directory_uri() . '/assets/styles/css/search.css', array('veros-normalize'), $version);    
+    }
 
 }
 
@@ -129,5 +132,22 @@ function veros_register_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'veros_register_scripts');
+
+function veros_widget_areas(){
+
+    register_sidebar(
+        array(
+            'name' => 'Search Area',
+            'id' => 'search',
+            'description' => 'Search Page - search form area',
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => ''
+        )
+    );
+}
+
+add_action('widgets_init', 'veros_widget_areas');
 
 ?>
