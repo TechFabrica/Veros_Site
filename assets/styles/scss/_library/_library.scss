@@ -7,6 +7,10 @@
     background-color: colors.get-color("background", "light");
     color: colors.get-color("primary", "dark-purple");
     cursor: default;
+
+    &--scroll-lock{
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p, span{

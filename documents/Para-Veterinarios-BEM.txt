@@ -1,0 +1,45 @@
+--- Para Veterinários ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __checklist
+    __checklist-item
+
+
+main
+    __title
+    __subtitle
+    __cards-container
+    __card
+    __card-img
+    __card-content-container
+    __card-title
+    __card-content
+    __checklist
+    __checklist-item
+    __big-number
+    __big-number-icon-container
+    __big-number-icon
+    __big-number-content
+    __button
+
+
+social-proof
+    __title
+        --emphasis
+    __card
+    __card-title
+    __card-quote
+    __card-author
+    __card-img
+    __card-name
+    __glide-arrow

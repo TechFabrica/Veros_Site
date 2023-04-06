@@ -1,0 +1,21 @@
+--- Contato ------------------------------------------------------------------------------------------
+
+hero
+    __path
+    __parent-page
+    __arrow
+    __current-page
+
+
+main
+    __title
+    __subtitle
+    __cards-container
+    __card
+    __card-icon-container
+    __card-icon
+    __card-content-container
+    __card-title
+    __card-content
+    __caption
+    __caption-icon

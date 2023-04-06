@@ -1,0 +1,9 @@
+@use "./common-blocks/master-common.scss";
+
+@use "./common-parts/hero--basic.scss";
+@use "./common-parts/faq.scss";
+@use "./common-parts/contact.scss";
+@use "./common-parts/newsletter.scss";
+
+@use "./search/main.scss";
+@use "./search/results.scss";

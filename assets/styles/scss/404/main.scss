@@ -1,0 +1,44 @@
+@use "../_library/library";
+
+.main{
+    padding-top: 64px;
+
+    &__wrapper{
+        min-height: 205px;
+        background-image: url("../../images/banners/404/ilustracao.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        @media screen and (min-width: library.$breakpoint-1) {
+            background-position: bottom left;
+        }
+    }
+    
+    &__container{
+        padding-top: 221px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding-top: 0;
+            grid-column: 4/9;
+        }
+    }
+
+    &__caption{
+        @include library.overline--16;
+        color: library.get-color("type", "emphasis-low");
+    }
+
+    &__title{
+        @include library.heading--32;
+        color: library.get-color("type", "emphasis-high");
+        margin: 16px 0 24px;
+    }
+    
+    &__subtitle{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+    }
+    
+    &__link{
+        color: library.get-color("primary", "light-purple");
+    }
+}

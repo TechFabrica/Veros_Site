@@ -42,6 +42,7 @@
                     <p class="footer__address-info"><?php echo $item['footer__address-info']; ?></p>
                 </a>
                 <?php endforeach; ?>
+                <a href="https://goo.gl/maps/t9iGDZsjfZEVdirG6" class="footer__maps-button button button--line button--round">Abrir no Google Maps</a>
             </address>
         </div>
     </div>
@@ -50,8 +51,8 @@
         
         <p class="footer__institutional-copyright"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
         <div class="footer__institutional-menu">
-            <a href="#" class="footer__institutional-menu-item button button--borderless">Política de Privacidade</a>
-            <a href="#" class="footer__institutional-menu-item button button--borderless">Imprensa</a>
+            <a href="http://localhost/veros_wordpress/politica-de-privacidade/" class="footer__institutional-menu-item button button--borderless">Política de Privacidade</a>
+            <a href="http://localhost/veros_wordpress/imprensa/" class="footer__institutional-menu-item button button--borderless">Imprensa</a>
         </div>
         <div class="footer__institutional-social-container">
             <a href="https://www.facebook.com/veros.hospital" class="footer__institutional-social">

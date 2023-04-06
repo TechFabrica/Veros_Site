@@ -36,6 +36,10 @@
         margin-top: 8px;
         color: library.get-color("type", "emphasis-medium");
         @include library.body--16;
+
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
     
     &__checklist{

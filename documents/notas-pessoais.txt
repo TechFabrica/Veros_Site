@@ -2,9 +2,6 @@ ALJUSTES
 
     ACF
         PENSAR NA ARQUITETURA DOS CAMPOS PARA BLOCOS COMUNS (FAQ, COMO FUNCIONA, ETC)
-
-    SERVIÇOS
-        ADICIONAR LINKS NA MAIN
     
     FAQ
         AJUSTAR CORES
@@ -12,6 +9,8 @@ ALJUSTES
     SVG (PATTERN AMARELO)   
         PEDIR PARA A FABÍOLA O QUE ESTÁ BUGADO
         ALTERAR PARA TRANSFORM A VARIAÇÃO MOBILE/DESKTOP
+
+    REVER SCSS E JS DUPLICADOS
     
 
 ---------------------------------------------------------------------------------------
@@ -20,6 +19,12 @@ ALJUSTES
 REFATORAÇÃO
 
     REMOVER OS OVERFLOW HIDDEN DOS GLIDES MOBILE
+
+    TRATAR TODAS AS IMAGENS
+    
+    ADICIONAR TAMANHOS ÀS IMAGENS PARA REDUZIR CLS
+
+    ADICIONAR MINIFICADOR PARA SASS E JS
 
 
 ---------------------------------------------------------------------------------------
@@ -30,6 +35,10 @@ PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
     Somos Veros: http://hml01.veros.vet/somos-veros/
     Serviços: http://hml01.veros.vet/servicos/
     Especialidades: http://hml01.veros.vet/especialidades/
-    Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+    Consultas: http://hml01.veros.vet/servicos/consultas/
+    Exames de Imagens e Laboratoriais: http://hml01.veros.vet/servicos/exames/
     Cirurgias: http://hml01.veros.vet/cirurgias/
-
+    Internação e UTI: http://hml01.veros.vet/internacao-e-uti/
+    Pronto-socorro e Ambulância 24 horas: http://hml01.veros.vet/servicos/pronto-socorro-e-ambulancia-24-horas/
+    Contato: http://hml01.veros.vet/contato/
+    Para veterinários: http://hml01.veros.vet/para-veterinarios/

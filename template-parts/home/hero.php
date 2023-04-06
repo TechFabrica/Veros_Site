@@ -18,7 +18,7 @@
         <?php endif; ?>
     </div>
     <div class="hero__left-wrapper grid__container grid__container--left">
-        <h2 class="hero__title">
+        <h1 class="hero__title">
             <?php the_field('hero__title'); ?>
             <span class="hero__title--emphasis">
                 <?php

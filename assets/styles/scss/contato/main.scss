@@ -1,0 +1,88 @@
+@use "../_library/library";
+
+.main{
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__title{
+        @include library.heading--32;
+        color: library.get-color("type", "emphasis-high");
+        text-align: center;
+    }
+    
+    &__subtitle{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+        text-align: center;
+    }
+    
+    &__cards-container{
+        margin-top: 16px;
+        column-gap: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 32px;
+        }
+    }
+    
+    &__card{
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        margin-top: 8px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 0;
+            margin-left: 8px;
+        }
+        
+        &:first-child{
+            margin-top: 0;
+            @media screen and (min-width: library.$breakpoint-1) {
+                margin-left: 0;
+            }
+        }
+        
+        &:hover{
+            background-color: library.get-color("support", "20");
+            border-color: library.get-color("support", "40");
+        }
+    }
+    
+    &__card-icon-container{
+        
+    }
+    
+    &__card-icon{
+        margin: 0 16px 0 0;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 0 0 16px 0;
+        }
+    }
+
+    &__card-content-container{
+        
+    }
+    
+    &__card-title{
+        @include library.body--16;
+        font-weight: 700;
+        color: library.get-color("type", "emphasis-high");
+    }
+    
+    &__card-content{
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+    }
+    
+    &__caption{
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        color: library.get-color("type", "emphasis-low");
+    }
+
+    &__caption-icon{
+        margin-right: 8px;
+    }
+}

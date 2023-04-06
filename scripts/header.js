@@ -23,6 +23,19 @@ window.addEventListener('scroll', function(){
   }
 });
 
+// LOCK MOBILE BODY SCROLL WHEN MENU IS OPEN
+var $body = document.querySelector('.body');
+var $menu_button = document.querySelector('.header__menu-button');
+
+$menu_button.addEventListener('change', function(e){
+  if (e.currentTarget.checked) {
+    $body.classList.add('body--scroll-lock');
+  } else {
+    $body.classList.remove('body--scroll-lock');
+  }
+});
+
+
 function getStyle(el, styleProp) {
     var value, defaultView = el.ownerDocument.defaultView;
     // W3C standard way:

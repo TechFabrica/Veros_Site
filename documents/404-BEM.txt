@@ -1,0 +1,14 @@
+--- 404 ------------------------------------------------------------------------------------------
+
+hero
+    __path
+    __parent-page
+    __arrow
+    __current-page
+
+
+main
+    __wrapper
+    __caption
+    __title
+    __subtitle
