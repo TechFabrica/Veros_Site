@@ -1470,6 +1470,11 @@ a {
 }
 .hero__right-wrapper {
   padding-left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.hero__right-wrapper--visible {
+  opacity: 1;
 }
 @media screen and (min-width: 1024px) {
   .hero__right-wrapper {
@@ -1480,6 +1485,9 @@ a {
   min-width: 100%;
   max-width: 100%;
   height: 100%;
+}
+.hero__banner--hidden {
+  display: none;
 }
 .hero__banner--desktop {
   min-width: 100%;
@@ -1493,6 +1501,9 @@ a {
   }
   .hero__banner--desktop {
     display: block;
+  }
+  .hero__banner--desktop-hidden {
+    display: none;
   }
 }
 .hero__title {
@@ -1519,7 +1530,7 @@ a {
 }
 .hero__pet-type-js-slot {
   opacity: 0;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
   position: absolute;
 }
 .hero__pet-type-js-slot--visible {

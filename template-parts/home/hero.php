@@ -1,21 +1,32 @@
 <section class="hero grid__supercontainer">
     <div class="hero__right-wrapper">
-        <?php 
-            $image = get_field('hero__banner');
-            if( !empty( $image ) ):
+        <?php
+            $banners_data = get_field('hero__banner');
+            $hidden_class = '';
+            foreach( $banners_data as $item ):
+                $image = $item['hero__banner-img'];
         ?>
 
-        <img class="hero__banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img class="hero__banner<?php echo $hidden_class ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
-        <?php endif; ?>
-        <?php 
-            $image = get_field('hero__banner--desktop');
-            if( !empty( $image ) ):
+        <?php
+                $hidden_class= ' hero__banner--hidden';
+            endforeach;
+        ?>
+        
+        <?php
+            $banners_data = get_field('hero__banner--desktop');
+            $hidden_class = '';
+            foreach( $banners_data as $item ):
+                $image = $item['hero__banner-img--desktop'];
         ?>
 
-        <img class="hero__banner--desktop" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img class="hero__banner--desktop<?php echo $hidden_class ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
-        <?php endif; ?>
+        <?php
+                $hidden_class= ' hero__banner--desktop-hidden';
+            endforeach;
+        ?>
     </div>
     <div class="hero__left-wrapper grid__container grid__container--left">
         <h1 class="hero__title">

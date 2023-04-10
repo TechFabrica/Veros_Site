@@ -13,8 +13,8 @@
                 if( !empty( $thumbnail ) ):
             ?>
 
-            <a href="<?php echo $item['main__item-title-link']; ?>" class="main__item-img grid__item--4-3">
-                <img src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <a href="<?php echo $item['main__item-title-link']; ?>" class="grid__item--4-3">
+                <img class="main__item-img" src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             </a>
 
             <?php endif; ?>

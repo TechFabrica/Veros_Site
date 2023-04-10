@@ -7,17 +7,25 @@
         min-height: 205px;
         background-image: url("../../images/banners/404/ilustracao.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top left;
+        background-size: 100%;
+        @media screen and (min-width: 480px) {
+            background-size: 430px;
+        }
         @media screen and (min-width: library.$breakpoint-1) {
-            background-position: bottom left;
+            background-size: contain;
         }
     }
     
     &__container{
-        padding-top: 221px;
+        padding-top: 52%;
+        @media screen and (min-width: 480px) {
+            padding-top: 220px;
+        }
         @media screen and (min-width: library.$breakpoint-1) {
             padding-top: 0;
+            grid-column: 4/-1;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
             grid-column: 4/9;
         }
     }

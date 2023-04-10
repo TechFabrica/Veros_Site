@@ -11,7 +11,7 @@ var initial_position = getStyle($whatsapp_cta, 'bottom');
 
 window.addEventListener('scroll', function(){
   // SCROLLING HEADER
-  $header_bar.classList.toggle('header--sticky', window.scrollY > 34);
+  $header_bar.classList.toggle('header--sticky', window.scrollY > 0); // CHANGE VALUE TO LOGIN BAR HEIGHT WHEN ENABLED
   
   // WHATSAPP ICON CHANGE POSITION AT END OF SCROLL
   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 30) {
