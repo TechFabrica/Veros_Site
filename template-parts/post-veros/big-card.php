@@ -44,9 +44,17 @@
             ?>
         </div>
         <div class="big-card__card-buttons-container">
-            <?php $buttons_data = get_field('big-card__buttons'); ?>
+            <?php
+                $buttons_data = get_field('big-card__buttons');
+                if( !empty( $buttons_data['big-card__button-1-text'] ) ):
+            ?>
             <a href="<?php echo $buttons_data['big-card__button-1-link']; ?>" class="big-card__card-button button button--line button--round"><?php echo $buttons_data['big-card__button-1-text']; ?></a>
+            <?php
+                endif;
+                if( !empty( $buttons_data['big-card__button-2-text'] ) ):
+            ?>
             <a href="<?php echo $buttons_data['big-card__button-2-link']; ?>" class="big-card__card-button button button--primary button--round"><?php echo $buttons_data['big-card__button-2-text']; ?></a>
+            <?php endif; ?>
         </div>
     </div>
 </section>

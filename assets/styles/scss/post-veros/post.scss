@@ -5,68 +5,115 @@
     
     &__title{
         color: library.get-color("primary", "dark-purple");
-        @include library.heading--24;
+        @include library.heading--28;
         @media screen and (min-width: library.$breakpoint-1) {
-            @include library.heading--28;
+            @include library.heading--48;
         }
     }
     
     &__subtitle{
+        margin-top: 8px;
         color: library.get-color("type", "emphasis-medium");
-        @include library.body--16;
-    }
-    
-    &__tabnav{
-        display: flex;
-        @include library.button--14--light;
-        margin: 48px 0 24px;
+        @include library.body--18;
         @media screen and (min-width: library.$breakpoint-1) {
-            margin: 40px 0 32px;
+            @include library.heading--24;
+            line-height: 36px;
+            font-weight: 400;
         }
     }
 
-    &__tabnav-item{
-        color: library.get-color("primary", "dark-purple");
-        font-weight: 700;
-        padding: 10px 16px;
-        @media screen and (min-width: library.$breakpoint-0) {
-            padding: 10px 20px;
-        }
+    &__container{
+        
+    }
+
+    &__image{
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 32px;
+    }
+
+    &__image-caption{
+        margin-bottom: 8px;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.caption--12;
+        text-align: center;
         @media screen and (min-width: library.$breakpoint-1) {
-            padding: 16px 40px;
+            @include library.body--18;
         }
     }
-    
-    &__cards-wrapper{
-        row-gap: 16px;
-        column-gap: 32px;
+
+    &__sub-heading{
+        margin-top: 24px;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.heading--18;
         @media screen and (min-width: library.$breakpoint-1) {
-            row-gap: 24px;
+            @include library.heading--24;
+        }
+    }
+
+    &__paragraph{
+        margin-top: 16px;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--18;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.body--20;
         }
     }
     
     &__card{
-        background-color: library.get-color("type", "emphasis-high-inverse");
-        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 24px;
+        background-color: library.get-color("primary", "offwhite");
+        border-radius: 16px;
+        padding: 24px 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            flex-direction: row;
+            align-items: center;
+            padding: 40px;
+        }
+    }
+    
+    &__card-container{
+        display: flex;
+        @media screen and (min-width: library.$breakpoint-1) {
+        }
+    }
+
+    &__card-icon{
+
+    }
+
+    &__card-subcontainer{
+        margin-left: 16px;
     }
     
     &__card-title{
         color: library.get-color("primary", "dark-purple");
-        @include library.heading--18;
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--32;
+        }
     }
     
-    &__card-content{
+    &__card-subtitle{
         color: library.get-color("type", "emphasis-medium");
-        @include library.body--14;
-        margin: 8px 0 24px;
+        @include library.body--16;
+        margin-top: 8px;
     }
     
-    &__card-link{
-        color: library.get-color("primary", "light-purple");
-        @include library.body--14;
-    }
-
-    &__card-arrow{
-
+    &__card-button{
+        display: flex;
+        justify-content: center;
+        @include library.button--14--light;
+        padding: 16px 24px;
+        margin-top: 24px;
+        width: calc(100% - 54px);
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 0;
+            width: auto;
+        }
     }
 }

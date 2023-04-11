@@ -1,6 +1,6 @@
 @use "./common-blocks/master-common.scss";
 
-@use "./scripts/tabnav.scss";
+@use "./post-veros/glide.scss";
 
 @use "./common-parts/hero--basic.scss";
 @use "./common-parts/faq.scss";
@@ -8,3 +8,5 @@
 @use "./common-parts/newsletter.scss";
 
 @use "./post-veros/post.scss";
+@use "./post-veros/big-card.scss";
+@use "./post-veros/cards-section.scss";

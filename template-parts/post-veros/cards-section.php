@@ -5,14 +5,20 @@
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <?php
-                    $cards_data = get_field('cards-section__cards');
+                    $cards_data = get_field('main__cards', 13);
                     foreach($cards_data as $item):
+                        if( $item['main__card-title'] != get_field('post__title') ):
                 ?>
-                <li class="cards-section__card glide__slide">
-                    <h4 class="cards-section__card-title"><?php echo $item['cards-section__card-title']; ?></h4>
-                    <p class="cards-section__card-content"><q><?php echo $item['cards-section__card-content']; ?></q></p>
-                </li>
-                <?php endforeach; ?>
+                <a href="<?php echo $item['main__card-link']; ?>">
+                    <li class="cards-section__card glide__slide">
+                        <h4 class="cards-section__card-title"><?php echo $item['main__card-title']; ?></h4>
+                        <p class="cards-section__card-content"><?php echo $item['main__card-content']; ?></p>
+                    </li>
+                </a>
+                <?php
+                        endif;
+                    endforeach;
+                ?>
             </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">

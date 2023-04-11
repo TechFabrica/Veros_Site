@@ -1509,6 +1509,14 @@ a {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6980392157);
 }
+.big-card__card-checklist-item--extra {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .big-card__card-checklist-item--extra {
+    display: inline-block;
+  }
+}
 .big-card__card-buttons-container {
   display: flex;
   justify-content: flex-end;

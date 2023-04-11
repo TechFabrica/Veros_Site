@@ -1,0 +1,49 @@
+--- Post Veros ------------------------------------------------------------------------------------------
+
+hero
+    __path
+    __parent-page
+    __arrow
+    __current-page
+
+
+post
+    __title
+    __subtitle
+    __container
+    __img
+    __sub-heading
+    __paragraph
+    __card
+    __card-icon
+    __card-container
+    __card-subcontainer
+    __card-title
+    __card-subtitle
+    __card-button
+
+
+big-card
+    wrapper
+    banner
+        --desktop
+    card
+    card-text-container
+    card-title
+    card-content
+    card-checklist-container
+    card-checklist-title
+    card-checklist-item
+    card-buttons-container
+    card-button
+
+
+cards-section
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-content
+    __glide-arrow
+
+
