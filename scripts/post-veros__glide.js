@@ -1,10 +1,10 @@
 new Glide('.glide',{
     type: 'carousel',
     gap: 24,
-    perView: 4,
+    perView: 3,
     breakpoints: {
         1023: {
-          perView: 1.5
+          perView: 1
         }
       }
 }).mount();

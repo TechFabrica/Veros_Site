@@ -1,4 +1,9 @@
-<section class="big-card grid__container grid__container">
+<?php
+    $class = '';
+    if( get_field('big-card--hidden') == 0 ):
+?>
+
+<section class="big-card grid__container">
     <?php
         $image = get_field('big-card__banner');
         if( !empty( $image ) ):
@@ -58,3 +63,5 @@
         </div>
     </div>
 </section>
+
+<?php endif; ?>

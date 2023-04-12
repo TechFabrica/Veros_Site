@@ -10,23 +10,24 @@
 
     <div class="main__wrapper">
         <h2 class="main__title"><?php the_field('main__title'); ?></h2>
-
         <div class="main__container">
-            <p class="main__content"><?php the_field('main__content'); ?></p>
-
             <div class="main__glide glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <?php
-                            $images_data = get_field('main__imgs');
-                            foreach($images_data as $item):
+                            $panes_data = get_field('main__panes');
+                            foreach($panes_data as $item):
                         ?>
-                        <li class="main__card glide__slide">
+                        <li class="main__pane glide__slide">
+                            <div class="main__pane-container">
+                                <h4 class="main__pane-title"><?php echo $item['main__pane-title']; ?></h4>
+                                <p class="main__pane-content"><?php echo $item['main__pane-content']; ?></p>
+                            </div>
                             <?php 
-                                $image = $item['main__img'];
+                                $image = $item['main__pane-img'];
                                 if( !empty( $image ) ):
                             ?>
-                            <img class="main__img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                            <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
                             <?php endif; ?>
                         </li>
                         <?php endforeach; ?>
@@ -43,7 +44,7 @@
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                     <?php
                         $bullet_index = 0;
-                        foreach($images_data as $item):
+                        foreach($panes_data as $item):
                     ?>
                     <button class="glide__bullet" data-glide-dir="=<?php echo $bullet_index ?>"></button>
                     <?php

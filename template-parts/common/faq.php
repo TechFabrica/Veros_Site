@@ -1,8 +1,6 @@
 <?php
     $class = '';
-    if( get_field('faq--hidden') == 1 ){
-        $class = 'faq--hidden';
-    }
+    if( get_field('faq--hidden') == 0 ):
 ?>
 
 <section class="faq grid__container <?php echo $class; ?>">
@@ -22,3 +20,5 @@
     </details>
     <?php endforeach; ?>
 </section>
+
+<?php endif; ?>

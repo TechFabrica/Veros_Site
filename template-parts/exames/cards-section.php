@@ -29,7 +29,7 @@
                             foreach($cards_data as $card):
                         ?>
                         <li class="cards-section__card glide__slide">
-                            <h4 class="cards-section__card-title"><?php echo $card['cards-section__card-title']; ?></h4>
+                            <h4 class="cards-section__card-title"><a href="<?php echo $card['cards-section__card-link']; ?>" class="cards-section__card-link"><?php echo $card['cards-section__card-title']; ?></a></h4>
                             <p class="cards-section__card-content"><q><?php echo $card['cards-section__card-content']; ?></q></p>
                         </li>
                         <?php endforeach; ?>

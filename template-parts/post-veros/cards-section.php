@@ -1,18 +1,38 @@
-<section class="cards-section grid__container">
+<?php
+    $class = '';
+    if( get_field('cards-section--hidden') == 0 ):
+?>
+
+<section class="cards-section grid__container<?php echo $class; ?>">
     <h2 class="cards-section__title grid__item--4-9"><?php the_field('cards-section__title') ?></h2>
     <p class="cards-section__subtitle grid__item--4-9"><?php the_field('cards-section__subtitle') ?></p>
     <div class="cards-section__glide glide grid__item--4-12">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <?php
-                    $cards_data = get_field('main__cards', 13);
+                    $cards_data = [];
+                    foreach((get_the_category()) as $category) {
+                        $category_name = $category->cat_name;
+                    }
+                    if( $category_name == 'Especialidades' ){
+                        $cards_data = get_field('main__cards', 13);
+                        $section_name = 'main';
+                    } elseif ( $category_name == 'Exames' ){
+                        $pane_data = get_field('cards-section__content-pane', 23);
+                        for ($i = 0; $i < count($pane_data); $i++){
+                            for ($j = 0; $j < count($pane_data[$i]['cards-section__cards']); $j++ ){
+                                array_push($cards_data, $pane_data[$i]['cards-section__cards'][$j]);
+                            }
+                        }
+                        $section_name = 'cards-section';
+                    }
                     foreach($cards_data as $item):
-                        if( $item['main__card-title'] != get_field('post__title') ):
+                        if( $item[$section_name.'__card-title'] != get_field('post__title') ):
                 ?>
-                <a href="<?php echo $item['main__card-link']; ?>">
+                <a href="<?php echo $item[$section_name.'__card-link']; ?>">
                     <li class="cards-section__card glide__slide">
-                        <h4 class="cards-section__card-title"><?php echo $item['main__card-title']; ?></h4>
-                        <p class="cards-section__card-content"><?php echo $item['main__card-content']; ?></p>
+                        <h4 class="cards-section__card-title"><?php echo $item[$section_name.'__card-title']; ?></h4>
+                        <p class="cards-section__card-content"><?php echo $item[$section_name.'__card-content']; ?></p>
                     </li>
                 </a>
                 <?php
@@ -33,12 +53,17 @@
             <?php
                 $bullet_index = 0;
                 foreach($cards_data as $item):
+                    if( $item[$section_name.'__card-title'] != get_field('post__title') ):
             ?>
             <button class="glide__bullet" data-glide-dir="=<?php echo $bullet_index ?>"></button>
             <?php
-                $bullet_index++; 
+                    $bullet_index++;
+                    endif;
                 endforeach;
             ?>
         </div>
+        
     </div>
 </section>
+
+<?php endif; ?>

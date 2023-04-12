@@ -946,9 +946,6 @@ a {
 .faq {
   background-color: #F5F5F6;
 }
-.faq--hidden {
-  display: none;
-}
 .faq__title {
   text-align: center;
   color: #0C093C;

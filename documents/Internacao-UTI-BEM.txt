@@ -18,9 +18,11 @@ main
     __wrapper
     __title
     __container
-    __content
-    __imgs-container
-    __img
+    __glide
+    __pane
+    __pane-title
+    __pane-content
+    __pane-img
     __glide-arrow
 
 como-funciona
