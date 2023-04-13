@@ -36,8 +36,7 @@
     &__card-location{
         margin-top: 8px;
         color: library.get-color("type", "emphasis-low");
-        @include library.button--14;
-        font-weight: 400;
+        @include library.button--14--light;
     }
     
     &__card-content{

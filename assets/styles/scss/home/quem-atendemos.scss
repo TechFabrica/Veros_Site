@@ -29,13 +29,12 @@
 
     &__tabnav{
         display: flex;
-        @include library.button--14--light;
+        @include library.button--14;
         margin-bottom: 32px;
     }
 
     &__tabnav-item{
         color: library.get-color("primary", "dark-purple");
-        font-weight: 700;
         padding: 12px 28px;
         @media screen and (min-width: library.$breakpoint-0) {
             padding: 12px 32px;

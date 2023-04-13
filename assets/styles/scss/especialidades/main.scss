@@ -18,16 +18,15 @@
     
     &__tabnav{
         display: flex;
-        @include library.button--14--light;
         margin: 48px 0 24px;
         @media screen and (min-width: library.$breakpoint-1) {
             margin: 40px 0 32px;
         }
     }
-
+    
     &__tabnav-item{
+        @include library.button--14;
         color: library.get-color("primary", "dark-purple");
-        font-weight: 700;
         padding: 10px 16px;
         @media screen and (min-width: library.$breakpoint-0) {
             padding: 10px 20px;

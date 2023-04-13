@@ -18,7 +18,7 @@
         @media screen and (min-width: library.$breakpoint-1) {
             @include library.heading--24;
             line-height: 36px;
-            font-weight: 400;
+            font-family: 'Vinila', sans-serif;
         }
     }
 

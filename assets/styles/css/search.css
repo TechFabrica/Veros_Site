@@ -1,11 +1,22 @@
 /* _library _colors */ /* _library _fonts */
 @font-face {
   font-family: Vinila;
-  src: url("../../fonts/VinilaRegular.otf");
+  src: url("../../fonts/Vinila-Regular.woff");
+}
+@font-face {
+  font-family: VinilaBold;
+  src: url("../../fonts/Vinila-Bold.woff");
+}
+@font-face {
+  font-family: SourceSans;
+  src: url("../../fonts/SourceSansPro-Regular.woff");
+}
+@font-face {
+  font-family: SourceSansBold;
+  src: url("../../fonts/SourceSansPro-Bold.woff");
 }
 .body {
   font-family: "SourceSans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -282,8 +293,7 @@ a {
   display: none;
   width: 100%;
   padding: 24px 0;
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 18px;
   line-height: 22.5px;
 }
@@ -334,8 +344,7 @@ a {
   padding-bottom: 0;
   position: relative;
   z-index: 3;
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 18px;
   line-height: 22.5px;
   transition: box-shadow 0.8s;
@@ -798,7 +807,7 @@ a {
   margin-left: 16px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
 }
 .footer__institutional {
   font-size: 14px;
@@ -891,15 +900,13 @@ a {
 .faq__title {
   text-align: center;
   color: #0C093C;
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .faq__title {
-    font-family: "Vinila", sans-serif;
-    font-weight: 700;
+    font-family: "VinilaBold", sans-serif;
     font-size: 28px;
     line-height: 35px;
   }
@@ -990,15 +997,13 @@ a {
 }
 .contact__title {
   color: #0C093C;
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .contact__title {
-    font-family: "Vinila", sans-serif;
-    font-weight: 700;
+    font-family: "VinilaBold", sans-serif;
     font-size: 24px;
     line-height: 30px;
   }
@@ -1099,15 +1104,13 @@ a {
 .newsletter__title {
   margin-bottom: 8px;
   color: #FFFFFF;
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .newsletter__title {
-    font-family: "Vinila", sans-serif;
-    font-weight: 700;
+    font-family: "VinilaBold", sans-serif;
     font-size: 32px;
     line-height: 43.2px;
   }
@@ -1171,8 +1174,7 @@ a {
   background-color: #EBF0EC;
 }
 .main__title {
-  font-family: "Vinila", sans-serif;
-  font-weight: 700;
+  font-family: "VinilaBold", sans-serif;
   font-size: 32px;
   line-height: 43.2px;
   color: #000000;
