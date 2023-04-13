@@ -1,0 +1,40 @@
+--- Trabalhe Conosco ------------------------------------------------------------------------------------------
+
+hero
+    __left-wrapper
+    __right-wrapper
+    __banner
+        --desktop
+    __path
+    __parent-page
+    __arrow
+    __current-page
+    __title
+    __content
+    __big-numbers-wrapper
+    __big-numbers-container
+    __big-number
+    __big-number-text
+
+
+main
+    __title
+    __subtitle
+    __card
+    __card-title
+    __card-location
+    __card-content
+    __card-button
+    __glide-arrow
+
+
+social-proof
+    __title
+        --emphasis
+    __card
+    __card-title
+    __card-quote
+    __card-author
+    __card-img
+    __card-name
+    __glide-arrow

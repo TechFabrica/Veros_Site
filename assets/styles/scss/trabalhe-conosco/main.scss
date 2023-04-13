@@ -1,0 +1,60 @@
+@use "../_library/library";
+
+.main{
+    background-color: library.get-color("background", "light");
+    padding-bottom: 122px;
+    
+    &__title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-1) {
+            @include library.heading--28;
+        }
+    }
+    
+    &__subtitle{
+        margin-bottom: 16px;
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+    }
+    
+    &__card{
+        background-color: library.get-color("background", "light");
+        @include library.body--16;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 24px;
+        border: 1px solid library.get-color("outline", "light");
+        border-radius: 4px;
+    }
+    
+    &__card-title{
+        color: library.get-color("primary", "dark-purple");
+        @include library.heading--18;
+    }
+    
+    &__card-location{
+        margin-top: 8px;
+        color: library.get-color("type", "emphasis-low");
+        @include library.button--14;
+        font-weight: 400;
+    }
+    
+    &__card-content{
+        margin-top: 8px;
+        @include library.body--16;
+        color: library.get-color("type", "emphasis-medium");
+    }
+    
+    &__card-button{
+        margin-top: 16px;
+        @include library.button--14;
+        color: library.get-color("type", "emphasis-high");
+        padding: 8px 24px;
+        width: fit-content;
+    }
+
+    &__glide-arrow{
+        padding: 16px 21px;
+    }
+}
