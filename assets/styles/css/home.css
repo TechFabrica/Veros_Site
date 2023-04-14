@@ -1447,8 +1447,10 @@ a {
 }
 .estrutura__support-container {
   border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding-top: 8px;
 }
 .estrutura__support-container:first-child {
+  padding-top: 0;
   border-top: none;
 }
 .estrutura__content-container {

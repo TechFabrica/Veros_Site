@@ -68,8 +68,10 @@
     }
     &__support-container{
         border-top: 1px solid library.get-color("outline", "light");
+        padding-top: 8px;
         
         &:first-child{
+            padding-top: 0;
             border-top: none;
         }
     }
