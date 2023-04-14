@@ -79,6 +79,7 @@
     }
     
     &__form-submit{
+        color: library.get-color("type", "emphasis-high-inverse");
         width: 100%;
         padding: 12px 0;
     }

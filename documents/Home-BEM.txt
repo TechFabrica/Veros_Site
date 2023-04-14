@@ -163,13 +163,12 @@ form
 footer
     __wrapper
     __logo-container
-    __nav
     __menu-container
     __menu
     __menu-item
-    __submenu
     __submenu-item
-    __addresses
+    __phones-container
+    __adress-container
     __address-title
     __address-support-container
     __address-icon

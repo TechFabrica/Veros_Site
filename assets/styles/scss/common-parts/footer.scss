@@ -19,6 +19,7 @@
     }
 
     &__logo-container{
+        margin-right: 32px;
         max-width: 127px;
     
         &-svg{
@@ -26,16 +27,34 @@
         }
     }
 
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        @media screen and (min-width: library.$breakpoint-1) {
-            flex-direction: row;
-        }
-    }
-
     &__menu-container{
+        width: 100%;
 
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: auto;
+        }
+
+        &:last-of-type .footer__menu{
+            & .footer__menu-item{
+                border: none;
+                @media screen and (min-width: library.$breakpoint-1) {
+                    &:hover{
+                        padding-bottom: 6px;
+                        border-bottom: 2px solid library.get-color("primary", "light-purple");
+                    }
+                }
+            }
+            & .footer__submenu-item:last-of-type{
+                border-bottom: 1px solid library.get-color("outline", "light");
+                @media screen and (min-width: library.$breakpoint-1) {
+                    border: none;
+                    &:hover{
+                        padding-bottom: 7px;
+                        border-bottom: 1px solid library.get-color("outline", "light");
+                    }
+                }
+            }
+        }
     }
     
     &__menu{
@@ -43,8 +62,7 @@
         flex-direction: column;
         
         @media screen and (min-width: library.$breakpoint-1) {
-            flex-direction: row;
-            margin: 0 10px;
+            margin: 0 8px;
             padding: 0;
             justify-content: space-between;
             align-items: flex-start;
@@ -54,19 +72,24 @@
     &__menu-item{
         display: inline-block;
         position: relative;
-        margin: 16px 0;
+        padding: 16px 0;
         width: 100%;
-        min-height: 48px;
         color: library.get-color("primary", "dark-purple");
-        @include library.body--14;
+        @include library.heading--16;
         border-bottom: 1px solid library.get-color("outline", "light");
         @media screen and (min-width: library.$breakpoint-1){
             width: auto;
             border: none;
-            margin: 0 8px;
-        }
-        @media screen and (min-width: library.$breakpoint-2){
-            @include library.body--16;
+            padding: 16px 8px 8px;
+
+            &:first-of-type{
+                padding-top: 0;
+            }
+
+            &:hover{
+                padding-bottom: 6px;
+                border-bottom: 2px solid library.get-color("primary", "light-purple");
+            }
         }
 
         & a{
@@ -75,31 +98,42 @@
         }
     }
 
-    &__submenu{
-        padding-bottom: 16px;
-        @media screen and (min-width: library.$breakpoint-2){
-            margin-top: 16px;
-            padding-bottom: 0;
-        }
-    }
-
     &__submenu-item{
         display: flex;
         color: library.get-color("type", "emphasis-medium");
         @include library.body--14;
+        padding: 8px 24px;
         
-        & a{
-            padding: 8px 24px;
-            width: 100%;
-            @media screen and (min-width: library.$breakpoint-1) {
-                padding: 8px 0;
+        @media screen and (min-width: library.$breakpoint-1) {
+            padding: 8px 8px;
+
+            &:first-of-type{
+                padding-top: 0;
+            }
+
+            &:hover{
+                padding-bottom: 7px;
+                border-bottom: 1px solid library.get-color("outline", "light");
             }
         }
     }
-
-    &__addresses{
+    
+    &__phones-container{
         @include library.caption--12;
         font-style: normal;
+        margin-top: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin: 0 16px 0 0;
+        }
+    }
+    
+    &__adress-container{
+        @include library.caption--12;
+        font-style: normal;
+        margin-top: 24px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 0;
+        }
     }
 
     &__adresses-menu-item{
@@ -111,7 +145,7 @@
     }
     
     &__address-title{
-        color: library.get-color("type", "emphasis-medium");
+        color: library.get-color("type", "emphasis-high");
         margin-bottom: 8px;
         @media screen and (min-width: library.$breakpoint-1) {
             padding-left: 16px;
@@ -141,7 +175,7 @@
         max-width: 300px;
         @media screen and (min-width: library.$breakpoint-1) {
             @include library.body--14;
-            max-width: 122px;
+            max-width: 160px;
         }
     }
 

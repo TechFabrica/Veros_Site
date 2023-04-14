@@ -11,8 +11,9 @@ add_action('after_theme_setup', 'veros_theme_support');
 function veros_menus(){
 
     $locations = array(
-        'primary' => 'Desktop header menu',
-        'footer' => 'Footer menu'
+        'primary' => 'Header menu',
+        'footer' => 'Footer menu',
+        'servicos' => 'Footer serviços menu'
     );
 
     register_nav_menus($locations);
@@ -24,13 +25,6 @@ class submenu_wrap extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = null) {
         $indent = str_repeat("\t", $depth);
         $output .= "\n$indent<ul class=\"header__submenu\">\n";
-    }
-}
-
-class footer_submenu_wrap extends Walker_Nav_Menu {
-    function start_lvl(&$output, $depth = 0, $args = null) {
-        $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"footer__submenu\">\n";
     }
 }
 

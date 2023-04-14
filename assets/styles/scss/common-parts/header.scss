@@ -67,6 +67,8 @@
     }
 
     &__menu-icon{
+        font-size: 0px;
+        color: library.get-color("background", "light");
         position: absolute;
         top: 40px;
         right: 30px;

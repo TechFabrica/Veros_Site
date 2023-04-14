@@ -31,11 +31,10 @@
         }
     }
     &__subtitle{
-        color: library.get-color("type", "emphasis-medium-inverse");
         margin: 8px 0;
         @include library.body--16;
         @media screen and (min-width: library.$breakpoint-1) {
-            @include library.heading--18;
+            @include library.body--18;
         }
     }
     &__link{

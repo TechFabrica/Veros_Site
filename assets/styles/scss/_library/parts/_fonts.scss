@@ -3,18 +3,22 @@
 @font-face {
     font-family: Vinila;
     src: url('../../fonts/Vinila-Regular.woff');
+    font-display: swap;
 }
 @font-face {
     font-family: VinilaBold;
     src: url('../../fonts/Vinila-Bold.woff');
+    font-display: swap;
 }
 @font-face {
     font-family: SourceSans;
     src: url('../../fonts/SourceSansPro-Regular.woff');
+    font-display: swap;
 }
 @font-face {
     font-family: SourceSansBold;
     src: url('../../fonts/SourceSansPro-Bold.woff');
+    font-display: swap;
 }
 
 @mixin heading--48 {
@@ -41,6 +45,11 @@
     font-family: 'VinilaBold', sans-serif;
     font-size: 18px;
     line-height: 22.5px;
+}
+@mixin heading--16 {
+    font-family: 'VinilaBold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 @mixin body--20 {
     font-size: 20px;

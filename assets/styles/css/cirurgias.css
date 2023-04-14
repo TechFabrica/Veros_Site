@@ -2,18 +2,22 @@
 @font-face {
   font-family: Vinila;
   src: url("../../fonts/Vinila-Regular.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: VinilaBold;
   src: url("../../fonts/Vinila-Bold.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: SourceSans;
   src: url("../../fonts/SourceSansPro-Regular.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: SourceSansBold;
   src: url("../../fonts/SourceSansPro-Bold.woff");
+  font-display: swap;
 }
 .body {
   font-family: "SourceSans", sans-serif;
@@ -401,6 +405,8 @@ a {
   }
 }
 .header__menu-icon {
+  font-size: 0px;
+  color: #F5F5F6;
   position: absolute;
   top: 40px;
   right: 30px;
@@ -674,18 +680,39 @@ a {
   }
 }
 .footer__logo-container {
+  margin-right: 32px;
   max-width: 127px;
 }
 .footer__logo-container-svg {
   width: 100%;
 }
-.footer__nav {
-  display: flex;
-  flex-direction: column;
+.footer__menu-container {
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .footer__nav {
-    flex-direction: row;
+  .footer__menu-container {
+    width: auto;
+  }
+}
+.footer__menu-container:last-of-type .footer__menu .footer__menu-item {
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer__menu-container:last-of-type .footer__menu .footer__menu-item:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #7758D9;
+  }
+}
+.footer__menu-container:last-of-type .footer__menu .footer__submenu-item:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+@media screen and (min-width: 1024px) {
+  .footer__menu-container:last-of-type .footer__menu .footer__submenu-item:last-of-type {
+    border: none;
+  }
+  .footer__menu-container:last-of-type .footer__menu .footer__submenu-item:last-of-type:hover {
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
   }
 }
 .footer__menu {
@@ -694,8 +721,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .footer__menu {
-    flex-direction: row;
-    margin: 0 10px;
+    margin: 0 8px;
     padding: 0;
     justify-content: space-between;
     align-items: flex-start;
@@ -704,59 +730,72 @@ a {
 .footer__menu-item {
   display: inline-block;
   position: relative;
-  margin: 16px 0;
+  padding: 16px 0;
   width: 100%;
-  min-height: 48px;
   color: #0C093C;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: "VinilaBold", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 @media screen and (min-width: 1024px) {
   .footer__menu-item {
     width: auto;
     border: none;
-    margin: 0 8px;
+    padding: 16px 8px 8px;
   }
-}
-@media screen and (min-width: 1280px) {
-  .footer__menu-item {
-    font-size: 16px;
-    line-height: 24px;
+  .footer__menu-item:first-of-type {
+    padding-top: 0;
+  }
+  .footer__menu-item:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #7758D9;
   }
 }
 .footer__menu-item a {
   width: 100%;
   display: inline-block;
 }
-.footer__submenu {
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 1280px) {
-  .footer__submenu {
-    margin-top: 16px;
-    padding-bottom: 0;
-  }
-}
 .footer__submenu-item {
   display: flex;
   color: rgba(0, 0, 0, 0.6980392157);
   font-size: 14px;
   line-height: 21px;
-}
-.footer__submenu-item a {
   padding: 8px 24px;
-  width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .footer__submenu-item a {
-    padding: 8px 0;
+  .footer__submenu-item {
+    padding: 8px 8px;
+  }
+  .footer__submenu-item:first-of-type {
+    padding-top: 0;
+  }
+  .footer__submenu-item:hover {
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
   }
 }
-.footer__addresses {
+.footer__phones-container {
   font-size: 12px;
   line-height: 18px;
   font-style: normal;
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__phones-container {
+    margin: 0 16px 0 0;
+  }
+}
+.footer__adress-container {
+  font-size: 12px;
+  line-height: 18px;
+  font-style: normal;
+  margin-top: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__adress-container {
+    margin-top: 0;
+  }
 }
 .footer__adresses-menu-item {
   border: none;
@@ -768,7 +807,7 @@ a {
   }
 }
 .footer__address-title {
-  color: rgba(0, 0, 0, 0.6980392157);
+  color: #000000;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 1024px) {
@@ -798,7 +837,7 @@ a {
   .footer__address-info {
     font-size: 14px;
     line-height: 21px;
-    max-width: 122px;
+    max-width: 160px;
   }
 }
 .footer__maps-button {
@@ -1186,6 +1225,7 @@ a {
   }
 }
 .newsletter__form-submit {
+  color: #FFFFFF;
   width: 100%;
   padding: 12px 0;
 }
