@@ -1460,6 +1460,7 @@ a {
   font-family: "VinilaBold", sans-serif;
   font-size: 18px;
   line-height: 22.5px;
+  color: #0C093C;
   padding: 48px 0 8px;
 }
 @media screen and (min-width: 1024px) {
@@ -1470,6 +1471,10 @@ a {
 .estrutura__content {
   font-size: 14px;
   line-height: 21px;
+  color: rgba(0, 0, 0, 0.6980392157);
+}
+.estrutura__content--emphasis {
+  color: #000000;
 }
 .estrutura__img-container {
   display: flex;

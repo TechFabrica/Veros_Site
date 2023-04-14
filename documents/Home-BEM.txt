@@ -95,6 +95,7 @@ estrutura
     __content-container
     __content-title
     __content
+        --emphasis
     __img-container
     __content-img
 

@@ -80,6 +80,7 @@
     }
     &__content-title{
         @include library.heading--18;
+        color: library.get-color("primary", "dark-purple");
         padding: 48px 0 8px;
         @media screen and (min-width: library.$breakpoint-1) {
             padding: 0 0 8px;
@@ -87,6 +88,11 @@
     }
     &__content{
         @include library.body--14;
+        color: library.get-color("type", "emphasis-medium");
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
     &__img-container{
         display: flex;
