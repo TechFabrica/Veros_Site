@@ -210,6 +210,9 @@ a {
   color: #EBF0EC;
   border-color: #EBF0EC;
 }
+.button--line-inverse:hover {
+  color: #FFFFFF;
+}
 .button--round {
   border-radius: 48px;
 }

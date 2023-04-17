@@ -24,6 +24,10 @@
     &--line-inverse{
         color: library.get-color("primary", "offwhite");
         border-color: library.get-color("primary", "offwhite");
+
+        &:hover{
+            color: library.get-color("type", "emphasis-high-inverse");
+        }
     }
     
     &--round{

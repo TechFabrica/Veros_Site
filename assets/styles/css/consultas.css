@@ -210,6 +210,9 @@ a {
   color: #EBF0EC;
   border-color: #EBF0EC;
 }
+.button--line-inverse:hover {
+  color: #FFFFFF;
+}
 .button--round {
   border-radius: 48px;
 }
@@ -1279,14 +1282,6 @@ a {
     font-family: "VinilaBold", sans-serif;
     font-size: 28px;
     line-height: 35px;
-  }
-}
-.como-funciona__hexa-pet:last-child {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .como-funciona__hexa-pet:last-child {
-    display: block;
   }
 }
 .como-funciona__bottom-container {

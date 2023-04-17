@@ -1,27 +1,9 @@
 <section class="como-funciona grid__container">
     <div class="como-funciona__top-container grid__item--4-12">
-        <?php 
-            $image = get_field('como-funciona__hexa-pet-1');
-            if( !empty( $image ) ):
-        ?>
-
-        <img class="como-funciona__hexa-pet" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-
-        <?php endif; ?>
-
         <div class="como-funciona__title-container">
             <p class="como-funciona__sect-title">Como funciona?</p>
             <h2 class="como-funciona__title"><?php the_field('como-funciona__title'); ?></h2>
         </div>
-
-        <?php 
-            $image = get_field('como-funciona__hexa-pet-2');
-            if( !empty( $image ) ):
-        ?>
-
-        <img class="como-funciona__hexa-pet" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-
-        <?php endif; ?>
     </div>
 
     <div class="como-funciona__bottom-container grid__item--4-12">

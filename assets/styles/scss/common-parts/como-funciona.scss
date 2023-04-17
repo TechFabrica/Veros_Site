@@ -37,15 +37,6 @@
         }
     }
     
-    &__hexa-pet{
-        &:last-child{
-            display: none;
-            @media screen and (min-width: library.$breakpoint-1) {
-                display: block;
-            }
-        }
-    }
-    
     &__bottom-container{
         margin-top: 48px;
         display: flex;
