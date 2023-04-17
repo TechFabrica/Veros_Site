@@ -57,6 +57,8 @@
 
     &__step{
         margin-top: 24px;
+        display: flex;
+        flex-direction: column;
         
         &:first-child{
             margin-top: 0;
@@ -72,6 +74,17 @@
         }
     }
     
+    &__step-icon{
+        max-width: 150px;
+        align-self: center;
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            max-width: 200px;
+            align-self: flex-start;
+            transform: translateY(30px);
+        }
+    }
+
     &__step-index{
         @include library.heading--28;
         color: library.get-color("primary", "offwhite");
@@ -86,6 +99,10 @@
     &__step-content{
         @include library.body--16;
         color: library.get-color("type", "emphasis-medium-inverse");
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high-inverse");
+        }
     }
 
     &__button-container{

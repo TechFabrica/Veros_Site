@@ -31,6 +31,14 @@
             foreach( $steps_data as $item ):
         ?>
         <div class="como-funciona__step">
+            <?php 
+                $icon = $item['como-funciona__step-icon'];
+                if( !empty( $icon ) ):
+            ?>
+
+            <img class="como-funciona__step-icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
+
+            <?php endif; ?>
             <p class="como-funciona__step-index"><?php echo '0'.$step_index; $step_index++; ?></p>
             <h3 class="como-funciona__step-title"><?php echo $item['como-funciona__step-title']; ?></h3>
             <p class="como-funciona__step-content"><?php echo $item['como-funciona__step-content']; ?></´p>

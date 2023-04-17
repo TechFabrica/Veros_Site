@@ -77,6 +77,10 @@
         @media screen and (min-width: library.$breakpoint-2){
             @include library.body--18;
         }
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
     
     &__big-numbers-wrapper{

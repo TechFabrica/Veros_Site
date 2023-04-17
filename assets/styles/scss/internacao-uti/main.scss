@@ -8,6 +8,7 @@
         display: none;
         @media screen and (min-width: library.$breakpoint-1) {
             display: block;
+            max-width: 35%;
         }
     }
     
@@ -28,8 +29,12 @@
     &__title{
         color: library.get-color("primary", "dark-purple");
         @include library.heading--24;
-        @media screen and (min-width: library.$breakpoint-1) {
+        @media screen and (min-width: library.$breakpoint-2) {
             @include library.heading--28;
+        }
+        
+        &--emphasis{
+            color: library.get-color("primary", "light-purple");
         }
     }
 
@@ -69,6 +74,10 @@
         color: library.get-color("type", "emphasis-medium");
         @include library.body--16;
         margin-top: 24px;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
 
     &__pane-img{
