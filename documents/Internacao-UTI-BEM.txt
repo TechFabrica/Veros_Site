@@ -17,6 +17,7 @@ main
     __banner
     __wrapper
     __title
+    __subtitle
     __container
     __glide
     __pane

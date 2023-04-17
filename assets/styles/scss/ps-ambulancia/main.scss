@@ -8,57 +8,88 @@
         display: none;
         @media screen and (min-width: library.$breakpoint-1) {
             display: block;
+            max-width: 35%;
         }
     }
     
     &__wrapper{
-        padding: 64px 24px;
+        margin: 64px 24px;
         
         @media screen and (min-width: library.$breakpoint-1) {
-            padding: 800px 80px 800px 64px;
+            margin: 80px 80px 80px 64px;
         }
         @media screen and (min-width: library.$breakpoint-2) {
-            padding: 100px 124px 100px 64px;
+            margin: 100px 124px 100px 64px;
         }
         @media screen and (min-width: library.$breakpoint-3) {
-            padding: 100px 240px 100px 64px;
+            margin: 100px 240px 100px 64px;
         }
     }
 
     &__title{
         color: library.get-color("primary", "dark-purple");
         @include library.heading--24;
-        @media screen and (min-width: library.$breakpoint-1) {
+        @media screen and (min-width: library.$breakpoint-2) {
             @include library.heading--28;
         }
+        
+        &--emphasis{
+            color: library.get-color("primary", "light-purple");
+        }
+    }
+
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--18;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
+    }
+
+    &__container{
+        width: 100%;
     }
     
-    &__container{
+    &__glide{
         margin-top: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            margin-top: 32px;
+        }
+    }
+
+    &__pane{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         @media screen and (min-width: library.$breakpoint-1) {
-            margin-top: 32px;
             flex-direction: row;
         }
     }
-    
-    &__content{
-        color: library.get-color("type", "emphasis-medium");
-        @include library.body--16;
-        margin-top: 64px;
+
+    &__pane-container{
+        margin-top: 24px;
         @media screen and (min-width: library.$breakpoint-1) {
             margin-top: 0;
             margin-right: 40px;
         }
     }
 
-    &__imgs-container{
-
+    &__pane-title{
+        @include library.heading--18;
+    }
+    
+    &__pane-content{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--16;
+        margin-top: 24px;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
 
-    &__img{
+    &__pane-img{
         width: 328px;
         height: 248px;
     }

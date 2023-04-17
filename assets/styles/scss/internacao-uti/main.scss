@@ -38,6 +38,15 @@
         }
     }
 
+    &__subtitle{
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--18;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
+    }
+
     &__container{
         width: 100%;
     }

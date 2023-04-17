@@ -1510,6 +1510,14 @@ a {
 .main__title--emphasis {
   color: #7758D9;
 }
+.main__subtitle {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 18px;
+  line-height: 27px;
+}
+.main__subtitle--emphasis {
+  color: #000000;
+}
 .main__container {
   width: 100%;
 }

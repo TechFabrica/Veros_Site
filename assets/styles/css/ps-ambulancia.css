@@ -921,11 +921,26 @@ a {
 .glide {
   display: flex;
   justify-content: center;
-  width: 328px;
+  width: 100%;
 }
 .glide__track {
-  width: 328px;
   overflow: hidden;
+  width: 312px;
+}
+@media screen and (min-width: 1024px) {
+  .glide__track {
+    width: 512px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .glide__track {
+    width: 712px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .glide__track {
+    width: 912px;
+  }
 }
 .glide__bullets {
   bottom: -25px;
@@ -1484,24 +1499,25 @@ a {
 @media screen and (min-width: 1024px) {
   .main__banner {
     display: block;
+    max-width: 35%;
   }
 }
 .main__wrapper {
-  padding: 64px 24px;
+  margin: 64px 24px;
 }
 @media screen and (min-width: 1024px) {
   .main__wrapper {
-    padding: 800px 80px 800px 64px;
+    margin: 80px 80px 80px 64px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__wrapper {
-    padding: 100px 124px 100px 64px;
+    margin: 100px 124px 100px 64px;
   }
 }
 @media screen and (min-width: 1600px) {
   .main__wrapper {
-    padding: 100px 240px 100px 64px;
+    margin: 100px 240px 100px 64px;
   }
 }
 .main__title {
@@ -1510,38 +1526,69 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .main__title {
     font-family: "VinilaBold", sans-serif;
     font-size: 28px;
     line-height: 35px;
   }
 }
+.main__title--emphasis {
+  color: #7758D9;
+}
+.main__subtitle {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 18px;
+  line-height: 27px;
+}
+.main__subtitle--emphasis {
+  color: #000000;
+}
 .main__container {
+  width: 100%;
+}
+.main__glide {
   margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .main__glide {
+    margin-top: 32px;
+  }
+}
+.main__pane {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 @media screen and (min-width: 1024px) {
-  .main__container {
-    margin-top: 32px;
+  .main__pane {
     flex-direction: row;
   }
 }
-.main__content {
-  color: rgba(0, 0, 0, 0.6980392157);
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 64px;
+.main__pane-container {
+  margin-top: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .main__content {
+  .main__pane-container {
     margin-top: 0;
     margin-right: 40px;
   }
 }
-.main__img {
+.main__pane-title {
+  font-family: "VinilaBold", sans-serif;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+.main__pane-content {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+.main__pane-content--emphasis {
+  color: #000000;
+}
+.main__pane-img {
   width: 328px;
   height: 248px;
 }
