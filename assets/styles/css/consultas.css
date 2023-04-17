@@ -1254,6 +1254,7 @@ a {
   }
 }
 .como-funciona__title-container {
+  width: 100%;
   margin: 0 32px;
 }
 .como-funciona__sect-title {
