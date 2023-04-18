@@ -1518,6 +1518,7 @@ a {
   color: #7758D9;
 }
 .main__subtitle {
+  margin-top: 8px;
   color: rgba(0, 0, 0, 0.6980392157);
   font-size: 18px;
   line-height: 27px;
