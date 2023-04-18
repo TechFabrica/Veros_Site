@@ -42,6 +42,7 @@ hero
     __pet-type-js-slot
         --visible
     __content
+        --emphasis
     __card
 
 

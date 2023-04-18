@@ -1600,6 +1600,9 @@ a {
     line-height: 27px;
   }
 }
+.hero__content--emphasis {
+  color: #000000;
+}
 .hero__bottom-wrapper {
   background-color: #0C093C;
   height: fit-content;

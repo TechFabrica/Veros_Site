@@ -11,6 +11,7 @@ hero
     __current-page
     __title
     __content
+        --emphasis
     __big-numbers-wrapper
     __big-numbers-container
     __big-number

@@ -1453,6 +1453,9 @@ a {
     line-height: 27px;
   }
 }
+.hero__content--emphasis {
+  color: #000000;
+}
 .hero__button {
   max-width: fit-content;
   margin-top: 16px;

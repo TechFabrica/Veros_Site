@@ -1224,6 +1224,9 @@ a {
     line-height: 27px;
   }
 }
+.hero__content--emphasis {
+  color: #000000;
+}
 .hero__big-numbers-wrapper {
   display: flex;
   align-items: center;
