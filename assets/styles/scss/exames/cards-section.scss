@@ -67,11 +67,27 @@
     }
 
     &__card-title{
-        @include library.body--18;
+        @include library.heading--18;
     }
     
     &__card-content{
-        margin: 8px 0 0;
+        margin-top: 8px;
+        color: library.get-color("type", "emphasis-medium");
+        @include library.body--14;
+    }
+    
+    &__card-link{
+        margin-top: 8px;
+        color: library.get-color("primary", "light-purple");
+        @include library.body--14;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__card-arrow{
+
     }
 
     &__glide-arrow{

@@ -39,6 +39,10 @@
     }
     &__link{
         @include library.body--16;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     &__left-wrapper-2{
         z-index: 1;

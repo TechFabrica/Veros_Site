@@ -81,5 +81,9 @@
         @media screen and (min-width: library.$breakpoint-1) {
             margin-top: 36px;
         }
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }

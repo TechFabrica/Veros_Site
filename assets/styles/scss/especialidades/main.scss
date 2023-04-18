@@ -63,6 +63,10 @@
     &__card-link{
         color: library.get-color("primary", "light-purple");
         @include library.body--14;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     &__card-arrow{

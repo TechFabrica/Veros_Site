@@ -218,6 +218,10 @@
 
     &__institutional-menu-item{
         padding: 12px 16px 12px 0;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     &__institutional-social-container{

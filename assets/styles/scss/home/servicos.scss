@@ -18,6 +18,10 @@
         @media screen and (min-width: library.$breakpoint-1) {
             text-align: end;
         }
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     &__card{
         height: 120px;

@@ -12,6 +12,10 @@
     
     &__parent-page{
         color: library.get-color("type", "emphasis-high");
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     
     &__arrow{

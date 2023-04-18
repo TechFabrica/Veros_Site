@@ -50,6 +50,10 @@
     
     &__parent-page{
         color: library.get-color("type", "emphasis-high");
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     
     &__arrow{
@@ -97,6 +101,9 @@
     &__link{
         display: inline-block;
         margin-top: 24px;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
-    
 }

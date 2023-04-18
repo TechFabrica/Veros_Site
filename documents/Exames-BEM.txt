@@ -27,6 +27,8 @@ cards-section
     __card
     __card-title
     __card-content
+    __card-link
+    __card-arrow
     __glide-arrow
 
 

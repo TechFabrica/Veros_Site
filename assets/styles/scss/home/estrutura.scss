@@ -42,6 +42,10 @@
         @media screen and (min-width: library.$breakpoint-1) {
             margin-bottom: 30px;
         }
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     &__left-wrapper-2{
         z-index: 1;
