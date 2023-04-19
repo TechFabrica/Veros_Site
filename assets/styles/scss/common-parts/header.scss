@@ -133,7 +133,6 @@
             height: auto;
             overflow: visible;
             flex-direction: row-reverse;
-            justify-content: flex-end;
         }
     }
 
@@ -143,7 +142,7 @@
         
         @media screen and (min-width: library.$breakpoint-1) {
             width: auto;
-            margin-left: 0;
+            margin: auto;
         }
     }
     

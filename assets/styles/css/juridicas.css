@@ -478,7 +478,6 @@ a {
     height: auto;
     overflow: visible;
     flex-direction: row-reverse;
-    justify-content: flex-end;
   }
 }
 .header__menu-container {
@@ -488,7 +487,7 @@ a {
 @media screen and (min-width: 1024px) {
   .header__menu-container {
     width: auto;
-    margin-left: 0;
+    margin: auto;
   }
 }
 .header__menu {
