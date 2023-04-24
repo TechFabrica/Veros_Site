@@ -59,8 +59,11 @@
     &__title{
         margin-top: 32px;
         margin-bottom: 8px;
-        
         @include library.heading--28;
+        
+        @media screen and (min-width: library.$breakpoint-1){
+            max-width: 470px;
+        }
         @media screen and (min-width: library.$breakpoint-2){
             @include library.heading--32;
         }
@@ -88,6 +91,7 @@
         margin-bottom: 63px;
         color: library.get-color("type", "emphasis-medium");
         @media screen and (min-width: library.$breakpoint-1) {
+            max-width: 480px;
             margin-bottom: 80px;
         }
         @media screen and (min-width: library.$breakpoint-2) {

@@ -7,6 +7,9 @@
     @media screen and (min-width: library.$breakpoint-1) {
         padding-top: 24px;
     }
+    @media screen and (min-width: library.$breakpoint-3) {
+        grid-template-columns: repeat(12, 1fr);
+    }
     
     &__banner{
         border-radius: 32px;

@@ -6,6 +6,7 @@ $breakpoint-2: 1280px;
 $breakpoint-3: 1600px;
 
 $desktop-column-gap: 24px;
+$desktop-grid-padding: calc((100vw - 1120px) / 2);
 
 .body{
     display: flex;
@@ -50,7 +51,8 @@ $desktop-column-gap: 24px;
     }
     
     @media screen and (min-width: $breakpoint-3) {
-        padding: 80px 240px;
+        grid-template-columns: repeat(12, 72px);
+        padding: 80px $desktop-grid-padding;
     }
     
     &--left{
@@ -67,7 +69,8 @@ $desktop-column-gap: 24px;
         }
         
         @media screen and (min-width: $breakpoint-3) {
-            padding: 0 calc($desktop-column-gap / 2) 0 240px;
+            grid-template-columns: repeat(6, 72px);
+            padding: 0 calc($desktop-column-gap / 2) 0 $desktop-grid-padding;
         }
     }
     
@@ -85,7 +88,8 @@ $desktop-column-gap: 24px;
         }
         
         @media screen and (min-width: $breakpoint-3) {
-            padding: 0 240px 0 calc($desktop-column-gap / 2);
+            grid-template-columns: repeat(6, 72px);
+            padding: 0 $desktop-grid-padding 0 calc($desktop-column-gap / 2);
         }
     }
 

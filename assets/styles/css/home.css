@@ -71,7 +71,8 @@
 }
 @media screen and (min-width: 1600px) {
   .grid__container {
-    padding: 80px 240px;
+    grid-template-columns: repeat(12, 72px);
+    padding: 80px calc((100vw - 1120px) / 2);
   }
 }
 .grid__container--left {
@@ -91,7 +92,8 @@
 }
 @media screen and (min-width: 1600px) {
   .grid__container--left {
-    padding: 0 12px 0 240px;
+    grid-template-columns: repeat(6, 72px);
+    padding: 0 12px 0 calc((100vw - 1120px) / 2);
   }
 }
 .grid__container--right {
@@ -111,7 +113,8 @@
 }
 @media screen and (min-width: 1600px) {
   .grid__container--right {
-    padding: 0 240px 0 12px;
+    grid-template-columns: repeat(6, 72px);
+    padding: 0 calc((100vw - 1120px) / 2) 0 12px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1383,7 +1386,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .estrutura__left-wrapper-1 {
-    padding: 80px 12px 80px 240px;
+    padding: 80px 12px 80px calc((100vw - 1120px) / 2);
   }
 }
 .estrutura__graphic {
@@ -1453,7 +1456,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .estrutura__right-wrapper {
-    padding: 64px 240px 64px 40px;
+    padding: 64px calc((100vw - 1120px) / 2) 64px 40px;
   }
 }
 .estrutura__support-container {
@@ -1562,6 +1565,11 @@ a {
   font-size: 28px;
   line-height: 35px;
 }
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    max-width: 470px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero__title {
     font-family: "VinilaBold", sans-serif;
@@ -1591,6 +1599,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .hero__content {
+    max-width: 480px;
     margin-bottom: 80px;
   }
 }

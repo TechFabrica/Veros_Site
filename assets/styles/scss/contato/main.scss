@@ -22,6 +22,9 @@
         @media screen and (min-width: library.$breakpoint-1) {
             margin-top: 32px;
         }
+        @media screen and (min-width: library.$breakpoint-3) {
+            column-gap: inherit;
+        }
     }
     
     &__card{
