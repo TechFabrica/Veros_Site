@@ -1369,6 +1369,7 @@ a {
 .estrutura {
   position: relative;
   grid-template-rows: 1fr 32vw;
+  overflow: hidden;
 }
 .estrutura__left-wrapper-1 {
   grid-row: 1/2;
@@ -1378,6 +1379,9 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .estrutura__left-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 45px 12px 40px 80px;
   }
 }
@@ -1393,12 +1397,14 @@ a {
 }
 .estrutura__graphic {
   position: absolute;
-  top: 0;
+  width: 1024px;
+  top: -20px;
   left: 0;
 }
 @media screen and (min-width: 1024px) {
   .estrutura__graphic {
-    left: -28px;
+    width: 100px;
+    left: -38px;
   }
 }
 @media screen and (min-width: 1280px) {

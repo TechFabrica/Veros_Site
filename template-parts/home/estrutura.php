@@ -1,8 +1,8 @@
 <section class="estrutura grid__supercontainer">
     <div class="estrutura__left-wrapper-1">
         <picture class="estrutura__graphic">
-            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1--desktop.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1.svg">
+            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-2--desktop.svg">
+            <img style="width: 100%" src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-2.svg">
         </picture>
         <h2 class="estrutura__title"><?php the_field('estrutura__title'); ?></h2>
         <p class="estrutura__subtitle"><?php the_field('estrutura__subtitle'); ?></p>
