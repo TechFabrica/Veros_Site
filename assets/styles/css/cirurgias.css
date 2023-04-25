@@ -1152,6 +1152,7 @@ a {
 @media screen and (min-width: 1024px) {
   .contact__card {
     flex-direction: row;
+    align-items: center;
   }
 }
 .contact__card-icon {
@@ -1382,6 +1383,7 @@ a {
 
 .main {
   position: relative;
+  grid-template-rows: 1fr 32vw;
 }
 .main__left-wrapper-1 {
   grid-row: 1/2;
@@ -1391,7 +1393,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .main__left-wrapper-1 {
-    padding: 80px 12px 80px 100px;
+    padding: 45px 12px 40px 80px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1401,13 +1403,23 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .main__left-wrapper-1 {
-    padding: 80px 12px 80px 240px;
+    padding: 80px 12px 80px calc((100vw - 1120px) / 2);
   }
 }
 .main__graphic {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .main__graphic {
+    left: -28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__graphic {
+    left: 0;
+  }
 }
 .main__title {
   font-family: "VinilaBold", sans-serif;

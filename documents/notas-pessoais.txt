@@ -45,3 +45,4 @@ PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
 
 
 
+ajustar grafismo, conferir limite de caracteres do conteúdo

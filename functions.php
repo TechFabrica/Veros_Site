@@ -105,6 +105,7 @@ function veros_register_scripts(){
         wp_enqueue_script('veros-pet-types', get_template_directory_uri() . '/scripts/pet-types.js', array(), $version, true);
         wp_enqueue_script('veros-dynamic-banners', get_template_directory_uri() . '/scripts/dynamic-banners.js', array(), $version, true);
         wp_enqueue_script('veros-tabnav', get_template_directory_uri() . '/scripts/tabnav.js', array(), $version, true);
+        wp_enqueue_script('veros-minify-text', get_template_directory_uri() . '/scripts/home__minify-text.js', array(), $version, true);
         // wp_enqueue_script('veros-social-proof-glide', get_template_directory_uri() . '/scripts/glide--social-proof.js', array('veros-glide-cdn'), $version, true);
     }
     if (is_page_template('especialidades.php')){

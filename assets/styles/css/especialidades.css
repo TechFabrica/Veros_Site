@@ -1053,6 +1053,7 @@ a {
 @media screen and (min-width: 1024px) {
   .contact__card {
     flex-direction: row;
+    align-items: center;
   }
 }
 .contact__card-icon {

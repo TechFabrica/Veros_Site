@@ -53,7 +53,7 @@
     }
     
     &__glide{
-        margin-top: 16px;
+        margin-top: 8px;
         @media screen and (min-width: library.$breakpoint-1) {
             margin-top: 32px;
         }
@@ -69,6 +69,7 @@
     }
 
     &__pane-container{
+        width: 100%;
         margin-top: 24px;
         @media screen and (min-width: library.$breakpoint-1) {
             margin-top: 0;
@@ -93,6 +94,17 @@
     &__pane-img{
         width: 328px;
         height: 248px;
+        margin-top: 16px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: 229px;
+            height: 173px;
+            float: right;
+            margin: 24px 0 16px 16px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            width: 328px;
+            height: 248px;
+        }
     }
 
     &__glide-arrow{

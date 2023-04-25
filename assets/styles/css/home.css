@@ -1180,6 +1180,7 @@ a {
 @media screen and (min-width: 1024px) {
   .contact__card {
     flex-direction: row;
+    align-items: center;
   }
 }
 .contact__card-icon {
@@ -1367,6 +1368,7 @@ a {
 
 .estrutura {
   position: relative;
+  grid-template-rows: 1fr 32vw;
 }
 .estrutura__left-wrapper-1 {
   grid-row: 1/2;
@@ -1376,7 +1378,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .estrutura__left-wrapper-1 {
-    padding: 80px 12px 80px 100px;
+    padding: 45px 12px 40px 80px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1394,6 +1396,16 @@ a {
   top: 0;
   left: 0;
 }
+@media screen and (min-width: 1024px) {
+  .estrutura__graphic {
+    left: -28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .estrutura__graphic {
+    left: 0;
+  }
+}
 .estrutura__title {
   font-family: "VinilaBold", sans-serif;
   font-size: 24px;
@@ -1401,14 +1413,19 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .estrutura__title {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .estrutura__title {
     font-family: "VinilaBold", sans-serif;
     font-size: 28px;
     line-height: 35px;
-    margin-top: 30px;
+    max-width: 435px;
   }
 }
 .estrutura__subtitle {
-  margin: 8px 0;
+  margin: 24px 0;
   font-size: 16px;
   line-height: 24px;
 }
@@ -1416,16 +1433,12 @@ a {
   .estrutura__subtitle {
     font-size: 18px;
     line-height: 27px;
+    max-width: 350px;
   }
 }
 .estrutura__link {
   font-size: 16px;
   line-height: 24px;
-}
-@media screen and (min-width: 1024px) {
-  .estrutura__link {
-    margin-bottom: 30px;
-  }
 }
 .estrutura__link:hover {
   text-decoration: underline;
@@ -1446,7 +1459,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .estrutura__right-wrapper {
-    padding: 64px 80px 64px 40px;
+    padding: 15px 80px 15px 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1599,7 +1612,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .hero__content {
-    max-width: 480px;
+    max-width: 510px;
     margin-bottom: 80px;
   }
 }
@@ -1682,8 +1695,12 @@ a {
     line-height: 35px;
   }
 }
+.quem-atendemos__title--emphasis {
+  color: #7758D9;
+}
 .quem-atendemos__subtitle {
   margin-bottom: 40px;
+  max-width: 900px;
 }
 .quem-atendemos__tabnav {
   display: flex;
@@ -1736,6 +1753,9 @@ a {
   margin-top: 16px;
   font-size: 16px;
   line-height: 24px;
+}
+.quem-atendemos__content--emphasis {
+  color: #000000;
 }
 .quem-atendemos__checklist {
   margin-top: 8px;

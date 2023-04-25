@@ -2,6 +2,7 @@
 
 .main{
     position: relative;
+    grid-template-rows: 1fr 32vw;
     
     &__left-wrapper-1{
         grid-row: 1/2;
@@ -9,19 +10,25 @@
         color: library.get-color("type", "emphasis-high-inverse");
         padding: 80px 24px 80px;
         @media screen and (min-width: library.$breakpoint-1) {    
-            padding: 80px calc(library.$desktop-column-gap / 2) 80px 100px;
+            padding: 45px calc(library.$desktop-column-gap / 2) 40px 80px;
         }
         @media screen and (min-width: library.$breakpoint-2) {
             padding: 80px calc(library.$desktop-column-gap / 2) 80px 124px;
         }
         @media screen and (min-width: library.$breakpoint-3) {
-            padding: 80px calc(library.$desktop-column-gap / 2) 80px 240px;
+            padding: 80px calc(library.$desktop-column-gap / 2) 80px library.$desktop-grid-padding;
         }
     }
     &__graphic{
         position: absolute;
         top: 0;
         left: 0;
+        @media screen and (min-width: library.$breakpoint-1) {
+            left: -28px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            left: 0;
+        }
     }
     &__title{
         @include library.heading--24;

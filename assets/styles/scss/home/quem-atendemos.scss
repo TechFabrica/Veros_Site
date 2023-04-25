@@ -17,14 +17,19 @@
         margin-bottom: 8px;
         color: library.get-color("primary", "dark-purple");
         @include library.heading--24;
-
+        
         @media screen and (min-width: library.$breakpoint-2){
             @include library.heading--28;
+        }
+
+        &--emphasis{
+            color: library.get-color("primary", "light-purple");
         }
     }
 
     &__subtitle{
         margin-bottom: 40px;
+        max-width: 900px;
     }
 
     &__tabnav{
@@ -72,6 +77,10 @@
     &__content{
         margin-top: 16px;
         @include library.body--16;
+
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high");
+        }
     }
 
     &__checklist{

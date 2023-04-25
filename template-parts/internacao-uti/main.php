@@ -13,14 +13,17 @@
                         <li class="main__pane glide__slide">
                             <div class="main__pane-container">
                                 <h4 class="main__pane-title"><?php echo $item['main__pane-title']; ?></h4>
-                                <p class="main__pane-content"><?php echo $item['main__pane-content']; ?></p>
-                            </div>
+                                
                             <?php 
                                 $image = $item['main__pane-img'];
                                 if( !empty( $image ) ):
                             ?>
-                            <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                                <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
                             <?php endif; ?>
+                            
+                                <p class="main__pane-content"><?php echo $item['main__pane-content']; ?></p>
+                            </div>
+                            
                         </li>
                         <?php endforeach; ?>
                     </ul>
