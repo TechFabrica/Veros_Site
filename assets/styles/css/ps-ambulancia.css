@@ -1515,6 +1515,7 @@ a {
   }
 }
 .main__wrapper {
+  max-width: 1128px;
   margin: 64px 24px;
 }
 @media screen and (min-width: 1024px) {
