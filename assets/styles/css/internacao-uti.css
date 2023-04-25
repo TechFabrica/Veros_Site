@@ -1476,6 +1476,7 @@ a {
 .main {
   background-color: #F5F5F6;
   display: flex;
+  justify-content: space-between;
 }
 .main__banner {
   display: none;
@@ -1483,6 +1484,7 @@ a {
 @media screen and (min-width: 1024px) {
   .main__banner {
     display: block;
+    max-height: 750px;
     max-width: 35%;
   }
 }
@@ -1491,17 +1493,17 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .main__wrapper {
-    margin: 80px 80px 80px 64px;
+    margin: 45px 64px 40px 80px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__wrapper {
-    margin: 100px 124px 100px 64px;
+    margin: 80px 64px 80px 124px;
   }
 }
 @media screen and (min-width: 1600px) {
   .main__wrapper {
-    margin: 100px 240px 100px 64px;
+    margin: 80px 64px 80px calc((100vw - 1120px) / 2);
   }
 }
 .main__title {
