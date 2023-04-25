@@ -69,8 +69,8 @@
         
         <p class="footer__institutional-copyright"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
         <div class="footer__institutional-menu">
-            <a href="http://localhost/veros_wordpress/politica-de-privacidade/" class="footer__institutional-menu-item button button--borderless">Política de Privacidade</a>
-            <a href="http://localhost/veros_wordpress/imprensa/" class="footer__institutional-menu-item button button--borderless">Imprensa</a>
+            <a href="<?php echo home_url() . '/politica-de-privacidade/'; ?>" class="footer__institutional-menu-item button button--borderless">Política de Privacidade</a>
+            <a href="<?php echo home_url() . '/imprensa/';?>" class="footer__institutional-menu-item button button--borderless">Imprensa</a>
         </div>
         <div class="footer__institutional-social-container">
             <a title="Facebook Veros" href="https://www.facebook.com/veros.hospital" class="footer__institutional-social">
