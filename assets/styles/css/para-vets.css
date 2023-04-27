@@ -1299,6 +1299,10 @@ a {
   align-items: center;
   margin: 36px 0 16px;
 }
+.main__big-number-icon-container {
+  display: flex;
+  align-items: center;
+}
 .main__big-number-content {
   font-family: "VinilaBold", sans-serif;
   font-size: 18px;

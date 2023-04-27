@@ -73,7 +73,8 @@
     }
 
     &__big-number-icon-container{
-
+        display: flex;
+        align-items: center;
     }
 
     &__big-number-icon{

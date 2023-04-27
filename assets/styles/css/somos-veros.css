@@ -1289,6 +1289,10 @@ a {
     margin-bottom: 16px;
   }
 }
+.mvv__big-number-icon-container {
+  display: flex;
+  align-items: center;
+}
 .mvv__big-number-content {
   font-family: "VinilaBold", sans-serif;
   font-size: 18px;
@@ -1430,6 +1434,10 @@ a {
 .trabalhe__big-number:last-child {
   padding: 10px 0;
   border-bottom: none;
+}
+.trabalhe__big-number-icon-container {
+  display: flex;
+  align-items: center;
 }
 .trabalhe__big-number-content {
   font-family: "VinilaBold", sans-serif;
