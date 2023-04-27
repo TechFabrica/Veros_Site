@@ -115,6 +115,7 @@ function veros_register_scripts(){
         wp_enqueue_script('veros-internacao-uti-glide', get_template_directory_uri() . '/scripts/internacao-uti__glide.js', array('veros-glide-cdn'), $version, true);
     }
     if (is_page_template('cirurgias.php')){
+        wp_enqueue_script('veros-dynamic-banners', get_template_directory_uri() . '/scripts/dynamic-banners.js', array(), $version, true);
         wp_enqueue_script('veros-cirurgias-glide', get_template_directory_uri() . '/scripts/cirurgias__glide.js', array('veros-glide-cdn'), $version, true);
     }
     if (is_page_template('ps-ambulancia.php')){
