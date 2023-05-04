@@ -1,0 +1,70 @@
+@use "../_library/library";
+
+.triagem{
+    background-color: library.get-color("background", "dark");
+
+    &__title{
+        color: library.get-color("secondary", "yellow");
+        @include library.heading--24;
+        @media screen and (min-width: library.$breakpoint-2) {
+            @include library.heading--28;
+        }
+    }
+
+    &__subtitle{
+        margin-top: 8px;
+        color: library.get-color("type", "emphasis-medium-inverse");
+        @include library.body--18;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high-inverse");
+        }
+    }
+
+    &__content{
+        margin: 8px 0 24px;
+        color: library.get-color("type", "emphasis-medium-inverse");
+        @include library.body--16;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high-inverse");
+        }
+    }
+
+    &__infographic{
+        min-width: 100%;
+        max-width: 100%;
+        
+        &--desktop{
+            min-width: 100%;
+            max-width: 100%;
+            display: none;
+        }
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: none;
+            &--desktop{
+                display: block;
+            }
+        }
+    }
+
+    &__topics{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__topic{
+        margin-top: 16px;
+        color: library.get-color("type", "emphasis-medium-inverse");
+        @include library.body--16;
+        
+        &--emphasis{
+            color: library.get-color("type", "emphasis-high-inverse");
+        }
+
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
