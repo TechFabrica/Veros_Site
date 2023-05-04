@@ -101,8 +101,8 @@
         @media screen and (min-width: library.$breakpoint-1) {
             width: 229px;
             height: 173px;
-            float: left;
-            margin: 24px 16px 16px 0;
+            float: right;
+            margin: 24px 0 16px 16px;
         }
         @media screen and (min-width: library.$breakpoint-2) {
             width: 328px;

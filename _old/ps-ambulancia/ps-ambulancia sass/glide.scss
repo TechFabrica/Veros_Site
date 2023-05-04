@@ -1,0 +1,70 @@
+@use "../_library/library";
+
+.glide{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__track{
+        overflow: hidden;
+        width: 312px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: 512px;
+        }
+        @media screen and (min-width: library.$breakpoint-2) {
+            width: 712px;
+        }
+        @media screen and (min-width: library.$breakpoint-3) {
+            width: 912px;
+        }
+    }
+    &__slides{
+        
+    }
+    &__slide{
+        
+        &--active{
+        }
+    }
+    &__bullets{
+        bottom: -25px;
+        @media screen and (min-width: library.$breakpoint-1) {
+            bottom: -45px;
+        }
+    }
+    &__bullet{
+        background-color: library.get-color("neutral", "20");
+        border: none;
+        
+        &--active, &:hover, &:focus{
+            background-color: library.get-color("background", "dark");
+            border: none;
+        }
+    }
+    &__arrows{
+        position: absolute;
+        bottom: -40px;
+    }
+    &__arrow{
+        display: none;
+        
+        @media screen and (min-width: library.$breakpoint-1) {
+            display: flex;
+            color: library.get-color("primary", "offwhite");
+            background-color: library.get-color("neutral", "20");
+            padding: 19px 21px;
+            border-radius: 48px;
+        }
+
+        &--left{
+            left: 70px;
+        }
+        &--right{
+            right: 70px;
+        }
+
+        &:hover{
+            border: 1px solid library.get-color("neutral", "0");
+        }
+    }
+}

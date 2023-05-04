@@ -1294,6 +1294,7 @@ a {
   }
 }
 .como-funciona__title {
+  display: block;
   text-align: center;
   color: #EBF0EC;
   font-family: "VinilaBold", sans-serif;
@@ -1306,6 +1307,13 @@ a {
     font-size: 28px;
     line-height: 35px;
   }
+}
+.como-funciona__title--sub {
+  margin: 16px auto 0;
+  color: rgba(235, 240, 236, 0.8);
+  font-family: "VinilaBold", sans-serif;
+  font-size: 18px;
+  line-height: 22.5px;
 }
 .como-funciona__bottom-container {
   margin-top: 48px;
