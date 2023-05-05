@@ -1,8 +1,8 @@
 <section class="main grid__supercontainer">
     <div class="main__left-wrapper-1 grid__container grid__container--left">
         <picture class="main__graphic">
-            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1--desktop.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-1.svg">
+            <source media="(min-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-2--desktop.svg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/pattern-amarelo-2.svg">
         </picture>
         <h2 class="main__title grid__item--4-5"><?php the_field('main__title'); ?></h2>
         <p class="main__subtitle grid__item--4-5"><?php the_field('main__subtitle'); ?></p>
