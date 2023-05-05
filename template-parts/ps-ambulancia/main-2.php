@@ -7,7 +7,9 @@
                     $image = $panes_data[$i]['main__pane-img'];
                     if( !empty( $image ) ):
         ?>
-            <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+            <div class="main__img-container">
+                <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+            </div>
             <?php
                 endif;
             ?>

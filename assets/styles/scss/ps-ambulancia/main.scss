@@ -29,15 +29,19 @@
     &__container{
         width: 100%;
         display: grid;
+        grid-template-columns: 100%;
         gap: 16px;
-        grid-template-columns: 1fr 1fr;
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__content-container{
 
 
         &--2{
-            max-width: 325px;
+            
         }
     }
 
@@ -70,7 +74,16 @@
         }
     }
 
+    &__img-container{
+        display: flex;
+        align-items: center;
+    }
+
     &__pane-img{
-        width: 90%;
+        width: 100%;
+
+        @media screen and (min-width: library.$breakpoint-1) {
+            width: 90%;
+        }
     }
 }

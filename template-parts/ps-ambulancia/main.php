@@ -1,6 +1,5 @@
 <section class="main grid__container">
     <h2 class="main__title grid__item--4-12"><?php the_field('main__title'); ?></h2>
-    <p class="main__subtitle grid__item--4-12"><?php the_field('main__subtitle'); ?></p>
     <div class="main__container grid__item--4-12">
         <?php
             $panes_data = get_field('main__panes');
@@ -9,7 +8,9 @@
                     $image = $panes_data[$i]['main__pane-img'];
                     if( !empty( $image ) ):
         ?>
-            <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+            <div class="main__img-container">
+                <img class="main__pane-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+            </div>
             <?php
                 endif;
             ?>

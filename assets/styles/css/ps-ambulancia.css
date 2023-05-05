@@ -1539,11 +1539,13 @@ a {
 .main__container {
   width: 100%;
   display: grid;
+  grid-template-columns: 100%;
   gap: 16px;
-  grid-template-columns: 1fr 1fr;
 }
-.main__content-container--2 {
-  max-width: 325px;
+@media screen and (min-width: 1024px) {
+  .main__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .main__pane-title {
   margin-bottom: 24px;
@@ -1572,8 +1574,17 @@ a {
 .main__pane-checklist:first-child {
   margin-top: 0;
 }
+.main__img-container {
+  display: flex;
+  align-items: center;
+}
 .main__pane-img {
-  width: 90%;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .main__pane-img {
+    width: 90%;
+  }
 }
 
 .triagem {
