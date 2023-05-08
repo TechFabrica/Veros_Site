@@ -23,7 +23,6 @@ cards-section
     __tabnav-item
     __content-pane
     __pane-title
-    __pane-content
     __card
     __card-title
     __card-content

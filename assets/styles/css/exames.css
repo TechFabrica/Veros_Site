@@ -949,7 +949,7 @@ a {
 }
 .glide__arrows {
   position: absolute;
-  top: -70px;
+  top: -40px;
   right: 85px;
 }
 .glide__arrow {
@@ -1428,19 +1428,14 @@ a {
   margin-top: 40px;
   color: #0C093C;
   font-family: "VinilaBold", sans-serif;
-  font-size: 18px;
-  line-height: 22.5px;
+  font-size: 24px;
+  line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .cards-section__pane-title {
     margin-top: 0;
+    margin-bottom: 30px;
   }
-}
-.cards-section__pane-content {
-  color: rgba(0, 0, 0, 0.6980392157);
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 24px;
 }
 .cards-section__card {
   background-color: #FFFFFF;

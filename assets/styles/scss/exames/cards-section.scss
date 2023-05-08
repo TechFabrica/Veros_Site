@@ -42,17 +42,12 @@
     &__pane-title{
         margin-top: 40px;
         color: library.get-color("primary", "dark-purple");
-        @include library.heading--18;
+        @include library.heading--24;
         
         @media screen and (min-width: library.$breakpoint-1){
             margin-top: 0;
+            margin-bottom: 30px;
         }
-    }
-    
-    &__pane-content{
-        color: library.get-color("type", "emphasis-medium");
-        margin-bottom: 16px;
-        @include library.body--16;
     }
     
     &__card{

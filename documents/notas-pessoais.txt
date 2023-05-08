@@ -45,4 +45,4 @@ PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
 
 
 
-Ajustar as novas dobras para o sistema de grids já existente (está quebrando no mobile)
+Remover subtitulo do painel na main de Exames e ajustar posicionamento dos botões de navegação do glide
