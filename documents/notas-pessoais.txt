@@ -45,4 +45,3 @@ PÁGINAS NO AMBIENTE DE HOMOLOGAÇÃO (COM URLs):
 
 
 
-Remover subtitulo do painel na main de Exames e ajustar posicionamento dos botões de navegação do glide
