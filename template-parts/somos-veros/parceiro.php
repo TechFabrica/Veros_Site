@@ -24,7 +24,7 @@
         <?php
             endforeach;
         ?>
-        <a href="<?php the_field('parceiro__link'); ?>" class="parceiro__button button button--line button--round">
+        <a href="<?php the_field('parceiro__link'); ?>" class="parceiro__button button button--line button--round" target="_blank">
             <?php the_field('parceiro__link-text'); ?>
         </a>
         </div>

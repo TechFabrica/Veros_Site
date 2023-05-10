@@ -28,7 +28,8 @@
         <div class="hero__big-numbers-wrapper">
             <?php
                 $big_numbers_data = get_field('hero__big-numbers');
-                foreach($big_numbers_data as $item):
+                if ( !empty($big_numbers_data) ):
+                    foreach($big_numbers_data as $item):
             ?>
             <div class="hero__big-numbers-container">
                 <div class="hero__big-number">
@@ -38,7 +39,10 @@
                     <?php echo $item['hero__big-number-text']; ?>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <?php
+                    endforeach;
+                endif;
+            ?>
         </div>
     </div>
 </section>

@@ -28,8 +28,12 @@
         <h1 class="hero__title"><?php the_field('hero__title'); ?></h2>
         <p class="hero__content"><?php the_field('hero__content'); ?></p>
         
+        <?php
+            if( !empty(get_field('hero__button-link')) ):
+        ?>
         <a href="<?php the_field('hero__button-link'); ?>" class="hero__button button button--line button--round">
             <?php the_field('hero__button-text'); ?>
         </a>
+        <?php endif; ?>
     </div>
 </section>
