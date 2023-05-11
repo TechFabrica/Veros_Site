@@ -28,10 +28,10 @@
         <?php endforeach; ?>
     </div>
     <?php
-        if( !empty(the_field('como-funciona__button-link')) ):
+        if( !empty(get_field('como-funciona__button-link')) ):
     ?>
     <div class="como-funciona__button-container grid__item--4-12">
-        <a href="<?php the_field('como-funciona__button-link') ?>" class="como-funciona__button button button--line-inverse button--round"><?php the_field('como-funciona__button-text') ?></a>
+        <a href="<?php the_field('como-funciona__button-link'); ?>" class="como-funciona__button button button--line-inverse button--round"><?php the_field('como-funciona__button-text'); ?></a>
     </div>
     <?php endif; ?>
 </section>

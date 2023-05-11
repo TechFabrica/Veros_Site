@@ -147,8 +147,14 @@
     &__address-title{
         color: library.get-color("type", "emphasis-high");
         margin-bottom: 8px;
+        font-weight: 700;
         @media screen and (min-width: library.$breakpoint-1) {
             padding-left: 16px;
+        }
+        
+        &--caption{
+            color: library.get-color("type", "emphasis-medium");
+            font-weight: 400;
         }
     }
     

@@ -817,11 +817,16 @@ a {
 .footer__address-title {
   color: #000000;
   margin-bottom: 8px;
+  font-weight: 700;
 }
 @media screen and (min-width: 1024px) {
   .footer__address-title {
     padding-left: 16px;
   }
+}
+.footer__address-title--caption {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-weight: 400;
 }
 .footer__address-support-container {
   display: flex;
